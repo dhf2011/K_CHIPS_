@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인 | K-Chips</title>
+  <link rel="stylesheet" href="../../resources/css/pc/common.css">
+  <link rel="stylesheet" href="../../resources/css/pc/style.css">
+  <script src="../../resources/js/jquery-3.6.0.min.js"></script>
+  <script src="../../resources/js/common_pc.js"></script>
+</head>
+
+<body>
+  <!-- skip -->
+  <div class="skip">
+    <a href="#container">본문 바로가기</a>
+  </div>
+  <!-- // skip -->
+  <div class="wrapper">
+    <!-- header -->
+    <header style="display: none;" class="header_wrap">
+      <div class="header_com">
+        <div class="inner">
+          <p class="header_com_logo"></p>
+          <ul class="header_com_li">
+
+            <li><a href="#none" target="_blank" title="새창 열림">로그인</a></li>
+            <li>l</li>
+            <li><a href="#none" target="_blank" title="새창 열림">회원가입</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header">
+        <div class="inner">
+          <h1 class="header_logo"><a class="header_logo_size" href="#none"><img
+                src="../../resources/images/pc/K_Chips_logo.svg" alt="K-Chips 홈페이지"></a></h1>
+          <!-- 추후 LNB -->
+          <!-- <div class="gnb_wrap">
+                        <ul class="dep1">
+                            <li class="dep1_1">
+                                <a href="#none">메뉴 1</a>
+                            </li>
+                            <li class="dep1_2">
+                                <a href="#none">메뉴 2</a>
+                                <ul class="dep2">
+                                    <li class="dep2_li">
+                                        <a href="#none">메뉴 2_1</a>
+                                        <ul class="dep3">
+                                            <li class="dep3_li"><a href="#none">메뉴 2_1_1</a></li>
+                                            <li class="dep3_li"><a href="#none">메뉴 2_1_2</a></li>
+                                            <li class="dep3_li"><a href="#none">메뉴 2_1_3</a></li>
+                                            <li class="dep3_li"><a href="#none">메뉴 2_1_4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dep2_li">
+                                        <a href="#none">메뉴 2_2</a>
+                                        <ul class="dep3">
+                                            <li class="dep3_li"><a href="#none">메뉴 2_2_1</a></li>
+                                            <li class="dep3_li"><a href="#none">메뉴 2_2_2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dep1_3">
+                                <a href="#none">메뉴 3</a>
+                                <ul class="dep2">
+                                    <li class="dep2_li">
+                                        <a href="#none">메뉴 3_1</a>
+                                        <ul class="dep3">
+                                            <li class="dep3_li"><a href="#none">메뉴 3_1_1</a></li>
+                                            <li class="dep3_li"><a href="#none">메뉴 3_1_2</a></li>
+                                            <li class="dep3_li"><a href="#none">메뉴 3_1_3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dep2_li">
+                                        <a href="#none">메뉴 3_2</a>
+                                        <ul class="dep3">
+                                            <li class="dep3_li"><a href="#none">메뉴 3_2_1</a></li>
+                                            <li class="dep3_li"><a href="#none">메뉴 3_2_2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dep1_4">
+                                <a href="#none">메뉴 4</a>
+                                <ul class="dep2">
+                                    <li class="dep2_li">
+                                        <a href="#none">메뉴 4_1</a>
+                                        <ul class="dep3">
+                                            <li class="dep3_li"><a href="#none">메뉴 4_1_1</a></li>
+                                            <li class="dep3_li"><a href="#none">메뉴 4_1_2</a></li>
+                                            <li class="dep3_li"><a href="#none">메뉴 4_1_3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dep2_li">
+                                        <a href="#none">메뉴 4_2</a>
+                                        <ul class="dep3">
+                                            <li class="dep3_li"><a href="#none">메뉴 4_2_1</a></li>
+                                            <li class="dep3_li"><a href="#none">메뉴 4_2_2</a></li>
+                                            <li class="dep3_li"><a href="#none">메뉴 4_2_3</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div> -->
+
+        </div>
+      </div>
+    </header>
+    <!-- // header -->
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="contents">
+        <div class="bx_login">
+          <h2 class="logo logo_login"><img src="../../resources/images/pc/K_Chips_logo.svg" alt="K-Chips 반도체 인제양성 플랫폼">
+          </h2>
+          <div class="bx_inp ty2">
+            <input type="text" title="아이디" placeholder="아이디">
+            <!-- 안내문 -->
+            <span class="Notice" style="display: none;">아이디는 영문대소문자, 숫자를 사용합니다.</span>
+          </div>
+          <div class="bx_inp ty2">
+            <input type="password" title="비밀번호" placeholder="비밀번호">
+            <!-- 안내문 -->
+            <span class="Notice" style="display: none;">비밀번호는 8자 이상, 영문대소, 숫자, 특수문자 중 2가지를 포함하고 있습니다.
+            </span>
+          </div>
+          <div class="login_chk_wrpa">
+            <div class="bx_chk">
+              <input type="checkbox" id="chk2" class="chk_ty1">
+              <label for="chk2">아이디 저장</label>
+            </div>
+            <div class="bx_chk">
+              <input type="checkbox" id="chk3" class="chk_ty1">
+              <label for="chk3">로그인 상태유지</label>
+            </div>
+          </div>
+          <div class="btn_wrap">
+            <a href="#none" class="btn_lg01">로그인</a>
+          </div>
+          <!-- <div class="mt45" style="text-align: center;">
+            <h2>회원가입</h2>
+          </div> -->
+          <div class="btn_wrap mt10">
+            <a href="#none" class="btn_lg03">회원가입</a>
+          </div>
+
+          <div class="btn_signup">
+            <a href="#none">아이디/비밀번호 찾기</a>
+            <a href="#none">비밀번호 찾기</a>
+          </div>
+
+          <div class="snsLogBox mt25">
+            <!-- 230913_수정완료 -->
+            <ul class="w100">
+              <li id="li_naver on">
+                <a href="#none" class="snsNaver" title="새창열기"><span class="text_hidden">네이버</span></a>
+              </li>
+              <li id="li_kakao">
+                <a href="#none" class="snsKakao" title="새창열기"><span class="text_hidden">카카오톡</span></a>
+              </li>
+              <li id="li_kakao">
+                <a href="#none" class="snsGoogle" title="새창열기"><span class="text_hidden">구굴</span></a>
+              </li>
+
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // container -->
+    <!-- footer -->
+    <!-- <footer class="footer">
+            <div class="inner">
+                <p class="footer_logo"><img src="." alt="K-Chips 홈페이지"></p>
+                <div class="footer_r">
+                    <ul class="footer_link">
+                        <li><a href="#none" target="_blank" title="새창 열림">이용약관</a></li>
+                        <li><a href="#none" target="_blank" title="새창 열림">개인정보 취급방침</a></li>
+                        <li><a href="#none" target="_blank" title="새창 열림">이메일무단수집거부</a></li>
+                    </ul>
+                    <p class="footer_copyright">COPYRIGHT © 2014 SEOUL AGRO-FISHERIES & FOOD. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </footer> -->
+    <!-- // footer -->
+  </div>
+</body>
+
+</html>

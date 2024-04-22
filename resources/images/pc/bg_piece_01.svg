@@ -1,0 +1,70 @@
+<svg width="265" height="660" viewBox="0 0 265 660" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style type="text/css">
+        <![CDATA[
+        .moon-wrap {
+        -webkit-animation: moon-wrap-anim 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) alternate infinite;
+        animation: moon-wrap-anim 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) alternate infinite;
+        }
+        @-webkit-keyframes moon-wrap-anim {
+        0% { -webkit-transform: translate(0, 0px); }
+        100% { -webkit-transform: translate(0, -15px); }
+        }
+        @keyframes moon-wrap-anim {
+        0% { transform: translate(0, 0px); }
+        100% { transform: translate(0, -15px); }
+        }
+        .moon {
+        -webkit-transform-origin: 30.5% 30.5%; -webkit-animation: moon-anim 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) alternate infinite;
+        transform-origin: 30.5% 30.5%; animation: moon-anim 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) alternate infinite;
+        }
+        @-webkit-keyframes moon-anim {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(6deg); }
+        }
+        @keyframes moon-anim {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(6deg); }
+        }
+        #twinkle {
+        -webkit-transform-origin: 16.5% 17%; -webkit-animation: twinkle-anim 1.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+        transform-origin: 16.5% 17%; animation: twinkle-anim 1.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+        }
+        @-webkit-keyframes twinkle-anim {
+        0% { -webkit-transform: scale(1); }
+        40% { -webkit-transform: scale(0.9); }
+        100% { -webkit-transform: scale(1); }
+        }
+        @keyframes twinkle-anim {
+        0% { transform: scale(1); }
+        40% { transform: scale(0.9); }
+        100% { transform: scale(1); }
+        }
+ 
+    .sun-core {
+        -webkit-transform-origin: 38% 38%; -webkit-animation: sun-core-anim 1.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) alternate infinite;
+        transform-origin: 38% 38%; animation: sun-core-anim 1.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) alternate infinite;
+        }
+        @-webkit-keyframes sun-core-anim {
+        0% { -webkit-transform: scale(1); }
+        100% { -webkit-transform: scale(0.95); }
+        }
+        @keyframes sun-core-anim {
+        0% { transform: scale(1); }
+        100% { transform: scale(0.95); }
+        }
+        .sun-shine {
+        -webkit-transform-origin: 38% 38%; -webkit-animation: sun-shine-anim 1.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) alternate infinite;
+        transform-origin: 38% 38%; animation: sun-shine-anim 1.5s cubic-bezier(0.445, 0.05, 0.55, 0.95) alternate infinite;
+        }
+        @-webkit-keyframes sun-shine-anim {
+        0% { -webkit-transform: scale(1); }
+        100% { -webkit-transform: scale(0.9); }
+        }
+        @keyframes sun-shine-anim {
+        0% { transform: scale(1); }
+        100% { transform: scale(0.9); }
+        }
+    ]]>
+      </style>
+<path class="sun-core" transform="translate(22.000000, 21.000000)" fill-rule="evenodd" clip-rule="evenodd" d="M-149.117 656.298C-145.224 660.289 -138.954 660.364 -135.127 656.516L261.411 257.776C265.314 253.851 265.171 247.363 261.094 243.402L14.0569 3.36011C11.9317 1.29513 9.04304 0.249808 6.15162 0.499432L-428.371 38.0132C-433.848 38.486 -437.784 43.3949 -437.093 48.9364C-407.332 287.884 -301.635 499.952 -149.117 656.298Z" fill="#0099D8" fill-opacity="0.4"/>
+</svg>

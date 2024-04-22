@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Guide Popup mobile</title>
+    <link rel="stylesheet" href="../../resources/css/mo/common.css">
+    <link rel="stylesheet" href="../../resources/css/mo/style.css">
+    <script src="../../resources/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resources/js/common_mo.js"></script>
+    <style>
+        .btn_temp {margin-top:20px;padding:5px 10px;border:1px solid #bbb;border-radius:5px}
+        .btn_temp:not(:last-of-type) {margin-right:10px}
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <header class="header" id="header">
+        <h1 class="header_logo"><a href="#none"><img src="../../resources/images/mo/img_logo.png" alt=""></a></h1>
+        <button type="btn" class="header_btn_bar"><span class="blind">전체메뉴</span></button><!-- gnb menu open : .on class -->
+    </header>
+    <!-- // header -->
+    <!-- gnb -->
+   
+    <!-- // gnb -->
+    <!-- container -->
+    <div class="container" id="container">
+        <div class="contents">
+            <!-- layer popup 확인용 버튼 -->
+            <button class="btn_temp" type="button" data-role="pop-on" data-link="lyPop1">alert layer popup</button><br>
+            <button class="btn_temp" type="button" data-role="pop-on" data-link="lyPop2">confirm layer popup</button><br>
+            <div class="bx_inp ty1 df mt10">
+               
+                <input type="text" title="" placeholder="학교명" data-role="pop-on" data-link="lyPop5"   value="" id="inp02">
+                 
+              </div>
+        </div>
+    </div>
+    <!-- // container -->
+    <footer class="footer" id="footer">
+        <div class="footer_top">
+            <p class="footer_logo" ><img  src="../../resources/images/mo/img_footer_logo.png" alt="K-Chips 반도체 인재양성 플랫폼"></p>
+        </div>
+        
+        <p class="footer_copyright">한국반도체산업협회 / 한국반도체연구조합 
+            경기도 성남시 분당구 판교역로 182(삼평동 644번지) 한국반도체산업협회회관 9~12층  l 전화 : 02-576-3472 ~ 4  l   팩스 : 02-570-5269 / 5219
+          </p>
+        <p class="footer_copyright"> © Copyright 2017 - KOREA SEMICONDUCTOR INDUSTRY ASSOCIATION</p>
+    </footer>
+  
+    <!-- alert layer popup -->
+    <div class="pop_wrap" id="lyPop1">
+        <div class="pop_cont">
+            <p class="tc">일치하는 정보가 없습니다<br> 아이디를 확인해주세요.</p>
+        </div>
+        <div class="pop_btn_wrap">
+            <button type="button" class="pop_btn_ty1" data-role="pop-off">확인</button>
+        </div>
+    </div>
+    <!-- // alert layer popup -->
+    <!-- confirm layer popup -->
+    <div class="pop_wrap" id="lyPop2">
+        <div class="pop_cont">
+            <p class="tc">저장 하시겠습니까?</p>
+        </div>
+        <div class="pop_btn_wrap">
+            <button type="button" class="pop_btn_ty1" data-role="pop-off">취소</button>
+            <button type="button" class="pop_btn_ty3" data-role="pop-off">확인</button>
+        </div>
+    </div>
+
+
+    <!-- 기관명 -->
+
+    <div class="pop_wrap typ4" id="lyPop5">
+        <div class="pop_cont2">
+          <div class="pop_inner">
+            <h2 class="pop_tit">기업명 검색</h2>
+            <div class="tree_wrap mt20">
+                <div class="bx_inp ty1 bx_srch">
+                    <input type="text" title="제안, 공유, 연구자료 검색" placeholder="">
+                    <button type="button" class="btn_srch">검색</button>
+                </div>
+              <!-- 부서 트리 영역 -->
+  
+              <!-- // 부서 트리 영역 -->
+              <div class="bx_tbl mt15">
+                <div class="tbl_col_typ2">
+                  <table>
+                    <caption>기업명의 관한 표</caption>
+                    <colgroup>
+                      <col style="width:20%">
+                      <col style="width:*">
+  
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">선택</th>
+                        <th scope="col">기업명</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="bx_chk tbl_chk_center">
+                            <input type="radio" id="rdo1-1" name="rdo1" class="rdo_ty1">
+                          </div>
+                        </td>
+                        <td><label for="rdo1-1">삼성전자</label></td>
+  
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="bx_chk tbl_chk_center">
+                            <input type="radio" id="rdo1-2" name="rdo1" class="rdo_ty1">
+                          </div>
+                        </td>
+                        <td><label for="rdo1-2">삼성전자</label></td>
+  
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="bx_chk tbl_chk_center">
+                            <input type="radio" id="rdo1-3" name="rdo1" class="rdo_ty1">
+                          </div>
+                        </td>
+                        <td><label for="rdo1-3">삼성전자</label></td>
+  
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="bx_chk tbl_chk_center">
+                            <input type="radio" id="rdo1-3" name="rdo1" class="rdo_ty1">
+                          </div>
+                        </td>
+                        <td><label for="rdo1-3">삼성전자</label></td>
+  
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="bx_chk tbl_chk_center">
+                            <input type="radio" id="rdo1-3" name="rdo1" class="rdo_ty1">
+                          </div>
+                        </td>
+                        <td><label for="rdo1-3">삼성전자</label></td>
+  
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="bx_chk tbl_chk_center">
+                            <input type="radio" id="rdo1-3" name="rdo1" class="rdo_ty1">
+                          </div>
+                        </td>
+                        <td><label for="rdo1-3">삼성전자</label></td>
+  
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="bx_chk tbl_chk_center">
+                            <input type="radio" id="rdo1-3" name="rdo1" class="rdo_ty1">
+                          </div>
+                        </td>
+                        <td><label for="rdo1-3">삼성전자</label></td>
+  
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="bx_chk tbl_chk_center">
+                            <input type="radio" id="rdo1-4" name="rdo1" class="rdo_ty1">
+                          </div>
+                        </td>
+                        <td><label for="rdo1-4">삼성전자</label></td>
+  
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="bx_chk tbl_chk_center">
+                            <input type="radio" id="rdo1-5" name="rdo1" class="rdo_ty1">
+                          </div>
+                        </td>
+                        <td><label for="rdo1-5">삼성전자</label></td>
+  
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="bx_chk tbl_chk_center">
+                            <input type="radio" id="rdo1-6" name="rdo1" class="rdo_ty1">
+                          </div>
+                        </td>
+                        <td><label for="rdo1-6">삼성전자</label></td>
+  
+                      </tr>
+                     
+  
+                    </tbody>
+                  </table>
+                <div class="paging_wrap">
+                    <div class="paging mt15">
+                      <a href="#none" class="prev"><span class="blind">이전</span></a>
+                      <ul class="paging_num">
+                        <li class="on"><a href="#none">1</a></li>
+                        <li><a href="#none">2</a></li>
+                        <li><a href="#none">3</a></li>
+                        <li><a href="#none">4</a></li>
+                        <li><a href="#none">5</a></li>
+                       
+                      </ul>
+                      <a href="#none" class="next"><span class="blind">다음</span></a>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+          </div>
+        </div>
+        <div class="btn_wrap fx_r mt20">
+          <button type="button" class="btn_md01" data-role="pop-off">취소</button>
+          <button type="button" class="btn_md02" data-role="pop-off">확인</button>
+        </div>
+    </div>
+  
+    <!-- // confirm layer popup -->
+  
+   
+</body>
+</html>

@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>K-Chips</title>
+  <link rel="stylesheet" href="../../resources/css/mo/swiper.min.css">
+  <link rel="stylesheet" href="../../resources/css/mo/common.css">
+  <link rel="stylesheet" href="../../resources/css/mo/style.css">
+  <script src="../../resources/js/jquery-3.6.0.min.js"></script>
+  <script src="../../resources/js/swiper.min.js"></script>
+  <script src="../../resources/js/common_mo.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header" id="header">
+    <!-- <div class="hd_back_ic">
+          <img src="/resources/images/mo/back_ic.svg" alt="">
+        </div> -->
+    <h1 class="header_logo"><a href="#none"><img src="../../resources/images/mo/logout.svg"
+          alt="K-Chips 반도체 인재양성 플랫폼"></a></h1>
+    <!-- 햄버거버튼 임시미노출 -->
+    <button type="btn" class="header_btn_bar">
+      <span class="blind">전체메뉴</span>
+    </button>
+
+    <!-- 햄버거 내용 -->
+    <div class="hamburger_content">
+      <div class="bx_flex jc_sb hamburger_content_top ai_ct">
+        <div class="">
+          <button class="btn_round02">
+            로그인
+          </button>
+          <!-- 로그인 하면 로그인>로그아웃 회원가입>홍길동님 으로 변경 -->
+          <button class="btn_round02 fc_White back_clr_333 ">
+            회원가입
+          </button>
+        </div>
+
+        <div>
+
+        </div>
+      </div>
+      <aside class="h_side_bar">
+        <div class="h_side_bar_close">
+
+
+          <div class="h_side_bar_wrap mt20">
+            <div class="lnb_wrap">
+              <ul class="lnb_li_dep1">
+                <li class="lnb_dep1 has_dep2"><!-- 활성화 시 .on 클래스 -->
+                  <a href="javascript:void(0);">K-CHIPS</a>
+                  <ul class="lnb_li_dep2">
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">사업소개</a>
+                    </li>
+                    <li class="lnb_dep2 has_dep3">
+                      <a href="javascript:void(0);">투자기관</a>
+                      <ul class="lnb_li_dep3">
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제계획서 등록</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제 협약</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">지식재산권 협약</a>
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">협약변경</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">수행기관</a>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">운영위원회</a>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">CI 소개</a>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">웹진 소개</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="lnb_dep1 has_dep2"><!-- 하위 메뉴가 있을 경우 .has_dep2 클래스 추가 -->
+                  <a href="javascript:void(0);">PROJECT</a>
+                  <ul class="lnb_li_dep2">
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">과제수행현황</a>
+                    </li>
+                    <li class="lnb_dep2 has_dep3">
+                      <a href="javascript:void(0);">협약</a>
+                      <ul class="lnb_li_dep3">
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제계획서 등록</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제 협약</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">지식재산권 협약</a>
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">협약변경</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">사업운영</a>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">연구비 관리 </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="lnb_dep1 has_dep2">
+                  <a href="javascript:void(0);">HR</a>
+                  <ul class="lnb_li_dep2">
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">인재찾기</a>
+                    </li>
+                    <li class="lnb_dep2 has_dep3">
+                      <a href="javascript:void(0);">참여연구원 현황</a>
+                      <ul class="lnb_li_dep3">
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제계획서 등록</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제 협약</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">지식재산권 협약</a>
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">협약변경</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">취업성과</a>
+                    </li>
+
+                  </ul>
+                </li>
+                <li class="lnb_dep1 has_dep2">
+                  <a href="javascript:void(0);">TRB</a>
+                  <ul class="lnb_li_dep2">
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">소개(인용방법)</a>
+                    </li>
+                    <li class="lnb_dep2 has_dep3">
+                      <a href="javascript:void(0);">테크니컬 리뷰보드</a>
+                      <ul class="lnb_li_dep3">
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제계획서 등록</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제 협약</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">지식재산권 협약</a>
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">협약변경</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">참여하기</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="lnb_dep1 has_dep2">
+                  <a href="javascript:void(0);">NOTICE</a>
+                  <ul class="lnb_li_dep2">
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">공지사항</a>
+                    </li>
+                    <li class="lnb_dep2 has_dep3">
+                      <a href="javascript:void(0);">설문조사</a>
+                      <ul class="lnb_li_dep3">
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제계획서 등록</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제 협약</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">지식재산권 협약</a>
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">협약변경</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">전자 알람</a>
+                    </li>
+
+                  </ul>
+
+                </li>
+                <li class="lnb_dep1 has_dep2">
+                  <a href="javascript:void(0);">MY HOME</a>
+                  <ul class="lnb_li_dep2">
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">나의 홈</a>
+                    </li>
+                    <li class="lnb_dep2 has_dep3">
+                      <a href="javascript:void(0);">정산 결과 확인</a>
+                      <ul class="lnb_li_dep3">
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제계획서 등록</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제 협약</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">지식재산권 협약</a>
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">협약변경</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">회원정보수정</a>
+                    </li>
+
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </aside>
+    </div>
+
+    <!-- gnb menu open : .on class -->
+
+    <!-- 활성화시 백그라운드 이미지 추가 필요 -->
+
+    <!-- gnb menu open : .on class -->
+  </header>
+
+
+  <!-- // header -->
+  <!-- gnb -->
+
+  <!-- // gnb -->
+  <!-- container -->
+  <div class="container02" id="container">
+    <div class="container_head bx_flex jc_sb ai_ct">
+      <button class="back_btn">
+        back
+      </button>
+      <div>
+        <div class="sel_typ2 ml10"><!-- 선택 시 .on class -->
+          <!-- 23.08.31 select 수정 -->
+          <select id="dgriCd" name="dgriCd">
+            <option value="" selected="selected" disabled="disabled">프로젝트명</option>
+
+          </select>
+        </div>
+      </div>
+      <div style="width: 24px;">
+
+      </div>
+    </div>
+
+    <div class="contents" style="padding-bottom: 40px;">
+      <div class="sb_container_pull mt14">
+
+        <div class="kr_ag_02_hd">
+          <div class="kr_ag_02_hd_left">
+            <h2 class="kr_ag_02_hd_title">
+              연구실험 결과가 나왔습니다.연구실험 결과가 나왔습니다.
+            </h2>
+
+            <div class="bx_flex  mt5 gap8">
+              <p class="kr_ag_02_hd_sbtext">
+                # <span> 업무관리</span>
+              </p>
+              <p class="kr_ag_02_hd_sbtext ">
+                # <span> 업무관리</span>
+              </p>
+
+            </div>
+
+
+
+          </div>
+
+
+
+
+        </div>
+        <div class="eee_line mt16">
+
+        </div>
+
+        <div class="bx_flex ai_ct jc_sb">
+          <div class="comment_thumb bx_flex ai_ct">
+            <div class="comment_thumb_img_wrap">
+              <img src="/resources/images/pc/CK_tica1140011765.jpg" alt="">
+            </div>
+            <p class="name ml8">
+              박진희
+            </p>
+          </div>
+          <div class="comment_inf">
+            <span class="time">
+              오후 4:45
+            </span>
+          </div>
+
+        </div>
+        <div class="eee_line">
+
+        </div>
+        <div class="kr_ag_02_mid">
+          <div class="detail_txt" style="padding-top: 16px;">
+            <p>3일(현지시각) CNN 등 복수의 외신에 따르면 영국 국방부는 전날 공식 홈페이지와 공식 엑스(X·옛 트위터)를 통해 새로운 레이저 지향성 에너지 무기인
+              '드래곤파이어(DragonFire)'의 영상과 사진을 공개했다.
+
+              영국 국방부는 드래곤파이어가 아주 먼 거리에서 동전 크기의 물체까지 명중할수 있다며 방공체계의 ‘게임 체인저’(game changer)가 될 수 있다고 설명했다. 구체적인 성능 등에 대해선
+              기밀사항이라며 공개하지 않았다.
+
+              또 미국 해군이 사용하는 SM-2 미사일이 기당 200만달러(한화 약 26억4700만원)를 넘는 데 비해, 드래곤파이어의 1회 발사 비용은 13달러(약 1만7000원) 정도에 불과하다고
+              했다.
+
+              그랜트 샙스 영국 국방부 장관은 "레이저 유형의 최첨단 무기는 값비싼 탄약에 대한 의존도를 줄이고 부수적 피해의 위험을 낮춰줌으로써 전장에 혁명적인 변화를 몰고 올 가능성이 있다"며
+              "전투에서 승리할 수 있는 우위를 점하고 국가를 안전하</p>
+          </div>
+
+
+          <div class="btn_wrap wp100">
+            <a href="" class="wp100"><button type="button" class="btn_down_mo wp100"><span
+                  class="wp100 ellips">문서1.PDF</span></button></a>
+          </div>
+          <div class="btn_wrap wp100">
+            <a href="" class="wp100"><button type="button" class="btn_down_mo wp100"><span
+                  class="wp100 ellips">문서1.PDF</span></button></a>
+          </div>
+        </div>
+        <div class="eee_line mt16">
+
+        </div>
+
+      </div>
+
+      <div class="container_bottom_btn">
+
+        <div class="container_bottom_btn_wrpa">
+
+          <div class="btn_wrap mt24">
+            <button type="button" class="btn_type01_line wp100 ">목록</button>
+            <button type="button" class="btn_type01_line wp100 ml15" data-role="pop-on" data-link="lyPop1">삭제</button>
+            <button type="button" class="btn_type01_long wp100 ml15">수정</button>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="comment_inf_container_top_title mt24">
+        <h2>
+          댓글
+        </h2>
+      </div>
+      <div class="CommentWriter mt8">
+        <div class="comment_inbox">
+          <textarea name="" id="" class="comment_inbox_text mt12" rows="5" placeholder="댓글을 남겨보세요. (최소 2자, 최대 1000자) 
+                "></textarea>
+
+        </div>
+        <span>1/1000</span>
+      </div>
+
+      <div class="btn_wrap bx_flex jc_end mt8 wp100">
+        <button type="button" class="btn_type02_long"><span>등록</span></button>
+      </div>
+
+      <div class="eee_line mt16">
+
+      </div>
+
+      <ul class="comment_list mt4">
+        <li class="CommentItem">
+          <div class="comment_area">
+
+
+            <div class="comment_box">
+
+              <div class="bx_flex ai_ct jc_sb rel">
+                <div class="bx_flex ai_ct gap8">
+                  <div class="comment_nick_box">
+                    한지선
+                  </div>
+                  <div class="colunm_line_ddd">
+
+                  </div>
+                  <div class="comment_text_view">
+                    오후 4:55
+                  </div>
+                </div>
+                <div class="comment_tool">
+                  <a class="comment_tool_button">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path
+                        d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                      </path>
+                    </svg>
+                  </a>
+                  <div class="LayerMore">
+                    <ul class="layer_list">
+                      <li class="layer_item">
+                        <a class="layer_button">수정</a>
+                        <a class="layer_button">삭제</a>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="comment_text_box mt5">
+                감사합니다. 좋은 실험이었네요. 자료 잘 활용하겠습니다. 감사합니다. 좋은 실험이었네요. 자료 잘 활용하겠습니다. 감사합니다. 좋은
+                실험이었네요. 자료 잘 활용하겠습니다. 감사합니다. 좋은 실험이었네요. 자료 잘 활용하겠습니다.
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </li>
+        <li class="CommentItem">
+          <div class="comment_area">
+
+
+            <div class="comment_box">
+
+              <div class="bx_flex ai_ct jc_sb rel">
+                <div class="bx_flex ai_ct gap8">
+                  <div class="comment_nick_box">
+                    한지선
+                  </div>
+                  <div class="colunm_line_ddd">
+
+                  </div>
+                  <div class="comment_text_view">
+                    오후 4:55
+                  </div>
+                </div>
+                <div class="comment_tool">
+                  <a class="comment_tool_button">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path
+                        d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                      </path>
+                    </svg>
+                  </a>
+                  <div class="LayerMore">
+                    <ul class="layer_list">
+                      <li class="layer_item">
+                        <a class="layer_button">수정</a>
+                        <a class="layer_button">삭제</a>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="comment_text_box mt5">
+                감사합니다. 좋은 실험이었네요. 자료 잘 활용하겠습니다. 감사합니다. 좋은 실험이었네요. 자료 잘 활용하겠습니다. 감사합니다. 좋은
+                실험이었네요. 자료 잘 활용하겠습니다. 감사합니다. 좋은 실험이었네요. 자료 잘 활용하겠습니다.
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </li>
+        <li class="CommentItem">
+          <div class="comment_area">
+
+
+            <div class="comment_box">
+
+              <div class="bx_flex ai_ct jc_sb rel">
+                <div class="bx_flex ai_ct gap8">
+                  <div class="comment_nick_box">
+                    한지선
+                  </div>
+                  <div class="colunm_line_ddd">
+
+                  </div>
+                  <div class="comment_text_view">
+                    2024-03-02 오후 4:55
+                  </div>
+                </div>
+                <div class="comment_tool">
+                  <a class="comment_tool_button">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path
+                        d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                      </path>
+                    </svg>
+                  </a>
+                  <div class="LayerMore">
+                    <ul class="layer_list">
+                      <li class="layer_item">
+                        <a class="layer_button">수정</a>
+                        <a class="layer_button">삭제</a>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="comment_text_box mt5">
+                감사합니다. 좋은 실험이었네요. 자료 잘 활용하겠습니다. 감사합니다. 좋은 실험이었네요. 자료 잘 활용하겠습니다. 감사합니다. 좋은
+                실험이었네요. 자료 잘 활용하겠습니다. 감사합니다. 좋은 실험이었네요. 자료 잘 활용하겠습니다.
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </li>
+
+
+        <!-- 수정할 경우 -->
+
+        <li class="CommentItem">
+          <div class="CommentWriter">
+            <div class="comment_inbox">
+              <em class="comment_inbox_name">한지선</em>
+              <textarea name="" id="" class="comment_inbox_text mt8" rows="3"> 감사합니다. 좋은 실험이었네요. 자료 잘 활용하겠습니다. 감사합니다. 좋은 실험이었네요. 자료 잘 활용하겠습니다. 감사합니다. 좋은 실험이었네요. 자료 잘 활용하겠습니다. 감사합니다. 좋은 실험이었네요. 자료 잘 활용하겠습니다.
+                        </textarea>
+            </div>
+
+
+            <div class="btn_wrap bx_flex jc_end mt8">
+              <button type="button" class="btn_download">취소</button>
+              <button type="button" class="btn_download">등록</button>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+  <!-- // container -->
+  <!-- footer -->
+  <footer class="footer" id="footer">
+
+    <p class="footer_copyright">한국반도체산업협회 / 한국반도체연구조합경기도
+      성남시 분당구 판교역로 182(삼평동 644번지) 한국반도체산업협회회관 9~12층 l 전화 : 02-576-3472 ~ 4 l 팩스 : 02-570-5269 / 5219
+    </p>
+    <p class="footer_copyright mt16"> © Copyright 2017 - KOREA SEMICONDUCTOR INDUSTRY ASSOCIATION</p>
+  </footer>
+
+
+  <!-- 행사신청 취소하기 팝업 -->
+
+  <div class="pop_wrap typ5" id="lyPop1">
+    <div data-role="pop-off" class="fixd_pop_up_hd">
+      <div class="" style="height: 8px;">
+
+      </div>
+      <div class="pop_hdbar_typ5">
+
+      </div>
+      <script>
+
+      </script>
+
+      <div class="pop_hd_typ5">
+        <div class="pop_top_wrap">
+          <h2 class="pop_top_title">행사신청 취소하기
+          </h2>
+          <button class="pop_top_close">x</button>
+        </div>
+      </div>
+    </div>
+    <div class="pop_cont">
+
+      <div class="pop_mid_cont_head">
+        <h2></h2>
+        <div class="pop_tb_rows_add_delete_wrap">
+
+        </div>
+
+      </div>
+
+      <div>
+        <table class="tbl_col_type03">
+          <colgroup>
+
+            <col width="*">
+
+
+          </colgroup>
+          <tbody>
+            <tr>
+              <th style="padding-top: 0;">
+                <h2 class="">
+                  행사명
+                </h2>
+              </th>
+            </tr>
+            <tr>
+              <td class="">
+                <p>
+                  K-CHIPS] 2024년 총괄워크숍 (4/1~3)
+                </p>
+              </td>
+
+            </tr>
+            <tr>
+              <td class="line_td">
+
+              </td>
+            </tr>
+
+            <tr>
+              <th>
+                <h2 class="">
+                  취소 사유
+                </h2>
+              </th>
+            </tr>
+            <tr>
+              <td class="inp_td ">
+                <textarea class="KF-CH-03_textarea " placeholder="" name="" id="" cols="30" rows="5"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td class="line_td">
+
+              </td>
+            </tr>
+
+
+          </tbody>
+
+        </table>
+
+
+      </div>
+      <div class="pop_btn_wrap02">
+        <button type="button" class="pop_btn_ty1_1" data-role="pop-off">취소</button>
+        <button type="button" class="pop_btn_ty1_2" data-role="pop-off">저장</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $(".comment_tool").click(function () {
+        $(this).toggleClass("on")
+      });
+    })
+  </script>
+</body>
+
+</html>

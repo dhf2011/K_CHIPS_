@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>K-Chips</title>
+  <link rel="stylesheet" href="../../resources/css/mo/swiper.min.css">
+  <link rel="stylesheet" href="../../resources/css/mo/common.css">
+  <link rel="stylesheet" href="../../resources/css/mo/style.css">
+  <script src="../../resources/js/jquery-3.6.0.min.js"></script>
+  <script src="../../resources/js/swiper.min.js"></script>
+  <script src="../../resources/js/common_mo.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header" id="header">
+    <!-- <div class="hd_back_ic">
+          <img src="/resources/images/mo/back_ic.svg" alt="">
+        </div> -->
+    <h1 class="header_logo"><a href="#none"><img src="../../resources/images/mo/logout.svg"
+          alt="K-Chips 반도체 인재양성 플랫폼"></a></h1>
+    <!-- 햄버거버튼 임시미노출 -->
+    <button type="btn" class="header_btn_bar">
+        <span class="blind">전체메뉴</span>
+    </button>
+
+   <!-- 햄버거 내용 -->
+<div class="hamburger_content">
+    <div class="bx_flex jc_sb hamburger_content_top ai_ct">
+        <div class="">
+            <button class="btn_round02">
+                로그인
+            </button>
+            <!-- 로그인 하면 로그인>로그아웃 회원가입>홍길동님 으로 변경 -->
+            <button class="btn_round02 fc_White back_clr_333 ">
+                회원가입
+            </button>
+        </div>
+        
+       <div>
+
+       </div>
+    </div>
+    <aside class="h_side_bar">
+        <div class="h_side_bar_close">
+          
+        
+            <div class="h_side_bar_wrap mt20">
+                <div class="lnb_wrap">
+                    <ul class="lnb_li_dep1">
+                        <li class="lnb_dep1 has_dep2"><!-- 활성화 시 .on 클래스 -->
+                            <a href="javascript:void(0);">K-CHIPS</a>
+                            <ul class="lnb_li_dep2">
+                                <li class="lnb_dep2">
+                                    <a href="javascript:void(0);">사업소개</a>
+                                </li>
+                                <li class="lnb_dep2 has_dep3">
+                                    <a href="javascript:void(0);">투자기관</a>
+                                    <ul class="lnb_li_dep3">
+                                        <li class="lnb_dep3">
+                                            <a href="javascript:void(0);">과제계획서 등록</a>
+                               
+                                        </li>
+                                        <li class="lnb_dep3">
+                                            <a href="javascript:void(0);">과제 협약</a>
+                                           
+                                        </li>
+                                        <li class="lnb_dep3">
+                                          
+                                            <a href="javascript:void(0);">지식재산권 협약</a>
+                                        </li>
+                                        <li class="lnb_dep3">
+                                            
+                                            <a href="javascript:void(0);">협약변경</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="lnb_dep2">
+                                    <a href="javascript:void(0);">수행기관</a>
+                                </li>
+                                <li class="lnb_dep2">
+                                    <a href="javascript:void(0);">운영위원회</a>
+                                </li>
+                                <li class="lnb_dep2">
+                                    <a href="javascript:void(0);">CI 소개</a>
+                                </li>
+                                <li class="lnb_dep2">
+                                    <a href="javascript:void(0);">웹진 소개</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="lnb_dep1 has_dep2"><!-- 하위 메뉴가 있을 경우 .has_dep2 클래스 추가 -->
+                            <a href="javascript:void(0);">PROJECT</a>
+                            <ul class="lnb_li_dep2">
+                                <li class="lnb_dep2">
+                                    <a href="javascript:void(0);">과제수행현황</a>
+                                </li>
+                                <li class="lnb_dep2 has_dep3">
+                                    <a href="javascript:void(0);">협약</a>
+                                    <ul class="lnb_li_dep3">
+                                        <li class="lnb_dep3">
+                                            <a href="javascript:void(0);">과제계획서 등록</a>
+                               
+                                        </li>
+                                        <li class="lnb_dep3">
+                                            <a href="javascript:void(0);">과제 협약</a>
+                                           
+                                        </li>
+                                        <li class="lnb_dep3">
+                                          
+                                            <a href="javascript:void(0);">지식재산권 협약</a>
+                                        </li>
+                                        <li class="lnb_dep3">
+                                            
+                                            <a href="javascript:void(0);">협약변경</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="lnb_dep2">
+                                    <a href="javascript:void(0);">사업운영</a>
+                                </li>
+                                <li class="lnb_dep2">
+                                    <a href="javascript:void(0);">연구비 관리 </a>
+                                </li>
+                            </ul>
+                        </li>
+                       
+                        <li class="lnb_dep1 has_dep2">
+                            <a href="javascript:void(0);">HR</a>
+                            <ul class="lnb_li_dep2">
+                                <li class="lnb_dep2">
+                                    <a href="javascript:void(0);">인재찾기</a>
+                                </li>
+                                <li class="lnb_dep2 has_dep3">
+                                    <a href="javascript:void(0);">참여연구원 현황</a>
+                                    <ul class="lnb_li_dep3">
+                                        <li class="lnb_dep3">
+                                            <a href="javascript:void(0);">과제계획서 등록</a>
+                               
+                                        </li>
+                                        <li class="lnb_dep3">
+                                            <a href="javascript:void(0);">과제 협약</a>
+                                           
+                                        </li>
+                                        <li class="lnb_dep3">
+                                          
+                                            <a href="javascript:void(0);">지식재산권 협약</a>
+                                        </li>
+                                        <li class="lnb_dep3">
+                                            
+                                            <a href="javascript:void(0);">협약변경</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="lnb_dep2">
+                                    <a href="javascript:void(0);">취업성과</a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                        <li class="lnb_dep1 has_dep2">
+                            <a href="javascript:void(0);">TRB</a>
+                            <ul class="lnb_li_dep2">
+                                <li class="lnb_dep2">
+                                    <a href="javascript:void(0);">소개(인용방법)</a>
+                                </li>
+                                <li class="lnb_dep2 has_dep3">
+                                    <a href="javascript:void(0);">테크니컬 리뷰보드</a>
+                                    <ul class="lnb_li_dep3">
+                                        <li class="lnb_dep3">
+                                            <a href="javascript:void(0);">과제계획서 등록</a>
+                               
+                                        </li>
+                                        <li class="lnb_dep3">
+                                            <a href="javascript:void(0);">과제 협약</a>
+                                           
+                                        </li>
+                                        <li class="lnb_dep3">
+                                          
+                                            <a href="javascript:void(0);">지식재산권 협약</a>
+                                        </li>
+                                        <li class="lnb_dep3">
+                                            
+                                            <a href="javascript:void(0);">협약변경</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="lnb_dep2">
+                                    <a href="javascript:void(0);">참여하기</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="lnb_dep1 has_dep2">
+                            <a href="javascript:void(0);">NOTICE</a>
+                            <ul class="lnb_li_dep2">
+                                <li class="lnb_dep2">
+                                    <a href="javascript:void(0);">공지사항</a>
+                                </li>
+                                <li class="lnb_dep2 has_dep3">
+                                    <a href="javascript:void(0);">설문조사</a>
+                                    <ul class="lnb_li_dep3">
+                                        <li class="lnb_dep3">
+                                            <a href="javascript:void(0);">과제계획서 등록</a>
+                               
+                                        </li>
+                                        <li class="lnb_dep3">
+                                            <a href="javascript:void(0);">과제 협약</a>
+                                           
+                                        </li>
+                                        <li class="lnb_dep3">
+                                          
+                                            <a href="javascript:void(0);">지식재산권 협약</a>
+                                        </li>
+                                        <li class="lnb_dep3">
+                                            
+                                            <a href="javascript:void(0);">협약변경</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="lnb_dep2">
+                                    <a href="javascript:void(0);">전자 알람</a>
+                                </li>
+                              
+                            </ul>
+                            
+                        </li>
+                        <li class="lnb_dep1 has_dep2">
+                            <a href="javascript:void(0);">MY HOME</a>
+                            <ul class="lnb_li_dep2">
+                                <li class="lnb_dep2">
+                                    <a href="javascript:void(0);">나의 홈</a>
+                                </li>
+                                <li class="lnb_dep2 has_dep3">
+                                    <a href="javascript:void(0);">정산 결과 확인</a>
+                                    <ul class="lnb_li_dep3">
+                                        <li class="lnb_dep3">
+                                            <a href="javascript:void(0);">과제계획서 등록</a>
+                               
+                                        </li>
+                                        <li class="lnb_dep3">
+                                            <a href="javascript:void(0);">과제 협약</a>
+                                           
+                                        </li>
+                                        <li class="lnb_dep3">
+                                          
+                                            <a href="javascript:void(0);">지식재산권 협약</a>
+                                        </li>
+                                        <li class="lnb_dep3">
+                                            
+                                            <a href="javascript:void(0);">협약변경</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="lnb_dep2">
+                                    <a href="javascript:void(0);">회원정보수정</a>
+                                </li>
+                              
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </aside>
+</div>
+  
+    <!-- gnb menu open : .on class -->
+
+    <!-- 활성화시 백그라운드 이미지 추가 필요 -->
+   
+    <!-- gnb menu open : .on class -->
+  </header>
+
+
+  <!-- // header -->
+  <!-- gnb -->
+
+  <!-- // gnb -->
+  <!-- container -->
+  <div class="container02" id="container">
+    <div class="container_head bx_flex jc_sb ai_ct">
+        <button class="back_btn">
+            back
+        </button>
+        <div>
+            <div class="sel_typ2 ml10"><!-- 선택 시 .on class -->
+                <!-- 23.08.31 select 수정 -->
+               <select id="dgriCd" name="dgriCd">
+                 <option value="" selected="selected" disabled="disabled">인재 찾기</option>
+                 </select>
+           </div>
+        </div>
+       <div style="width: 24px;">
+
+       </div>
+    </div>
+    <div class="sb_search_bx">
+        <div class="sb_search_category">
+          <div class="sb_search_row column">
+            <div class="sb_search_col">
+              <div class="sb_search-title">
+                <h2>구분</h2>
+  
+              </div>
+  
+  
+            </div>
+            <div class="sb_search_col mt12">
+  
+  
+                <div class="sb_search-item gap8 bx_flex" style="flex-wrap: wrap;">
+                    <div class="bx_chk inblock wid101 tc">
+                             <input type="checkbox" id="chk1 " class="chk_ty4">
+                             <label for="chk1 ">학생연구원</label>
+                       
+                     </div> 
+                    <div class="bx_chk inblock wid101 tc">
+                             <input type="checkbox" id="chk2" class="chk_ty4">
+                             <label for="chk12">참여연구원</label>
+                       
+                     </div> 
+                  
+                 
+                     
+                </div>
+  
+            </div>
+           
+            <div class="sb_search_col mt16">
+              <div class="sb_search-title">
+                <h2>최종 학위</h2>
+  
+              </div>
+  
+  
+            </div>
+            <div class="sb_search_col mt8">
+                <div class="sb_search-item gap8 bx_flex" style="flex-wrap: wrap;">
+                    <div class="bx_chk inblock wid101 tc">
+                             <input type="checkbox" id="chk3" class="chk_ty4">
+                             <label for="chk3">학사</label>
+                       
+                     </div> 
+                    <div class="bx_chk inblock wid101 tc">
+                             <input type="checkbox" id="chk4" class="chk_ty4">
+                             <label for="chk4">석사</label>
+                       
+                     </div> 
+                    <div class="bx_chk inblock wid101 tc">
+                             <input type="checkbox" id="chk5" class="chk_ty4">
+                             <label for="chk5">박사</label>
+                       
+                     </div> 
+                  
+                 
+                     
+                </div>
+  
+            </div>
+            <div class="sb_search_col mt16">
+              <div class="sb_search-title">
+                <h2>과정</h2>
+  
+              </div>
+  
+  
+            </div>
+            <div class="sb_search_col mt8">
+                <div class="sb_search-item gap8 bx_flex" style="flex-wrap: wrap;">
+                    <div class="bx_chk inblock wid101 tc">
+                             <input type="checkbox" id="chk6" class="chk_ty4">
+                             <label for="chk6">석박사통합과정</label>
+                       
+                     </div> 
+                    <div class="bx_chk inblock wid101 tc">
+                             <input type="checkbox" id="chk7" class="chk_ty4">
+                             <label for="chk7">박사과정</label>
+                       
+                     </div> 
+                    <div class="bx_chk inblock wid101 tc">
+                             <input type="checkbox" id="chk8" class="chk_ty4">
+                             <label for="chk8">석사과정</label>
+                       
+                     </div> 
+                  
+                 
+                     
+                </div>
+  
+            </div>
+            <div class="sb_search_col mt16">
+                <div class="sb_search-title">
+                  <h2>학력</h2>
+    
+                </div>
+    
+    
+              </div>
+              <div class="sb_search_col mt8">
+                  <div class="sb_search-item gap8 bx_flex" style="flex-wrap: wrap;">
+                      <div class="bx_chk inblock wid101 tc">
+                               <input type="checkbox" id="chk9" class="chk_ty4">
+                               <label for="chk9">대학교 (4년)</label>
+                         
+                       </div> 
+                      <div class="bx_chk inblock wid101 tc">
+                               <input type="checkbox" id="chk10" class="chk_ty4">
+                               <label for="chk10">대학원</label>
+                         
+                       </div> 
+                      <div class="bx_chk inblock wid101 tc">
+                               <input type="checkbox" id="chk11" class="chk_ty4">
+                               <label for="chk11">석사과정</label>
+                         
+                       </div> 
+                    
+                   
+                       
+                  </div>
+    
+    
+    
+              </div>
+            <div class="sb_search_col mt16">
+              <div class="sb_search-title">
+                <h2>경력</h2>
+  
+              </div>
+  
+  
+            </div>
+            <div class="sb_search_col mt8">
+                <div class="sb_search-item gap8 bx_flex" style="flex-wrap: wrap;">
+                    <div class="bx_chk inblock wid101 tc">
+                             <input type="checkbox" id="chk12" class="chk_ty4">
+                             <label for="chk12">5년 이하</label>
+                       
+                     </div> 
+                    <div class="bx_chk inblock wid101 tc">
+                             <input type="checkbox" id="chk13" class="chk_ty4">
+                             <label for="chk13">5년~10년</label>
+                       
+                     </div> 
+                    <div class="bx_chk inblock wid101 tc">
+                             <input type="checkbox" id="chk14" class="chk_ty4">
+                             <label for="chk14">10년~15년</label>
+                       
+                     </div> 
+                    <div class="bx_chk inblock wid101 tc">
+                             <input type="checkbox" id="chk15" class="chk_ty4">
+                             <label for="chk15">15년~20년</label>
+                       
+                     </div> 
+                    <div class="bx_chk inblock wid101 tc">
+                             <input type="checkbox" id="chk16" class="chk_ty4">
+                             <label for="chk16">20년~</label>
+                       
+                     </div> 
+                  
+                 
+                     
+                </div>
+                <div class="sb_search-item">
+                    <div class="bx_inp ty03_40 ">
+                      <input type="text" class="text_clear_inpt wp100" title="" placeholder="검색어를 입력하세요" id="">
+                    </div>
+                  </div>
+  
+            </div>
+           
+  
+  
+  
+          </div>
+  
+        </div>
+  
+        <div class="sb_search_button">
+          <!-- <button class="sb_search_button_open"></button> 열고닫기 버튼 비활성화 -->
+  
+          <button type="button" class="btn_type03 wp100">검색</button>
+  
+        </div>
+  
+      </div>
+    
+    <div class="contents" style="min-height:auto">
+        <div class="mo_tbl_head mt6">
+            <div class="example_number">
+              <p>Total <span class="main_color">0</span></p>
+            </div>
+        </div>
+        <div>
+            <table class="table_type01_01 mt8">
+                <colgroup>
+                <col width="80px" >
+                <col width="" >
+                <col width="100px" >
+
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="FriendItem_Root__Image__D84LL">
+                                <img src="/resources/images/pc/CK_tica1140011765.jpg" alt="">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="FriendItem_Text__oZatW">
+                                <div class="typography_Typography__body1__4BooL bx_flex ai_ct">
+                                  <h2 class="comment_nick_box fc_main ellips">
+                                    김진영
+                                  </h2>
+                                  
+                                </div>
+                  
+                                <div class="typography_Typography__weightMedium__8bmzB">
+                                  <p class="ellips">구분 (<span>학생</span>/<span>참여연구원</span>)</p>
+                                </div>
+                                <div class="typography_Typography__weightMedium__8bmzB  ">
+                                  <p class="ellips">소속(<span>수행 기관</span>/<span>연구실</span>)</p>
+                                </div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="btn_wrap">
+                                <button class="btn_download type01 maincolor">
+                                    이력서 열람
+                                </button>
+            
+                              </div>
+                              <div class="btn_wrap mt8">
+                                <button class="btn_download type01 maincolor ">
+                                    취업 요청
+                                </button>
+            
+                              </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  
+  </div>
+  <!-- // container -->
+  <!-- footer -->
+  <footer class="footer" id="footer">
+
+    <p class="footer_copyright">한국반도체산업협회 / 한국반도체연구조합경기도 
+        성남시 분당구 판교역로 182(삼평동 644번지) 한국반도체산업협회회관 9~12층  l  전화 : 02-576-3472 ~ 4  l  팩스 : 02-570-5269 / 5219
+    </p>
+    <p class="footer_copyright mt16"> © Copyright 2017 - KOREA SEMICONDUCTOR INDUSTRY ASSOCIATION</p>
+  </footer>
+
+
+</body>
+
+</html>

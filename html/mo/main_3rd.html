@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>K-Chips</title>
+  <link rel="stylesheet" href="../../resources/css/mo/swiper.min.css">
+  <link rel="stylesheet" href="../../resources/css/mo/common.css">
+  <link rel="stylesheet" href="../../resources/css/mo/style.css">
+  <script src="../../resources/js/jquery-3.6.0.min.js"></script>
+  <script src="../../resources/js/swiper.min.js"></script>
+  <script src="../../resources/js/common_mo.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header" id="header">
+    <!-- <div class="hd_back_ic">
+          <img src="/resources/images/mo/back_ic.svg" alt="">
+        </div> -->
+    <h1 class="header_logo"><a href="#none"><img src="../../resources/images/mo/logout.svg"
+          alt="K-Chips 반도체 인재양성 플랫폼"></a></h1>
+    <!-- 햄버거버튼 임시미노출 -->
+    <button type="btn" class="header_btn_bar">
+      <span class="blind">전체메뉴</span>
+    </button>
+
+    <!-- 햄버거 내용 -->
+    <div class="hamburger_content">
+      <div class="bx_flex jc_sb hamburger_content_top ai_ct">
+        <div class="">
+          <button class="btn_round02">
+            로그인
+          </button>
+          <!-- 로그인 하면 로그인>로그아웃 회원가입>홍길동님 으로 변경 -->
+          <button class="btn_round02 fc_White back_clr_333 ">
+            회원가입
+          </button>
+        </div>
+
+        <div>
+
+        </div>
+      </div>
+      <aside class="h_side_bar">
+        <div class="h_side_bar_close">
+
+
+          <div class="h_side_bar_wrap mt20">
+            <div class="lnb_wrap">
+              <ul class="lnb_li_dep1">
+                <li class="lnb_dep1 has_dep2"><!-- 활성화 시 .on 클래스 -->
+                  <a href="javascript:void(0);">K-CHIPS</a>
+                  <ul class="lnb_li_dep2">
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">사업소개</a>
+                    </li>
+                    <li class="lnb_dep2 has_dep3">
+                      <a href="javascript:void(0);">투자기관</a>
+                      <ul class="lnb_li_dep3">
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제계획서 등록</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제 협약</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">지식재산권 협약</a>
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">협약변경</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">수행기관</a>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">운영위원회</a>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">CI 소개</a>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">웹진 소개</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="lnb_dep1 has_dep2"><!-- 하위 메뉴가 있을 경우 .has_dep2 클래스 추가 -->
+                  <a href="javascript:void(0);">PROJECT</a>
+                  <ul class="lnb_li_dep2">
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">과제수행현황</a>
+                    </li>
+                    <li class="lnb_dep2 has_dep3">
+                      <a href="javascript:void(0);">협약</a>
+                      <ul class="lnb_li_dep3">
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제계획서 등록</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제 협약</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">지식재산권 협약</a>
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">협약변경</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">사업운영</a>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">연구비 관리 </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="lnb_dep1 has_dep2">
+                  <a href="javascript:void(0);">HR</a>
+                  <ul class="lnb_li_dep2">
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">인재찾기</a>
+                    </li>
+                    <li class="lnb_dep2 has_dep3">
+                      <a href="javascript:void(0);">참여연구원 현황</a>
+                      <ul class="lnb_li_dep3">
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제계획서 등록</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제 협약</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">지식재산권 협약</a>
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">협약변경</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">취업성과</a>
+                    </li>
+
+                  </ul>
+                </li>
+                <li class="lnb_dep1 has_dep2">
+                  <a href="javascript:void(0);">TRB</a>
+                  <ul class="lnb_li_dep2">
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">소개(인용방법)</a>
+                    </li>
+                    <li class="lnb_dep2 has_dep3">
+                      <a href="javascript:void(0);">테크니컬 리뷰보드</a>
+                      <ul class="lnb_li_dep3">
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제계획서 등록</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제 협약</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">지식재산권 협약</a>
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">협약변경</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">참여하기</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="lnb_dep1 has_dep2">
+                  <a href="javascript:void(0);">NOTICE</a>
+                  <ul class="lnb_li_dep2">
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">공지사항</a>
+                    </li>
+                    <li class="lnb_dep2 has_dep3">
+                      <a href="javascript:void(0);">설문조사</a>
+                      <ul class="lnb_li_dep3">
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제계획서 등록</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제 협약</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">지식재산권 협약</a>
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">협약변경</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">전자 알람</a>
+                    </li>
+
+                  </ul>
+
+                </li>
+                <li class="lnb_dep1 has_dep2">
+                  <a href="javascript:void(0);">MY HOME</a>
+                  <ul class="lnb_li_dep2">
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">나의 홈</a>
+                    </li>
+                    <li class="lnb_dep2 has_dep3">
+                      <a href="javascript:void(0);">정산 결과 확인</a>
+                      <ul class="lnb_li_dep3">
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제계획서 등록</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제 협약</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">지식재산권 협약</a>
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">협약변경</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">회원정보수정</a>
+                    </li>
+
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </aside>
+    </div>
+
+    <!-- gnb menu open : .on class -->
+
+    <!-- 활성화시 백그라운드 이미지 추가 필요 -->
+
+    <!-- gnb menu open : .on class -->
+  </header>
+
+
+  <!-- // header -->
+  <!-- gnb -->
+
+  <!-- // gnb -->
+  <!-- container -->
+  <div class="container" id="container">
+
+    <div class="contents main">
+      <div class="main_02_banner_wrap" style="position: relative;">
+
+        <div class="swiper ty02 mySwiper02">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide ty02">
+              <img src="../../resources/images/pc/main_banner_02.png" alt="">
+            </div>
+            <div class="swiper-slide ty02">
+              <img src="../../resources/images/pc/main_banner_02.png" alt="">
+            </div>
+            <div class="swiper-slide ty02">
+              <img src="../../resources/images/pc/main_banner_02.png" alt="">
+            </div>
+
+          </div>
+
+
+
+          <div class="mu_controller">
+            <div class="swiper-pagination ty02">
+
+
+            </div>
+            <button class="mu_contr">
+              멈춤
+            </button>
+            <div class="cunt">
+              <div id="slideIndexDisplay">
+                1
+              </div>/
+              <div id="last_slideIndexDisplay">
+
+              </div>
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="main_announcement_wrap02 mt55">
+        <div class="main_announcement_box">
+          <div class="main_announcement_ic_hd">
+            <ul class="tabList">
+              <li class="on"><a href="#tab1">공지</a></li>
+              <li class=""><a href="#tab2">홍보</a></li>
+              <li class=""><a href="#tab3">채용</a></li>
+            </ul>
+          </div>
+          <div class="main_announcement_list_hd">
+            <div style="position: relative">
+              <ul class="tabGroup">
+                <li id="tab1" class="tab-cont" style="opacity: 1;">
+                  <ul class="announcement_group_list">
+                    <li class="ellips6">
+                      <a class="pr" href="#"> <span>[공지]</span> 2023년 1월 과제관리 시스템 오픈 예정 </a>
+                    </li>
+
+                    <li class="ellips6">
+                      <a class="new pr" href="#"> <span> [홍보] </span>2023년 1월 과제관리 시스템 오픈 예정2023년
+                        1월 과제관리 시스템 오픈 예정</a>
+                    </li>
+
+
+                    <li class="ellips6">
+                      <a class="pr" href="#"> <span> [홍보] </span> 2023년 1월 과제관리 시스템 오픈 예정2023년 1월
+                        과제관리 시스템 오픈 예정2023년 1월 과제관리 시스템 오픈 예정2023년 1월 과제관리 시스템 오픈 예정</a>
+                    </li>
+
+                    <li class="ellips6">
+                      <a class="pr" href="#"> <span> [홍보] </span> 2023년 1월 과제관리 시스템 오픈 예정</a>
+                    </li>
+
+
+                  </ul>
+                </li>
+                <li id="tab2" class="tab-cont" style="opacity: 0;">
+                  <ul class="announcement_group_list">
+                    <li class="ellips6">
+                      <a class="pr" href="#"> <span>[공지]</span> 2023년 1월 과제관리 시스템 오픈 예정 </a>
+                    </li>
+                    <li class="ellips6">
+                      <a class="pr" href="#"> <span>[시스템]</span> 2023년 6월 전체 시스템 오픈 예정</a>
+                    </li>
+                    <li class="ellips6">
+                      <a class="new pr" href="#"> <span> [홍보] </span>2023년 1월 과제관리 시스템 오픈 예정2023년
+                        1월 과제관리 시스템 오픈 예정</a>
+                    </li>
+                    <li class="ellips6">
+                      <a class="pr" href="#"> <span> [홍보] </span> 2023년 1월 과제관리 시스템 오픈 예정</a>
+                    </li>
+
+
+                  </ul>
+                </li>
+                <li id="tab3" class="tab-cont" style="opacity: 0;">
+                  <ul class="announcement_group_list">
+                    <li class="ellips6">
+                      <a class="pr" href="#"> <span>[시스템]</span> 2023년 6월 전체 시스템 오픈 예정</a>
+                    </li>
+                    <li class="ellips6">
+                      <a class="pr" href="#"> <span>[공지]</span> 2023년 1월 과제관리 시스템 오픈 예정 </a>
+                    </li>
+                    <li class="ellips6">
+                      <a class="pr" href="#"> <span>[시스템]</span> 2023년 6월 전체 시스템 오픈 예정</a>
+                    </li>
+                    <li class="ellips6">
+                      <a class="new pr" href="#"> <span> [홍보] </span>2023년 1월 과제관리 시스템 오픈 예정2023년
+                        1월 과제관리 시스템 오픈 예정</a>
+                    </li>
+
+
+
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 로그인 전 -->
+        <div class="main_membership_join_box">
+          <div class="main_membership_research_btn">
+            <h2>
+              효율적인 과제관리 <br>
+              연구기관
+            </h2>
+            <a href="#">
+              회원가입하기
+            </a>
+          </div>
+
+          <div class="main_membership_invest_btn">
+            <h2>
+              한 눈에 과제 파악 <br>
+              투자기업
+            </h2>
+            <a href="#">
+              회원가입하기
+            </a>
+          </div>
+        </div>
+        <!-- 로그인 후 -->
+        <!-- <div class="main_announcement_box">
+                <div class="main_announcement_ic_hd">
+                    <h2>알림 메세지</h2>
+                </div>
+                <div class="main_announcement_list_hd">
+                    <ul class="announcement_group_list">
+                        <li class="ellips6">
+                           <a class=" pr" href="#"> <span>[공지]</span> 2023년 1월 과제관리 시스템 오픈 예정 </a>
+                        </li>
+                        <li class="ellips6">
+                           <a class=" pr" href="#"> <span>[시스템]</span> 2023년 6월 전체 시스템 오픈 예정</a>
+                        </li>
+                        <li class="ellips6">
+                           <a class="new pr" href="#"> <span> [홍보] </span>2023년 1월 과제관리 시스템 오픈 예정2023년 1월 과제관리 시스템 오픈 예정</a>
+                        </li>
+                        <li class="ellips6">
+                           <a class=" pr" href="#"> <span> [홍보] </span> 2023년 1월 과제관리 시스템 오픈 예정</a>
+                        </li>
+                    
+                       
+                    </ul>
+                </div>
+            </div> -->
+      </div>
+
+      <div class="contents_full01 mt25" style="background-color: #fff;">
+        <div style="display: flex; justify-content: center; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;">
+          <div class="main_brand_wrap">
+            <div class="brandswiper_wrap">
+              <div class="swiper brandSwiper swiper-container-initialized swiper-container-horizontal">
+                <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-678px, 0px, 0px);">
+                  <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                    data-swiper-slide-index="0" style="width: 166px; margin-right: 60px;"><img
+                      src="../../resources/images/pc/brandSwiper01.png" alt=""></div>
+                  <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                    data-swiper-slide-index="1" style="width: 166px; margin-right: 60px;"><img
+                      src="../../resources/images/pc/brandSwiper02.png" alt=""></div>
+                  <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2"
+                    style="width: 166px; margin-right: 60px;"><img src="../../resources/images/pc/brandSwiper03.png"
+                      alt=""></div>
+                  <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0"
+                    style="width: 166px; margin-right: 60px;"><img src="../../resources/images/pc/brandSwiper01.png"
+                      alt=""></div>
+                  <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1"
+                    style="width: 166px; margin-right: 60px;"><img src="../../resources/images/pc/brandSwiper02.png"
+                      alt=""></div>
+                  <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="2"
+                    style="width: 166px; margin-right: 60px;"><img src="../../resources/images/pc/brandSwiper03.png"
+                      alt=""></div>
+                  <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                    data-swiper-slide-index="0" style="width: 166px; margin-right: 60px;"><img
+                      src="../../resources/images/pc/brandSwiper01.png" alt=""></div>
+                  <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
+                    data-swiper-slide-index="1" style="width: 166px; margin-right: 60px;"><img
+                      src="../../resources/images/pc/brandSwiper02.png" alt=""></div>
+                  <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2"
+                    style="width: 166px; margin-right: 60px;"><img src="../../resources/images/pc/brandSwiper03.png"
+                      alt=""></div>
+                </div>
+
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div class="contents_04" style="padding-top: 0px; padding-bottom: 40px;">
+        <div class="main_board_wrap">
+          <h2 data-aos="fade-up" class="main_board_title aos-init aos-animate" data-aos-once="true"
+            data-aos-anchor-placement="bottom-bottom">
+            세계를 놀라게 하는 <br>
+            <span> K-Chips 연구성과</span>
+            <div id="back-to-top">
+
+            </div>
+            <div class="main_board_result_boxwrap">
+              <div data-aos="fade-up" data-aos-once="true" data-aos-delay="0" data-aos-anchor-placement="center-bottom"
+                class="main_board_result_box on aos-init mt15 aos-animate">
+                <div class="main_result_box_title">
+                  <h2>
+                    취업성과
+                  </h2>
+                  <p>
+                    2023.01 ~ 2024.01
+                  </p>
+                </div>
+                <div class="main_result_box_num">
+                  <p class="nums" data-count="120">120</p><span>+</span>
+                </div>
+              </div>
+              <div data-aos="fade-up" data-aos-once="true" data-aos-delay="100"
+                data-aos-anchor-placement="center-bottom" class="main_board_result_box aos-init aos-animate">
+                <div class="main_result_box_title">
+                  <h2>
+                    연구원
+                  </h2>
+                  <p>
+                    2023.01 ~ 2024.01
+                  </p>
+                </div>
+                <div class="main_result_box_num">
+                  <p class="nums" data-count="1200">1200</p><span>+</span>
+                </div>
+              </div>
+              <div data-aos="fade-up" data-aos-once="true" data-aos-delay="200"
+                data-aos-anchor-placement="center-bottom" class="main_board_result_box aos-init aos-animate">
+                <div class="main_result_box_title">
+                  <h2>
+                    프로젝트
+                  </h2>
+                  <p>
+                    2023.01 ~ 2024.01
+                  </p>
+                </div>
+                <div class="main_result_box_num">
+                  <p class="nums" data-count="100">100</p><span>+</span>
+                </div>
+              </div>
+              <div data-aos="fade-up" data-aos-once="true" data-aos-delay="300"
+                data-aos-anchor-placement="center-bottom" class="main_board_result_box aos-init aos-animate">
+                <div class="main_result_box_title">
+                  <h2>
+                    특허 출원
+                  </h2>
+                  <p>
+                    2023.01 ~ 2024.01
+                  </p>
+                </div>
+                <div class="main_result_box_num">
+                  <p class="nums" data-count="100">100</p><span>+</span>
+                </div>
+              </div>
+              <div data-aos="fade-up" data-aos-once="true" data-aos-delay="00" data-aos-anchor-placement="center-bottom"
+                class="main_board_result_box aos-init aos-animate">
+                <div class="main_result_box_title">
+                  <h2>
+                    논문 SCI
+                  </h2>
+                  <p>
+                    2023.01 ~ 2024.01
+                  </p>
+                </div>
+                <div class="main_result_box_num">
+                  <p class="nums" data-count="180">180</p><span>+</span>
+                </div>
+              </div>
+              <div data-aos="fade-up" data-aos-once="true" data-aos-delay="100"
+                data-aos-anchor-placement="center-bottom" class="main_board_result_box aos-init aos-animate">
+                <div class="main_result_box_title">
+                  <h2>
+                    연구개발비
+                  </h2>
+                  <p>
+                    2023.01 ~ 2024.01
+                  </p>
+                </div>
+                <div class="main_result_box_num">
+                  <p class="nums" data-count="20">20</p><span>+</span>
+                </div>
+              </div>
+              <div data-aos="fade-up" data-aos-once="true" data-aos-delay="200"
+                data-aos-anchor-placement="center-bottom" class="main_board_result_box aos-init aos-animate">
+                <div class="main_result_box_title">
+                  <h2>
+                    수행기관
+                  </h2>
+                  <p>
+                    2023.01 ~ 2024.01
+                  </p>
+                </div>
+                <div class="main_result_box_num">
+                  <p class="nums" data-count="100">100</p><span>+</span>
+                </div>
+              </div>
+              <div data-aos="fade-up" data-aos-once="true" data-aos-delay="300"
+                data-aos-anchor-placement="center-bottom" class="main_board_result_box aos-init aos-animate">
+                <div class="main_result_box_title">
+                  <h2>
+                    투자기업
+                  </h2>
+                  <p>
+                    2023.01 ~ 2024.01
+                  </p>
+                </div>
+                <div class="main_result_box_num">
+                  <p class="nums" data-count="10">10</p><span>+</span>
+                </div>
+              </div>
+
+            </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+    <div class="contents_full01">
+      <div class="main_service_information_wrap ">
+        <div class="main_service_information_contents">
+          <h2 class="main_board_title aos-init aos-animate" data-aos-duration="1500" data-aos="fade-up"
+            data-aos-once="true" data-aos-anchor-placement="bottom-bottom">
+            반도체 인재를 키워내는<br> <span> K-Chips 서비스 안내</span>
+          </h2>
+
+          <div class="main_service_information_box_wrap mt50 aos-init aos-animate" data-aos-delay="200"
+            data-aos-duration="1500" data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="center-bottom">
+            <div class="main_service_information_box">
+              <div class="main_service_information_box_tilte">
+                <h2>
+                  PROJECT
+                </h2>
+                <p>
+                  과제계획서 등록, 보고서 등록, <br> 연구비 정산 관련 과제관리 서비스
+                </p>
+              </div>
+              <img src="../../resources/images/pc/main_service01.png" alt="">
+
+            </div>
+            <div class="main_service_information_box">
+              <div class="main_service_information_box_tilte">
+                <h2>
+                  TRB
+                </h2>
+                <p>
+                  연구기관과 투자기업의 리뷰보드, <br>
+                  전문위원의 날카로운 분석
+                </p>
+              </div>
+              <img src="../../resources/images/pc/main_service02.png" alt="">
+
+            </div>
+            <div class="main_service_information_box">
+              <div class="main_service_information_box_tilte">
+                <h2>
+                  HR
+                </h2>
+                <p>
+                  우수 인재 검색이 가능하고 <br>
+                  반도체 전문 인재를 키우고 관리
+                </p>
+              </div>
+              <img src="../../resources/images/pc/main_service03.png" alt="">
+
+            </div>
+            <div class="main_service_information_box">
+              <div class="main_service_information_box_tilte">
+                <h2>
+                  NOTICE
+                </h2>
+                <p>
+                  공지사항, 전자알람,새로운 <br>
+                  인재에 대한 수요조사 참여 서비스
+                </p>
+              </div>
+              <img src="../../resources/images/pc/main_service04.png" alt="">
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+    <div class="contents main" style="min-height:auto; margin-bottom: 60px;">
+      <div class="contents_02">
+        <div class="main_webzine_wrap aos-init aos-animate" data-aos="fade-up" data-aos-once="true"
+          data-aos-duration="1500" data-aos-anchor-placement="center-bottom">
+          <img src="../../resources/images/mo/webzine_img.svg" alt="">
+          <div class="main_webzine_text_box">
+            <h2>
+              생생한 반도체 업계 소식이 <br> 궁금하신가요?<br>
+              지금 K-Chips 소식을 받아보세요!
+            </h2>
+            <button class="mt30">
+              K-Chips 웹진 구독하기
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- // container -->
+  <!-- footer -->
+  <footer class="footer" id="footer">
+
+    <p class="footer_copyright">한국반도체산업협회 / 한국반도체연구조합경기도
+      성남시 분당구 판교역로 182(삼평동 644번지) 한국반도체산업협회회관 9~12층 l 전화 : 02-576-3472 ~ 4 l 팩스 : 02-570-5269 / 5219
+    </p>
+    <p class="footer_copyright mt16"> © Copyright 2017 - KOREA SEMICONDUCTOR INDUSTRY ASSOCIATION</p>
+  </footer>
+
+  <!-- // footer -->
+
+  <script>
+    // 메인 스와이퍼
+    $(document).ready(function () {
+
+      var mainVisual_slide = new Swiper(".mySwiper02", {
+
+        spaceBetween: 30,
+        effect: "fade",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        on: {
+          slideChange: function () {
+            var currentSlideIndex = mainVisual_slide.realIndex + 1;
+
+            // Display current index
+            $("#slideIndexDisplay").text(currentSlideIndex);
+
+            // Display last index
+
+          },
+        },
+      });
+      var lastSlideIndex = mainVisual_slide.slides.length;
+      $("#last_slideIndexDisplay").text(lastSlideIndex);
+
+      // Toggle autoplay on mu_contr button click
+      $(".mu_contr").on("click", function () {
+        $(this).toggleClass('on');
+
+        if ($(this).hasClass('on')) {
+          mainVisual_slide.autoplay.stop();
+        } else {
+          mainVisual_slide.autoplay.start();
+        }
+      });
+    });
+
+
+  </script>
+
+
+
+  <!-- 공지 홍보 채용 -->
+  <script>
+    (function ($) {
+
+      $.extend($.fn, {
+        tabModule: function (options) {
+
+          $.fn.tabModule.defaults = {
+            selector: 'a',
+            tabContWrap: 'tabGroup',
+            tabContents: 'tab-cont',
+            speed: 400,
+            visibleCont: 1,
+            autoRolling: false,
+            roofTime: 5000,
+            animate: false,
+            autoControl: false
+          };
+
+          return this.each(function () {
+            var that = $(this),
+              opts = $.extend({}, $.fn.tabModule.defaults, options || {}),
+              auto = true,
+              intervalId = null,
+              currIdx = 0,
+              stop;
+            that.data('tabList', that.closest('ul'));
+            that.data('autoCtrl', $('.btn-ctrl > a'));
+
+            that.find(opts.selector).on('click focus', function () {
+              var target = $(this),
+                idx = $(this).parent().index();
+              currIdx = idx;
+              showTab(target, idx);
+              return false;
+            });
+
+            function showTab(target, idx) {
+              target.parent().radioClass();
+              var displayTab = $('.' + opts.tabContWrap).children().eq(idx);
+
+              if (!opts.animate) {
+                displayTab.show().siblings().hide();
+              } else {
+                displayTab.stop().fadeTo(opts.speed, 1)
+                  .siblings().stop().fadeTo(opts.speed, 0);
+              }
+            }
+
+            opts.autoRolling ? intervalId = setInterval(rollingTab, opts.roofTime) :
+              that.find(opts.selector).eq(opts.visibleCont - 1).trigger('click');
+
+            function rollingTab() {
+              currIdx++;
+              if (currIdx == $('.' + opts.tabContents).length) {
+                currIdx = 0;
+              }
+              that.find(opts.selector).eq(currIdx).trigger('click');
+            }
+
+            that.data('tabList').on({
+              'mouseenter': function () {
+                // if(!auto) return false;
+                clearInterval(intervalId);
+              },
+              'mouseleave': function () {
+                if (stop == 'stop' || (opts.autoRolling == false)) return false;
+                intervalId = setInterval(rollingTab, opts.roofTime);
+              }
+            });
+
+            !opts.autoControl ? that.data('autoCtrl').parent().hide() : that.data('autoCtrl').parent().show();
+
+            that.data('autoCtrl').on({
+              click: function () {
+                var _self = $(this),
+                  status = _self.attr('class');
+                if (status == 'stop') {
+                  _self.attr('class', 'play');
+                  _self.find('img').imgReplace('stop', 'play');
+                  clearInterval(intervalId);
+                } else {
+                  _self.attr('class', 'stop');
+                  _self.find('img').imgReplace('play', 'stop')
+                  intervalId = setInterval(rollingTab, opts.roofTime);
+                }
+                stop = status;
+              }
+            })
+
+          });
+        },
+
+        radioClass: function (opts) {
+          $.fn.radioClass.defaults = { className: 'on' };
+          opts = $.extend({}, $.fn.radioClass.defaults, opts || {})
+          return this.each(function () {
+            $(this).siblings('.' + opts.className).removeClass(opts.className).end().addClass(opts.className);
+          });
+        },
+
+        imgReplace: function (img1, img2) {
+          return this.each(function () {
+            var target = $(this);
+            target.attr('src', function () {
+              return $(this).attr('src').replace(img1, img2)
+            })
+          })
+        }
+      })
+
+
+
+    })(jQuery)
+
+    $('.tabList').tabModule({
+      animate: true,
+      autoRolling: true,
+      autoControl: true
+    });
+  </script>
+
+
+
+
+  <!--브랜드 스와이퍼 -->
+  <script>
+    var swiper = new Swiper(".brandSwiper", {
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false
+      },
+      slidesPerView: 'auto',
+      speed: 5000,
+      slideToClickedSlide: true,
+      on: {
+        init: function () {
+          console.log('swiper 초기화 될때 실행');
+        },
+        imagesReady: function () { // 모든 내부 이미지가 로드 된 직후 이벤트가 시작됩니다.
+          console.log('슬라이드 이미지 로드 후 실행');
+        },
+      },
+
+
+    });
+  </script>
+</body>
+
+</html>

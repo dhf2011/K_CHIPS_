@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원정보 수정 | K-Chips</title>
+  <link rel="stylesheet" href="../../resources/css/pc/common.css">
+  <link rel="stylesheet" href="../../resources/css/pc/style.css">
+  <script src="../../resources/js/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="../../resources/js/common_pc.js"></script>
+</head>
+
+<body>
+  <!-- skip -->
+  <div class="skip">
+    <a href="#container">본문 바로가기</a>
+  </div>
+  <!-- // skip -->
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header_wrap">
+
+      <div class="header">
+        <div class="inner">
+          <h1 class="header_logo"><a href="#none"><img src="../../resources/images/pc/K_Chips_logo.svg"
+                alt="K-Chips 반도체 인재양성 플랫폼"></a></h1>
+
+        </div>
+      </div>
+    </header>
+    <!-- // header -->
+    <!-- container -->
+    <div class="container" id="container">
+      <div class="location_wrap brdb_no">
+        <div class="inner">
+          <ul class="location">
+            <li><a href="#none">홈</a></li>
+            <li><a href="#none" class="on">회원 정보 수정</a></li><!-- 해당 페이지 .on class -->
+          </ul>
+        </div>
+      </div>
+      <div class="contents">
+        <div class="member_wrap big_member_wrap">
+          <h2 class="tit_dep3">회원정보 수정</h2>
+          <div class="tab_wrap">
+            <ul class="tab_list member_tab">
+              <li class="tab_li on"><!-- 활성화 시 on 클래스 추가 -->
+
+                <a href="#none">학생연구원<br><span>(학사, 석사, 박사과정)</span></a>
+
+              </li>
+              <li class="tab_li">
+                <a href="#none">참여연구원<br><span>(교수, 연구원 등)</span></a>
+              </li>
+
+            </ul>
+            <!-- Tab contents 학생연구원 -->
+            <div class="tab_cont on"><!-- 활성화 시 on 클래스 추가 -->
+              <div class="tbl_row_typ1">
+                <table>
+                  <caption>참여연구원 </caption>
+                  <colgroup>
+                    <col style="width:180px">
+                    <col style="width:*">
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="back_clr_back rel"><button type="button" style=" filter: invert(100%);"
+                          data-role="pop-on" data-link="lyPop1" class="circle_info"></button><label class="fc_gy8"
+                          for="inp01">간편로그인 등록</label></th>
+                      <td>
+                        <div class="snsLogBox">
+                          <ul>
+                            <li id="li_naver">
+                              <a href="#none" class="snsNaver on" title="새창열기"><span class="text_hidden">네이버</span></a>
+                              <!-- 간편등록을 하면 on태그가 추가됨 -->
+                            </li>
+                            <li id="li_kakao">
+                              <a href="#none" class="snsKakao " title="새창열기"><span class="text_hidden">카카오톡</span></a>
+                            </li>
+                            <li id="li_kakao">
+                              <a href="#none" class="snsGoogle" title="새창열기"><span class="text_hidden">구굴</span></a>
+                            </li>
+
+
+
+                          </ul>
+
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><label class="essential" for="inp01">아이디</label></th>
+                      <td>
+                        <div class="bx_inp ty2">
+                          <input type="text" id="inp01" title="" placeholder="" value="아이디" readonly="">
+
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="vt"><label for="inp02" class="essential">비밀번호</label></th>
+                      <td>
+                        <div class="bx_inp ty2">
+                          <input type="text" id="inp02" title="" placeholder="비밀번호를 입력해주세요." value="">
+
+                          <p class="txt_refer">비밀번호는 8자 이상, 영문대소, 숫자, 특수문자 중 2가지를 포함하고 있습니다.
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="vt"><label for="inp03" class="essential">비밀번호 확인</label></th>
+                      <td>
+                        <div class="bx_inp ty2">
+                          <input type="text" id="inp03" title="" placeholder="비밀번호를 다시 입력하세요." value="">
+                          <span class="Notice">위에 입력한 비밀번호와 동일하게 다시 입력해주세요. </span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><label for="inp04" class="essential">휴대전화</label></th>
+                      <td>
+                        <div class="bx_inp ty2">
+                          <input type="text" id="inp04" title="" placeholder=" " value="010-4053-4074" readonly="">
+                          <button type="button" class="btn_md04 ml2">본인인증하기</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><label for="inp05" class="essential">이름</label></th>
+                      <td>
+                        <div class="bx_inp ty2">
+                          <input type="email" id="inp05" title="" placeholder="" value="홍길동" readonly="">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><label for="inp06" class="essential">생년월일</label></th>
+                      <td>
+                        <div class="bx_inp ty2">
+                          <input type="tel" id="inp06" title="" placeholder="" value="19930722" readonly="">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><label for="inp06" class="essential">성별</label></th>
+                      <td>
+                        <div class="bx_inp ty2 df">
+                          <div class="bx_chk">
+                            <input type="checkbox" id="chk4" class="chk_ty1" checked="" disabled="">
+                            <label for="chk4">남성</label>
+                          </div>
+                          <div class="bx_chk ml15">
+                            <input type="checkbox" id="chk3" class="chk_ty1" disabled="">
+                            <label for="chk3">여성</label>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row"><label for="inp06" class="essential">기본 이메일</label></th>
+
+                      <td>
+                        <div class="bx_inp ty2">
+                          <input type="tel" id="inp06" title="" placeholder="" value="">
+                          <button type="button" class="btn_md04 ml2">중복체크</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><label for="inp06">서브 이메일</label></th>
+                      <td>
+                        <div class="bx_inp ty2">
+                          <input type="tel" id="inp06" title="" placeholder="" value="">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="rel"> <button type="button" data-role="pop-on" data-link="lyPop1"
+                          class="circle_info">연구자 번호 정보 아이콘</button> <label for="inp04" class="essential">연구자 번호</label>
+                      </th>
+                      <td>
+                        <div class="bx_inp ty2">
+                          <input type="text" id="inp04" title="" placeholder=" ">
+                          <button type="button" class="btn_md04 ml2">중복체크</button>
+                          <p class="txt_refer">연구자 번호는 범부처통합연구지원시스템<br>(IRIS)에서 찾으실 수 있습니다.<a class="link_url ml10"
+                              target="_blank" href="https://www.iris.go.kr/main.do">[ IRIS 바로가기 ]</a></p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><label for="inp04" class="essential">검색 키워드 등록</label></th>
+                      <td>
+                        <div class="bx_inp ty2">
+                          <input type="text" id="inp04" title="" placeholder=" ">
+                          <p class="txt_refer">키워드는 30개까지 등록이 가능합니다. <br> 예) #서울대 #홍길동 #RECVD</p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><label class="essential" for="inp01">학력</label></th>
+                      <td>
+                        <ul class="list_add_delete">
+                          <li>
+                            <!-- li 삭제 버튼 2번쨰 li 부터 표시 -->
+                            <button class="close_btn">삭제</button>
+
+                            <div class="bx_inp inp_pla_clr_999 ty2">
+                              <div class="sel_typ1 sel_wid150 "><!-- 선택 시 .on class -->
+                                             <!-- 23.08.31 select 수정 -->
+                        <select id="lang" name="school">
+                          <option value="" selected disabled>학교 구분</option>
+                          <option value="고등학교">고등학교</option>
+                          <option value="대학( 2, 3 년 )">대학( 2, 3 년 )</option>
+                          <option value="대학( 4년 )">대학( 4년 )</option>
+                          <option value="대학원">대학원</option>
+                  
+                        </select>
+                        <label for="school" class="icoArrow"></label>
+  
+                              </div>
+                              <input type="text" id="Bar" title="" class="inp_wid350" placeholder="학교명">
+                              <div class="month_inp_wrap">
+                                <input type="text" id="inputBox" title="" value="" class="inputBox_is inp_wid106"
+                                  placeholder="">
+                                <label for="inputBox" id="outputLabel">입학년월</label>
+                              </div>
+                              <div class="month_inp_wrap">
+                                <input type="text" id="inputBox2" title="" value="" class="inputBox_is inp_wid106 "
+                                  placeholder="">
+                                <label for="inputBox2" id="outputLabel">졸업년월</label>
+                              </div>
+                              <div class="sel_typ1"><!-- 선택 시 .on class -->
+                                 <!-- 23.08.31 select 수정 -->
+                        <select id="lang" name="graduate">
+                          <option value="" selected disabled>졸업상태</option>
+                          <option value="학생">졸업</option>
+                          <option value="회사원">졸업예정</option>
+                          <option value="기타">중퇴</option>
+                          <option value="기타">수료</option>
+                          <option value="기타">휴학</option>
+                  
+                        </select>
+                        <label for="graduate" class="icoArrow"></label>
+  
+                              </div>
+                            </div>
+                            <div class="bx_inp inp_pla_clr_999 ty2 mt10">
+
+                              <input type="text" id="Bar" title="" class="inp_wid507" placeholder="학과명">
+                              <input type="text" id="Bar" title="" class="inp_wid106" placeholder="학점">
+
+                              <div class="sel_typ1"><!-- 선택 시 .on class -->
+                               <!-- 23.08.31 select 수정 -->
+                           <select id="lang" name="total">
+                            <option value="" selected disabled>총점</option>
+                            <option value="학생">4.5</option>
+                            <option value="회사원">4.3</option>
+                            <option value="기타">4.0</option>
+                            <option value="기타">100</option>
+                          </select>
+                          <label for="total" class="icoArrow"></label>
+                              </div>
+                              <div class="bx_chk dib ml5">
+                                <input type="checkbox" id="chk2" class="chk_ty1" checked="">
+                                <label for="chk2">편입</label>
+                              </div>
+                            </div>
+                            <div class="bx_inp ty2 inp_pla_clr_999 mt10">
+
+                              <input type="text" id="Bar" title="" class="inp_wid_full" placeholder="학위 논문명 (선택)">
+
+                            </div>
+                            <!-- li 추가 버튼 마지막 li에만 노출 -->
+                            <div class="mt15 list_add_wrap">
+                              <div class="individual_add_btn"><button type="button">li추가 버튼</button></div>
+
+                            </div>
+                          </li>
+
+                        </ul>
+                      </td>
+                    </tr>
+
+                    <!-- 경력 -->
+                    <tr>
+                      <th scope="row"><label class="essential" for="inp01">경력</label></th>
+                      <td>
+                        <ul class="list_add_delete">
+                          <li>
+                            <!-- li 삭제 버튼 2번쨰 li 부터 표시 -->
+                            <button class="close_btn">삭제</button>
+                            <div class="period_calculation_wrap mt15">
+                              <h2>
+                                교수 총 임용기간 : <span>3년 4개월</span>
+                              </h2>
+                            </div>
+
+                            <div class="bx_inp inp_pla_clr_999 ty2">
+                              <div class="sel_typ1 sel_wid150 "><!-- 선택 시 .on class -->
+                                  <!-- 23.08.31 select 수정 -->
+                        <select id="lang" name="total">
+                          <option value="" selected disabled>근무지 종류</option>
+                          <option value="대학교">대학교</option>
+                          <option value="연구소">연구소</option>
+                          <option value="정부">정부</option>
+                          <option value="기타">기타</option>
+                        </select>
+                        <label for="total" class="icoArrow"></label>
+                              </div>
+                              <input type="text" id="Bar" title="" class="inp_wid330" placeholder="기관명">
+                              <div class="month_inp_wrap">
+                                <input type="text" id="inputBox3" title="" value="" class="inputBox_is inp_wid106"
+                                  placeholder="">
+                                <label for="inputBox3" id="outputLabel">입사년월</label>
+                              </div>
+                              <div class="month_inp_wrap">
+                                <input type="text" id="inputBox4" title="" value="" class="inputBox_is inp_wid106 "
+                                  placeholder="">
+                                <label for="inputBox4" id="outputLabel">퇴사년월</label>
+                              </div>
+                              <div class="bx_chk dib ml5 bx_chk_wid_auto">
+                                <input type="checkbox" id="chk13" class="chk_ty1" checked="">
+                                <label for="chk13">첫 임용</label>
+                              </div>
+                              <div class="bx_chk dib ml5">
+                                <input type="checkbox" id="chk14" class="chk_ty1" checked="">
+                                <label for="chk14">재직중</label>
+                              </div>
+
+                            </div>
+                            <div class="bx_inp inp_pla_clr_999 ty2 mt10">
+
+                              <input type="text" id="Bar" title="" class="inp_wid285" placeholder="반도체시스템공학과">
+                              <input type="text" id="Bar" title="" class="inp_wid285" placeholder="직급/직책">
+                              <input type="text" id="Bar" title="" class="inp_wid285" placeholder="담당직무">
+
+
+                            </div>
+                            <div class="bx_inp ty2 inp_pla_clr_999 mt10">
+
+                              <input type="text" id="Bar" title="" class="inp_wid_full" placeholder="대표 업무 또는 논문(선택)">
+
+                            </div>
+                            <!-- li 추가 버튼 마지막 li에만 노출 -->
+                            <div class="mt15 list_add_wrap">
+                              <div class="individual_add_btn"><button type="button">li추가 버튼</button></div>
+
+                            </div>
+                          </li>
+
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div class="bx_chk dib ml5 bx_chk_wid_auto">
+                          <input type="checkbox" id="chk17" class="chk_ty1 checked_standard">
+                          <label for="chk17">추가 소속정보</label>
+                        </div>
+                      </th>
+                      <td>
+                        <div class="bx_inp ty2">
+                          <input type="tel" id="inp06" class="checked_see" title="" placeholder="" value="">
+                          <p class="txt_refer checked_hide on">추가로 표시하고 싶은 소속정보가 있을 경우에만 체크해주세요</p>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- Tab contents 참여연구원 -->
+            <div class="tab_cont">
+              <div class="tbl_row_typ1">
+                <table>
+                  <caption>참여연구원 </caption>
+                  <colgroup>
+                    <col style="width:180px">
+                    <col style="width:*">
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="back_clr_back rel"><button type="button" style=" filter: invert(100%);"
+                          data-role="pop-on" data-link="lyPop1" class="circle_info"></button><label class="fc_gy8"
+                          for="inp01">간편로그인 등록</label></th>
+                      <td>
+                        <div class="snsLogBox">
+                          <ul>
+                            <li id="li_naver">
+                              <a href="#none" class="snsNaver on" title="새창열기"><span class="text_hidden">네이버</span></a>
+                              <!-- 간편등록을 하면 on태그가 추가됨 -->
+                            </li>
+                            <li id="li_kakao">
+                              <a href="#none" class="snsKakao " title="새창열기"><span class="text_hidden">카카오톡</span></a>
+                            </li>
+                            <li id="li_kakao">
+                              <a href="#none" class="snsGoogle" title="새창열기"><span class="text_hidden">구굴</span></a>
+                            </li>
+
+
+
+                          </ul>
+
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><label class="essential" for="inp01">아이디</label></th>
+                      <td>
+                        <div class="bx_inp ty2">
+                          <input type="text" id="inp01" title="" placeholder="" value="아이디" readonly="">
+
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="vt"><label for="inp02" class="essential">비밀번호</label></th>
+                      <td>
+                        <div class="bx_inp ty2">
+                          <input type="text" id="inp02" title="" placeholder="비밀번호를 입력해주세요." value="">
+
+                          <p class="txt_refer">비밀번호는 8자 이상, 영문대소, 숫자, 특수문자 중 2가지를 포함하고 있습니다.
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="vt"><label for="inp03" class="essential">비밀번호 확인</label></th>
+                      <td>
+                        <div class="bx_inp ty2">
+                          <input type="text" id="inp03" title="" placeholder="비밀번호를 다시 입력하세요." value="">
+                          <span class="Notice">위에 입력한 비밀번호와 동일하게 다시 입력해주세요. </span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><label for="inp04" class="essential">휴대전화</label></th>
+                      <td>
+                        <div class="bx_inp ty2">
+                          <input type="text" id="inp04" title="" placeholder=" " value="010-4053-4074" readonly="">
+                          <button type="button" class="btn_md04 ml2">본인인증하기</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><label for="inp05" class="essential">이름</label></th>
+                      <td>
+                        <div class="bx_inp ty2">
+                          <input type="email" id="inp05" title="" placeholder="" value="홍길동" readonly="">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><label for="inp06" class="essential">생년월일</label></th>
+                      <td>
+                        <div class="bx_inp ty2">
+                          <input type="tel" id="inp06" title="" placeholder="" value="19930722" readonly="">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><label for="inp06" class="essential">성별</label></th>
+                      <td>
+                        <div class="bx_inp ty2 df">
+                          <div class="bx_chk">
+                            <input type="checkbox" id="chk4" class="chk_ty1" checked="" disabled="">
+                            <label for="chk4">남성</label>
+                          </div>
+                          <div class="bx_chk ml15">
+                            <input type="checkbox" id="chk3" class="chk_ty1" disabled="">
+                            <label for="chk3">여성</label>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row"><label for="inp06" class="essential">기본 이메일</label></th>
+
+                      <td>
+                        <div class="bx_inp ty2">
+                          <input type="tel" id="inp06" title="" placeholder="" value="">
+                          <button type="button" class="btn_md04 ml2">중복체크</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><label for="inp06">서브 이메일</label></th>
+                      <td>
+                        <div class="bx_inp ty2">
+                          <input type="tel" id="inp06" title="" placeholder="" value="">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="rel"> <button type="button" data-role="pop-on" data-link="lyPop1"
+                          class="circle_info">연구자 번호 정보 아이콘</button> <label for="inp04" class="essential">연구자 번호</label>
+                      </th>
+                      <td>
+                        <div class="bx_inp ty2">
+                          <input type="text" id="inp04" title="" placeholder=" ">
+                          <button type="button" class="btn_md04 ml2">중복체크</button>
+                          <p class="txt_refer">연구자 번호는 범부처통합연구지원시스템<br>(IRIS)에서 찾으실 수 있습니다.<a class="link_url ml10"
+                              target="_blank" href="https://www.iris.go.kr/main.do">[ IRIS 바로가기 ]</a></p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><label for="inp04" class="essential">검색 키워드 등록</label></th>
+                      <td>
+                        <div class="bx_inp ty2">
+                          <input type="text" id="inp04" title="" placeholder=" ">
+                          <p class="txt_refer">키워드는 30개까지 등록이 가능합니다. <br> 예) #서울대 #홍길동 #RECVD</p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><label class="essential" for="inp01">학력</label></th>
+                      <td>
+                        <ul class="list_add_delete">
+                          <li>
+                            <!-- li 삭제 버튼 2번쨰 li 부터 표시 -->
+                            <button class="close_btn">삭제</button>
+
+                            <div class="bx_inp inp_pla_clr_999 ty2">
+                              <div class="sel_typ1 sel_wid150 "><!-- 선택 시 .on class -->
+                                            <!-- 23.08.31 select 수정 -->
+                        <select id="lang" name="school">
+                          <option value="" selected disabled>학교 구분</option>
+                          <option value="고등학교">고등학교</option>
+                          <option value="대학( 2, 3 년 )">대학( 2, 3 년 )</option>
+                          <option value="대학( 4년 )">대학( 4년 )</option>
+                          <option value="대학원">대학원</option>
+                  
+                        </select>
+                        <label for="school" class="icoArrow"></label>
+  
+                              </div>
+                              <input type="text" id="Bar" title="" class="inp_wid350" placeholder="학교명">
+                              <div class="month_inp_wrap">
+                                <input type="text" id="inputBox5" title="" value="" class="inputBox_is inp_wid106"
+                                  placeholder="">
+                                <label for="inputBox5" id="outputLabel">입학년월</label>
+                              </div>
+                              <div class="month_inp_wrap">
+                                <input type="text" id="inputBox6" title="" value="" class="inputBox_is inp_wid106 "
+                                  placeholder="">
+                                <label for="inputBox6" id="outputLabel">졸업년월</label>
+                              </div>
+                              <div class="sel_typ1"><!-- 선택 시 .on class -->
+                                  <!-- 23.08.31 select 수정 -->
+                        <select id="lang" name="graduate">
+                          <option value="" selected disabled>졸업상태</option>
+                          <option value="학생">졸업</option>
+                          <option value="회사원">졸업예정</option>
+                          <option value="기타">중퇴</option>
+                          <option value="기타">수료</option>
+                          <option value="기타">휴학</option>
+                  
+                        </select>
+                        <label for="graduate" class="icoArrow"></label>
+  
+                              </div>
+                            </div>
+                            <div class="bx_inp inp_pla_clr_999 ty2 mt10">
+
+                              <input type="text" id="Bar" title="" class="inp_wid507" placeholder="학과명">
+                              <input type="text" id="Bar" title="" class="inp_wid106" placeholder="학점">
+
+                              <div class="sel_typ1"><!-- 선택 시 .on class -->
+                                 <!-- 23.08.31 select 수정 -->
+                           <select id="lang" name="total">
+                            <option value="" selected disabled>총점</option>
+                            <option value="학생">4.5</option>
+                            <option value="회사원">4.3</option>
+                            <option value="기타">4.0</option>
+                            <option value="기타">100</option>
+                          </select>
+                          <label for="total" class="icoArrow"></label>
+                              </div>
+                              <div class="bx_chk dib ml5">
+                                <input type="checkbox" id="chk2" class="chk_ty1" checked="">
+                                <label for="chk2">편입</label>
+                              </div>
+                            </div>
+                            <div class="bx_inp ty2 inp_pla_clr_999 mt10">
+
+                              <input type="text" id="Bar" title="" class="inp_wid_full" placeholder="학위 논문명 (선택)">
+
+                            </div>
+                            <!-- li 추가 버튼 마지막 li에만 노출 -->
+                            <div class="mt15 list_add_wrap">
+                              <div class="individual_add_btn"><button type="button">li추가 버튼</button></div>
+
+                            </div>
+                          </li>
+
+                        </ul>
+                      </td>
+                    </tr>
+
+                    <!-- 경력 -->
+                    <tr>
+                      <th scope="row"><label class="essential" for="inp01">경력</label></th>
+                      <td>
+                        <ul class="list_add_delete">
+                          <li>
+                            <!-- li 삭제 버튼 2번쨰 li 부터 표시 -->
+                            <button class="close_btn">삭제</button>
+                            <div class="period_calculation_wrap mt15">
+                              <h2>
+                                교수 총 임용기간 : <span>3년 4개월</span>
+                              </h2>
+                            </div>
+
+                            <div class="bx_inp inp_pla_clr_999 ty2">
+                              <div class="sel_typ1 sel_wid150 "><!-- 선택 시 .on class -->
+                                    <!-- 23.08.31 select 수정 -->
+                        <select id="lang" name="total">
+                          <option value="" selected disabled>근무지 종류</option>
+                          <option value="대학교">대학교</option>
+                          <option value="연구소">연구소</option>
+                          <option value="정부">정부</option>
+                          <option value="기타">기타</option>
+                        </select>
+                        <label for="total" class="icoArrow"></label>
+                              </div>
+                              <input type="text" id="Bar" title="" class="inp_wid330" placeholder="기관명">
+                              <div class="month_inp_wrap">
+                                <input type="text" id="inputBox7" title="" value="" class="inputBox_is inp_wid106"
+                                  placeholder="">
+                                <label for="inputBox7" id="outputLabel">입사년월</label>
+                              </div>
+                              <div class="month_inp_wrap">
+                                <input type="text" id="inputBox8" title="" value="" class="inputBox_is inp_wid106 "
+                                  placeholder="">
+                                <label for="inputBox8" id="outputLabel">퇴사년월</label>
+                              </div>
+                              <div class="bx_chk dib ml5 bx_chk_wid_auto">
+                                <input type="checkbox" id="chk13" class="chk_ty1" checked="">
+                                <label for="chk13">첫 임용</label>
+                              </div>
+                              <div class="bx_chk dib ml5">
+                                <input type="checkbox" id="chk14" class="chk_ty1" checked="">
+                                <label for="chk14">재직중</label>
+                              </div>
+
+                            </div>
+                            <div class="bx_inp inp_pla_clr_999 ty2 mt10">
+
+                              <input type="text" id="Bar" title="" class="inp_wid285" placeholder="반도체시스템공학과">
+                              <input type="text" id="Bar" title="" class="inp_wid285" placeholder="직급/직책">
+                              <input type="text" id="Bar" title="" class="inp_wid285" placeholder="담당직무">
+
+
+                            </div>
+                            <div class="bx_inp ty2 inp_pla_clr_999 mt10">
+
+                              <input type="text" id="Bar" title="" class="inp_wid_full" placeholder="대표 업무 또는 논문(선택)">
+
+                            </div>
+                            <!-- li 추가 버튼 마지막 li에만 노출 -->
+                            <div class="mt15 list_add_wrap">
+                              <div class="individual_add_btn"><button type="button">li추가 버튼</button></div>
+
+                            </div>
+                          </li>
+
+                        </ul>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row">
+                        <div class="bx_chk dib ml5 bx_chk_wid_auto">
+                          <input type="checkbox" id="chk16" class="chk_ty1 checked_standard">
+                          <label for="chk16">추가 소속정보</label>
+                        </div>
+                      </th>
+                      <td>
+                        <div class="bx_inp ty2">
+                          <input type="tel" id="inp06" class="checked_see" title="" placeholder="" value="">
+                          <p class="txt_refer checked_hide on">추가로 표시하고 싶은 소속정보가 있을 경우에만 체크해주세요</p>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <div class="btn_wrap fx_c mt80">
+            <a href="#none" class="btn_lg01 w1">저장하기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // container -->
+    <!-- footer -->
+    <footer class="footer">
+      <div class="inner">
+        <p class="footer_logo"><img src="/resources/images/pc/K_Chips_logo_white.svg" alt="K-Chips 반도체 인재양서 플랫폼"></p>
+        <div class="footer_r">
+      
+          <p class="footer_copyright">
+            한국반도체산업협회 / 한국반도체연구조합 <br>
+            경기도 성남시 분당구 판교역로 182(삼평동 644번지) 한국반도체산업협회회관 9~12층  l 전화 : 02-576-3472 ~ 4  l   팩스 : 02-570-5269 / 5219 <br>          
+            © Copyright 2017 - KOREA SEMICONDUCTOR INDUSTRY ASSOCIATION
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- // footer -->
+
+    <!-- 연구자 번호 인포메이션팝업 -->
+    <div class="pop_wrap" id="lyPop1">
+      <div class="pop_cont">
+        <div class="pop_inner">
+          <p class="tc">범부처통합연구지원시스템(IRIS)에 등록된 연구자 번호를 찾아서 입력해주세요.
+          </p>
+        </div>
+      </div>
+      <div class="pop_btn_wrap">
+        <button type="button" class="pop_btn_ty1" data-role="pop-off">확인</button>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+</body>
+
+<script>
+
+
+
+$(document).ready(function(){
+    var checkbox = $('.checked_standard');  // 체크박스 요소 가져오기
+  
+
+    $('.checked_standard').click(function () {
+      if ($(this).is(':checked')) {
+        $('.checked_see').addClass("on")
+        $('.checked_hide').removeClass("on")
+      } else {
+        $('.checked_hide').addClass("on")
+        $('.checked_see').removeClass("on")
+      }
+    });
+
+
+  })
+</script>
+
+
+</html>

@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide</title>
+    <link rel="stylesheet" href="../../resources/css/pc/common.css">
+    <link rel="stylesheet" href="../../resources/css/pc/style.css">
+    <script src="../../resources/js/jquery-3.6.0.min.js"></script>
+    <script src="../../resources/js/common_pc.js"></script>
+    <style>
+        .g_box {margin-bottom:20px;padding:20px;border:3px dashed #eee}
+        .g_tit {font-size:20px;font-weight:900}
+        .g_sub_tit {margin:15px 0}
+        .g_box .bx_inp + .bx_inp {margin-top:10px}
+        .g_box .bx_chk {display:inline-block}
+        .g_box .bx_chk + .bx_chk {margin-left:20px}
+        .g_box .btn_wrap + .btn_wrap {margin-top:10px}
+    </style>
+</head>
+<body>
+    <!-- skip -->
+    <div class="skip">
+		<a href="#container">본문 바로가기</a>
+	</div>
+    <!-- // skip -->
+    <div class="wrapper">
+        <!-- header -->
+        <header class="header_wrap">
+        
+            <div class="header">
+                <div class="inner">
+                    <h1 class="header_logo"><a href="#none"><img src="../../resources/images/pc/K_Chips_logo.svg"
+                                alt="K-Chips 반도체 인재양성 플랫폼"></a></h1>
+
+                    <nav class="h_navigation_wrap">
+                        <ul class="h_navigation">
+                            <li class="dep_01">
+                                <a href="#">
+                                    K-CHIPS
+                                </a>
+                                <ul class="dep_02">
+                                    <li>
+                                        <a href="">
+                                            사업소개
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            투자기관
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            수행기관
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            운영위원회
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            CI 소개
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            웹진 소개
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                           
+                            <li class="dep_01">
+                                <a href="#">
+                                    PROJECT
+                                </a>
+                                <ul class="dep_02">
+                                    <li>
+                                        <a href="">
+                                            과제수행현황
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            협약
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            사업운영
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            연구비 관리
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            <li class="dep_01">
+                                <a href="#">
+                                    HR
+                                </a>
+                                <ul class="dep_02">
+                                    <li>
+                                        <a href="">
+                                            인재찾기
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            참여연구원 현황
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="">
+                                            취업성과
+                                        </a>
+                                    </li>
+                                
+                                </ul>
+                            </li>
+                            <li class="dep_01">
+                                <a href="#">
+                                    TRB
+                                </a>
+                                <ul class="dep_02">
+                                    <li>
+                                        <a href="">
+                                            소개(이용방법)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            테크니컬 리뷰보드
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            참여하기
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dep_01">
+                                <a href="#">
+                                    NOTICE
+                                </a>
+                                <ul class="dep_02">
+                                    <li>
+                                        <a href="">
+                                            공지사항
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            설문조사
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            전자 알람
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dep_01">
+                                <a href="#">
+                                    MY HOME
+                                </a>
+                                <ul class="dep_02">
+                                    <li>
+                                        <a href="">
+                                            나의 홈
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            정산 결과 확인
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            회원정보수정
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="h_information_wrap">
+                        <a href="#" class="h_infor_name reaction_fade">
+                            홍길동님
+                        </a>
+                        
+                        <div class="h_infor_alarm reaction_fade">
+                            <i>
+                                <img src="../../resources/images/pc/ic_alarm.svg" alt="">
+                            </i>
+                            <div class="alarm_situation ">
+                                <p>2</p>
+                            </div>
+                        </div>
+                        <div class="h_infor_logout reaction_fade">
+                            <a href="#">로그아웃</a>
+                        </div>
+                        
+                        <div class="h_infor_hamburger">
+                            <img src="../../resources/images/pc/hamburger.svg" alt="">
+                        </div>
+                    </div>
+               </div>
+            </div>
+
+            <!--햄버거 메뉴 -->
+            <aside class="h_side_bar">
+                <div class="h_side_bar_close">
+                    <button class="h_side_bar_close_btn">
+                
+                    </button>
+                
+                    <div class="h_side_bar_wrap">
+                        <div class="lnb_wrap">
+                            <ul class="lnb_li_dep1">
+                                <li class="lnb_dep1 has_dep2"><!-- 활성화 시 .on 클래스 -->
+                                    <a href="javascript:void(0);">K-CHIPS</a>
+                                    <ul class="lnb_li_dep2">
+                                        <li class="lnb_dep2">
+                                            <a href="javascript:void(0);">사업소개</a>
+                                        </li>
+                                        <li class="lnb_dep2 has_dep3">
+                                            <a href="javascript:void(0);">투자기관</a>
+                                            <ul class="lnb_li_dep3">
+                                                <li class="lnb_dep3">
+                                                    <a href="javascript:void(0);">과제계획서 등록</a>
+                                                </li>
+                                                <li class="lnb_dep3">
+                                                    <a href="javascript:void(0);">과제 협약</a>
+                                                   
+                                                </li>
+                                                <li class="lnb_dep3">
+                                                  
+                                                    <a href="javascript:void(0);">지식재산권 협약</a>
+                                                </li>
+                                                <li class="lnb_dep3">
+                                                    
+                                                    <a href="javascript:void(0);">협약변경</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="lnb_dep2">
+                                            <a href="javascript:void(0);">수행기관</a>
+                                        </li>
+                                        <li class="lnb_dep2">
+                                            <a href="javascript:void(0);">운영위원회</a>
+                                        </li>
+                                        <li class="lnb_dep2">
+                                            <a href="javascript:void(0);">CI 소개</a>
+                                        </li>
+                                        <li class="lnb_dep2">
+                                            <a href="javascript:void(0);">웹진 소개</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="lnb_dep1 has_dep2"><!-- 하위 메뉴가 있을 경우 .has_dep2 클래스 추가 -->
+                                    <a href="javascript:void(0);">PROJECT</a>
+                                    <ul class="lnb_li_dep2">
+                                        <li class="lnb_dep2">
+                                            <a href="javascript:void(0);">과제수행현황</a>
+                                        </li>
+                                        <li class="lnb_dep2 has_dep3">
+                                            <a href="javascript:void(0);">협약</a>
+                                            <ul class="lnb_li_dep3">
+                                                <li class="lnb_dep3">
+                                                    <a href="javascript:void(0);">과제계획서 등록</a>
+                                       
+                                                </li>
+                                                <li class="lnb_dep3">
+                                                    <a href="javascript:void(0);">과제 협약</a>
+                                                   
+                                                </li>
+                                                <li class="lnb_dep3">
+                                                  
+                                                    <a href="javascript:void(0);">지식재산권 협약</a>
+                                                </li>
+                                                <li class="lnb_dep3">
+                                                    
+                                                    <a href="javascript:void(0);">협약변경</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="lnb_dep2">
+                                            <a href="javascript:void(0);">사업운영</a>
+                                        </li>
+                                        <li class="lnb_dep2">
+                                            <a href="javascript:void(0);">연구비 관리 </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                               
+                                <li class="lnb_dep1 has_dep2">
+                                    <a href="javascript:void(0);">HR</a>
+                                    <ul class="lnb_li_dep2">
+                                        <li class="lnb_dep2">
+                                            <a href="javascript:void(0);">인재찾기</a>
+                                        </li>
+                                        <li class="lnb_dep2 has_dep3">
+                                            <a href="javascript:void(0);">참여연구원 현황</a>
+                                            <ul class="lnb_li_dep3">
+                                                <li class="lnb_dep3">
+                                                    <a href="javascript:void(0);">과제계획서 등록</a>
+                                       
+                                                </li>
+                                                <li class="lnb_dep3">
+                                                    <a href="javascript:void(0);">과제 협약</a>
+                                                   
+                                                </li>
+                                                <li class="lnb_dep3">
+                                                  
+                                                    <a href="javascript:void(0);">지식재산권 협약</a>
+                                                </li>
+                                                <li class="lnb_dep3">
+                                                    
+                                                    <a href="javascript:void(0);">협약변경</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="lnb_dep2">
+                                            <a href="javascript:void(0);">취업성과</a>
+                                        </li>
+                                       
+                                    </ul>
+                                </li>
+                                <li class="lnb_dep1 has_dep2">
+                                    <a href="javascript:void(0);">TRB</a>
+                                    <ul class="lnb_li_dep2">
+                                        <li class="lnb_dep2">
+                                            <a href="javascript:void(0);">소개(인용방법)</a>
+                                        </li>
+                                        <li class="lnb_dep2 has_dep3">
+                                            <a href="javascript:void(0);">테크니컬 리뷰보드</a>
+                                            <ul class="lnb_li_dep3">
+                                                <li class="lnb_dep3">
+                                                    <a href="javascript:void(0);">과제계획서 등록</a>
+                                       
+                                                </li>
+                                                <li class="lnb_dep3">
+                                                    <a href="javascript:void(0);">과제 협약</a>
+                                                   
+                                                </li>
+                                                <li class="lnb_dep3">
+                                                  
+                                                    <a href="javascript:void(0);">지식재산권 협약</a>
+                                                </li>
+                                                <li class="lnb_dep3">
+                                                    
+                                                    <a href="javascript:void(0);">협약변경</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="lnb_dep2">
+                                            <a href="javascript:void(0);">참여하기</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="lnb_dep1 has_dep2">
+                                    <a href="javascript:void(0);">NOTICE</a>
+                                    <ul class="lnb_li_dep2">
+                                        <li class="lnb_dep2">
+                                            <a href="javascript:void(0);">공지사항</a>
+                                        </li>
+                                        <li class="lnb_dep2 has_dep3">
+                                            <a href="javascript:void(0);">설문조사</a>
+                                            <ul class="lnb_li_dep3">
+                                                <li class="lnb_dep3">
+                                                    <a href="javascript:void(0);">과제계획서 등록</a>
+                                       
+                                                </li>
+                                                <li class="lnb_dep3">
+                                                    <a href="javascript:void(0);">과제 협약</a>
+                                                   
+                                                </li>
+                                                <li class="lnb_dep3">
+                                                  
+                                                    <a href="javascript:void(0);">지식재산권 협약</a>
+                                                </li>
+                                                <li class="lnb_dep3">
+                                                    
+                                                    <a href="javascript:void(0);">협약변경</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="lnb_dep2">
+                                            <a href="javascript:void(0);">전자 알람</a>
+                                        </li>
+                                    
+                                    </ul>
+                                    
+                                </li>
+                                <li class="lnb_dep1 has_dep2">
+                                    <a href="javascript:void(0);">MY HOME</a>
+                                    <ul class="lnb_li_dep2">
+                                        <li class="lnb_dep2">
+                                            <a href="javascript:void(0);">나의 홈</a>
+                                        </li>
+                                        <li class="lnb_dep2 has_dep3">
+                                            <a href="javascript:void(0);">정산 결과 확인</a>
+                                            <ul class="lnb_li_dep3">
+                                                <li class="lnb_dep3">
+                                                    <a href="javascript:void(0);">과제계획서 등록</a>
+                                                
+                                                </li>
+                                                <li class="lnb_dep3">
+                                                    <a href="javascript:void(0);">과제 협약</a>
+                                                    
+                                                </li>
+                                                <li class="lnb_dep3">
+                                                    
+                                                    <a href="javascript:void(0);">지식재산권 협약</a>
+                                                </li>
+                                                <li class="lnb_dep3">
+                                                    
+                                                    <a href="javascript:void(0);">협약변경</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="lnb_dep2">
+                                            <a href="javascript:void(0);">회원정보수정</a>
+                                        </li>
+                                    
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </aside>
+        </header>
+        <!-- // header -->
+        <!-- container -->
+        <div class="container" id="container">
+           
+            <div class="contents">
+                <!-- Title -->
+                <div class="g_box">
+                    <h2 class="g_tit">Title</h2>
+                    <h3 class="g_sub_tit mt45">size : 36 / Letter Spacing : -2% / Line Height : 48 / Color : #111</h3>
+                    <h2 class="tit_type01">[H1_SB] 반도체 인재양성 플랫폼 K-Chips</h2>
+                    <h3 class="g_sub_tit mt30">size : 32 / Letter Spacing : -2% / Line Height : 48 / Color : #111</h3>
+                    <h2 class="tit_type02">[H1_SB]  반도체 인재양성 플랫폼 K-Chips</h2>
+                   
+                    <div class="tit_guide_line mt45">
+
+                    </div>
+                    <h2 class="g_tit mt45">Text</h2>
+
+                    <h4 class="g_sub_tit mt45">size : 28 / Letter Spacing : -2% / Line Height : 32 / Color : #111</h4>
+                    <p class="text_dep01">반도체 인재양성 플랫폼 K-Chips</p>
+                    <h4 class="g_sub_tit  mt30">size : 24 / Letter Spacing : -2% / Line Height : 32 / Color : #111</h4>
+                    <p class="text_dep02">반도체 인재양성 플랫폼 K-Chips</p>
+                    <h4 class="g_sub_tit mt30">size : 24 / Letter Spacing : -2% / Line Height : 30 / Color : #111</h4>
+                    <p class="text_dep03">반도체 인재양성 플랫폼 K-Chips</p>
+                    <h4 class="g_sub_tit mt30">size : 20 / Letter Spacing : -2% / Line Height : 30 / Color : #111</h4>
+                    <p class="text_dep4">반도체 인재양성 플랫폼 K-Chips</p>
+                    <h4 class="g_sub_tit mt30">size : 20/ Letter Spacing : -2% / Line Height : 30 / Color : #111</h4>
+                    <p class="text_dep05">반도체 인재양성 플랫폼 K-Chips</p>
+                    <h4 class="g_sub_tit mt30">size : 18 / Letter Spacing : -2% / Line Height : 28 / Color : #111</h4>
+                    <p class="text_dep06">반도체 인재양성 플랫폼 K-Chips</p>
+                    <h4 class="g_sub_tit mt30">size : 18 / Letter Spacing : -2% / Line Height : 28 / Color : #111</h4>
+                    <p class="text_dep07">반도체 인재양성 플랫폼 K-Chips</p>
+                    <div class="tit_guide_line mt45">
+
+                    </div>
+                    <h2 class="g_tit mt45">SB_Text</h2>
+
+                    <h4 class="g_sub_tit mt45">size : 16 / Letter Spacing : -2% / Line Height : 28 / Color : #333/ Bold</h4>
+                    <p class="text_sb_dep01">반도체 인재양성 플랫폼 K-Chips</p>
+                    <h4 class="g_sub_tit mt30">size : 16 / Letter Spacing : -2% / Line Height : 28 / Color : #333</h4>
+                    <p class="text_sb_dep02">반도체 인재양성 플랫폼 K-Chips</p>
+
+
+                    <h4 class="g_sub_tit mt30">size : 16 / Letter Spacing : -2% / Line Height : 24 / Color : #333/ Bold</h4>
+                    <p class="text_sb_mo_dep01">반도체 인재양성 플랫폼 K-Chips</p>
+                    <h4 class="g_sub_tit mt30">size : 16 / Letter Spacing : -2% / Line Height : 24 / Color : #333</h4>
+                    <p class="text_sb_m0_dep02">반도체 인재양성 플랫폼 K-Chips</p>
+
+
+
+                    <h4 class="g_sub_tit mt30">size : 14 / Letter Spacing : -2% / Line Height : 24 / Color : #555 / Bold</h4>
+                    <p class="text_sb_dep03">반도체 인재양성 플랫폼 K-Chips</p>
+                    <h4 class="g_sub_tit mt30">size : 14 / Letter Spacing : -2% / Line Height : 24 / Color : #555</h4>
+                    <p class="text_sb_dep04">반도체 인재양성 플랫폼 K-Chips</p>
+
+                </div>
+                <!-- Form -->
+                <div class="g_box">
+                    <h2 class="g_tit">Form</h2>
+                    <h3 class="g_sub_tit">[input] - type1</h3>
+                    <div class="bx_inp ty1">
+                        <input type="text" title="제목 입력" placeholder="제목을 입력해주세요." id="inp01">
+                    </div>
+                    <h3 class="g_sub_tit">[input] - type2</h3>
+                    <div class="bx_inp ty2">
+                        <input type="text" title=""class="text_clear_inpt"  placeholder="입력" id="">
+                        <span></span>
+                    </div>
+                    <h3 class="g_sub_tit">[input] - type03</h3>
+                   <div class="bx_inp_low">
+                        <div class="bx_inp ty03 inp_size_w275">
+                            <input type="text" class="text_clear_inpt" title="" placeholder="입력" id="">
+                            <button class="text_clear" onclick="clearInput()" style="display:none">X</button>
+                            
+                        </div>
+                        <div class="bx_inp ty03 inp_size_w275">
+                            <input type="text" class="text_clear_inpt" value="disabled"  title="" placeholder="입력" id=""  readonly>
+                            <button class="text_clear" onclick="clearInput()" style="display:none">X</button>
+                            
+                        </div>
+                        <div class="bx_inp ty03 inp_size_w275">
+                            <input type="text" class="text_clear_inpt inpt_error" value=""  title="" placeholder="Error" id="">
+                            <button class="text_clear" onclick="clearInput()" style="display:none">X</button>
+                            
+                        </div>
+
+                   </div>
+                   <h3 class="g_sub_tit">[input] - type03_40</h3>
+                   <div class="bx_inp_low">
+                       <div class="bx_inp ty03_40 inp_size_w275">
+                        <input type="text" class="text_clear_inpt" title="" placeholder="입력" id="" >
+                        <button class="text_clear" onclick="clearInput()" style="display:none">X</button>
+                    </div>
+                      
+                       <div class="bx_inp ty03_40 inp_size_w275">
+                        <input type="text" class="text_clear_inpt" title="" value="disabled" placeholder="입력" id="" readonly>
+                        <button class="text_clear" onclick="clearInput()" style="display:none">X</button>
+                    </div>
+                      
+                       <div class="bx_inp ty03_40 inp_size_w275">
+                        <input type="text" class="text_clear_inpt inpt_error" title="" value="" placeholder="Error" id="">
+                        <button class="text_clear" onclick="clearInput()" style="display:none">X</button>
+                    </div>
+                    <div class="bx_inp ty03_40 inp_size_w275">
+                        <input type="text" class="text_clear_inpt" title="" placeholder="입력" id="" >
+                    </div>
+                    <div class="bx_inp ty03_40 inp_type_search inp_size_w275">
+                        <input type="text" class="text_clear_inpt" title="" placeholder="검색" id="" >
+                        <span>icon</span>
+                    </div>
+                   </div>
+                   <h3 class="g_sub_tit">[input] - Input48+ico</h3>
+                   <div class="bx_inp bx_calendar02 mt5 d_c">
+                    <div class="calendar_bg"><input type="date" class="inp_size_w240" data-placeholder="날짜 입력" required></div>
+                    <span>~</span> 
+                    <div class="calendar_bg"><input type="date" class="inp_size_w240 inpt_error" data-placeholder="날짜 입력 에러" required></div>
+                                    </div>
+                   <h3 class="g_sub_tit">[input] - Input40+ico</h3>
+                   <div class="bx_inp bx_calendar03 mt5 d_c">
+                    <div class="calendar_bg"><input type="date" class="inp_size_w240" data-placeholder="날짜 입력" required></div>
+                    <span>~</span> 
+                    <div class="calendar_bg"><input type="date" class="inp_size_w240 inpt_error" data-placeholder="날짜 입력 에러" required></div>
+                                    </div>
+
+                    <h3 class="g_sub_tit">[serch]</h3>
+                   <div class="bx_inp_low">
+                        <div class="bx_inp ty03_40 inp_size_w275">
+                            <input type="text" class="text_clear_inpt" title="" placeholder="입력" id="">
+                            <button class="text_clear" onclick="clearInput()" style="display:none">X</button>
+                        </div>
+                        <div class="btn_wrap ml10">
+                            <button type="button" class="btn_type03 wid120">검색</button>
+                        </div>
+
+                   </div>
+                    <div class="bx_inp bx_srch mt10">
+                        <input type="text" title="검색어 입력">
+                        <button type="button" class="btn_sm01">검색</button>
+                    </div>
+                    <!-- <h3 class="g_sub_tit">[select type1]</h3>
+                    <div class="sel_typ1">
+                        <button type="button" class="btn_sel">전체</button>
+                        <ul class="sel_option">
+                            <li><button type="button">승인 중</button></li>
+                            <li><button type="button">심사 중</button></li>
+                            <li><button type="button">심사완료</button></li>
+                        </ul>
+                    </div> -->
+                    <h3 class="g_sub_tit">[select type1(48)] </h3>
+                    <div class="bx_inp ty2 sel_wid240">
+                        <div class="sel_typ2 "><!-- 선택 시 .on class -->
+                              <!-- 23.08.31 select 수정 -->
+                      <select id="lang" name="total">
+                        <option value="" selected="" disabled="">근무지 종류</option>
+                        <option value="대학교">대학교</option>
+                        <option value="연구소">연구소</option>
+                        <option value="정부">정부</option>
+                        <option value="기타">기타</option>
+                      </select>
+                      <label for="total" class="icoArrow"></label>
+                        </div>
+                                               
+                      </div>
+                    <h3 class="g_sub_tit">[select type1(40)] </h3>
+                    <div class="bx_inp ty2 sel_wid240">
+                        <div class="sel_typ3 "><!-- 선택 시 .on class -->
+                              <!-- 23.08.31 select 수정 -->
+                      <select id="lang" name="total">
+                        <option value="" selected="" disabled="">근무지 종류</option>
+                        <option value="대학교">대학교</option>
+                        <option value="연구소">연구소</option>
+                        <option value="정부">정부</option>
+                        <option value="기타">기타</option>
+                      </select>
+                      <label for="total" class="icoArrow"></label>
+                        </div>
+                                               
+                      </div>
+                    <h3 class="g_sub_tit">[radio type1]</h3>
+                    <div class="bx_radio">
+                        <input type="radio" id="rdo1-1" name="rdo1" class="rdo_ty1">
+                        <label for="rdo1-1">default</label>
+                        <input type="radio" id="rdo1-2" name="rdo1" class="rdo_ty1" checked>
+                        <label for="rdo1-2">checked</label>
+                    </div>
+                    <h3 class="g_sub_tit">[radio type2]</h3>
+                    <div class="bx_radio02">
+                        <input type="radio" id="radio-1" name="radio2" class="radio_ty2">
+                        <label for="radio-1">default</label>
+                        <input type="radio" id="radio-2" name="radio2" class="radio_ty2" checked>
+                        <label for="radio-2">checked</label>
+                        <input type="radio" id="radio-3" name="radio3" class="radio_ty2" disabled>
+                        <label for="radio-3">disabled</label>
+                        <input type="radio" id="radio-4" name="radio3" class="radio_ty2" checked disabled>
+                        <label for="radio-4">disabled selected</label>
+                    </div>
+                    <!-- <h3 class="g_sub_tit">[radio type3]</h3>
+                    <div class="bx_radio02">
+                        <input type="radio" id="radio-5" name="radio4" class="radio_ty3">
+                        <label for="radio-5">default</label>
+                        <input type="radio" id="radio-6" name="radio4" class="radio_ty3" checked>
+                        <label for="radio-6">checked</label>
+                        <input type="radio" id="radio-7" name="radio5" class="radio_ty3" disabled>
+                        <label for="radio-7">disabled</label>
+                        <input type="radio" id="radio-8" name="radio5" class="radio_ty3" checked disabled>
+                        <label for="radio-8">disabled selected</label>
+                    </div> -->
+                   
+                    <h3 class="g_sub_tit">[checkbox type1]</h3>
+                    <div class="bx_chk">
+                        <input type="checkbox" id="chk1" class="chk_ty1">
+                        <label for="chk1">default</label>
+                    </div>
+                    <div class="bx_chk">
+                        <input type="checkbox" id="chk2" class="chk_ty1" checked>
+                        <label for="chk2">checked</label>
+                    </div>
+                    <div class="bx_chk">
+                        <input type="checkbox" id="chk3" class="chk_ty1" disabled>
+                        <label for="chk3">disabled</label>
+                    </div>
+                    <div class="bx_chk">
+                        <input type="checkbox" id="chk4" class="chk_ty1" checked disabled>
+                        <label for="chk4">checked disabled</label>
+                    </div>
+
+                    <h3 class="g_sub_tit">[checkbox type2]</h3>
+                    <div class="bx_chk">
+                        <input type="checkbox" id="chk5" class="chk_ty2">
+                        <label for="chk5">default</label>
+                    </div>
+                    <div class="bx_chk">
+                        <input type="checkbox" id="chk6" class="chk_ty2" checked>
+                        <label for="chk6">checked</label>
+                    </div>
+                    <div class="bx_chk">
+                        <input type="checkbox" id="chk7" class="chk_ty2" disabled>
+                        <label for="chk7">disabled</label>
+                    </div>
+                    <div class="bx_chk">
+                        <input type="checkbox" id="chk8" class="chk_ty2" checked disabled>
+                        <label for="chk8">checked disabled</label>
+                    </div>
+
+                    <h3 class="g_sub_tit">[checkbox type3]</h3>
+                    <div class="bx_chk">
+                        <input type="checkbox" id="chk9" class="chk_ty3">
+                        <label for="chk9">default</label>
+                    </div>
+                    <div class="bx_chk">
+                        <input type="checkbox" id="chk10" class="chk_ty3" checked>
+                        <label for="chk10">checked</label>
+                    </div>
+                    <div class="bx_chk">
+                        <input type="checkbox" id="chk11" class="chk_ty3" disabled>
+                        <label for="chk11">disabled</label>
+                    </div>
+                    <div class="bx_chk">
+                        <input type="checkbox" id="chk12" class="chk_ty3" checked disabled>
+                        <label for="chk12">checked disabled</label>
+                    </div>
+
+
+                    <h3 class="g_sub_tit">[checkbox type4]</h3>
+                    <div class="bx_chk wid100 tc">
+                      
+                            <input type="checkbox" id="chk13" class="chk_ty4">
+                            <label for="chk13">default</label>
+                       
+                    </div>
+                    <div class="bx_chk wid100 tc">
+                        <input type="checkbox" id="chk14" class="chk_ty4" checked>
+                        <label for="chk14">checked</label>
+                    </div>
+                    <div class="bx_chk wid100 tc">
+                        <input type="checkbox" id="chk15" class="chk_ty4" disabled>
+                        <label for="chk15">disabled</label>
+                    </div>
+                    <div class="bx_chk wid240 tc">
+                        <input type="checkbox" id="chk16" class="chk_ty4" checked disabled>
+                        <label for="chk16">checked disabled</label>
+                    </div>
+                    
+                    <!-- <h3 class="g_sub_tit">[좋아요]</h3>
+                    <p class="bx_chk_like">
+                        <input type="checkbox" id="chkLike" class="chk_like">
+                        <label for="chkLike">좋아요</label>
+                    </p> -->
+                </div>
+                <!-- Tab -->
+                <div class="g_box">
+                    <h2 class="g_tit">Tab</h2>
+                    <h3 class="g_sub_tit">[tab - type1]</h3>
+                    <div class="tab_wrap">
+                        <ul class="tab_list">
+                            <li class="tab_li on"><!-- 활성화 시 on 클래스 추가 -->
+                                <a href="#none">Tab 1</a>
+                            </li>
+                            <li class="tab_li">
+                                <a href="#none">Tab 2</a>
+                            </li>
+                        </ul>
+                        <!-- Tab contents 1 -->
+                        <div class="tab_cont on"><!-- 활성화 시 on 클래스 추가 -->
+                            Tab contents 1
+                        </div>
+                        <!-- Tab contents 2 -->
+                        <div class="tab_cont">
+                            Tab contents 2
+                        </div>
+                    </div>
+                </div>
+                <!-- button -->
+                <div class="g_box">
+                    <h2 class="g_tit">Button</h2>
+                    <h3 class="g_sub_tit">[Large 56]</h3>
+                    <div class="btn_wrap">
+                        <button type="button" class="btn_type01 wid120">버튼</button>
+                        <button type="button" class="btn_type01_line wid120">일곱자리까지임</button>
+                    </div>
+             
+                    <div class="btn_wrap">
+                        <button type="button" class="btn_type01_long">텍스트가 긴 경우 쭉쭉늘어난다</button>
+                        <button type="button" class="btn_type01_line_long">텍스트가 긴 경우 계속늘어난다</button>
+                    </div>
+                   
+                    <h3 class="g_sub_tit">[Medium 48]</h3>
+                   
+                    <div class="btn_wrap">
+                        <button type="button" class="btn_type02 wid120">버튼</button>
+                        <button type="button" class="btn_type02_line wid120">일곱자리까지임</button>
+                    </div>
+             
+                    <div class="btn_wrap">
+                        <button type="button" class="btn_type02_long">텍스트가 긴 경우 쭉쭉늘어난다</button>
+                        <button type="button" class="btn_type02_line_long">텍스트가 긴 경우 계속늘어난다</button>
+                    </div>
+                    <h3 class="g_sub_tit">[Medium 40]</h3>
+                    <div class="btn_wrap">
+                        <button type="button" class="btn_type03 wid120">버튼</button>
+                        <button type="button" class="btn_type03_line wid120">일곱자리까지임</button>
+                    </div>
+             
+                    <div class="btn_wrap">
+                        <button type="button" class="btn_type03_long">텍스트가 긴 경우 쭉쭉늘어난다</button>
+                        <button type="button" class="btn_type03_line_long">텍스트가 긴 경우 계속늘어난다</button>
+                    </div>
+                  
+                    <h3 class="g_sub_tit">[Download Button]</h3>
+                    <div class="btn_wrap">
+                        <button type="button" class="btn_download"><span>다운로드</span></button>
+                        <button type="button" class="btn_download" disabled><span>다운로드</span></button>
+                    </div>
+                    <h3 class="g_sub_tit">[Rows delete add]</h3>
+                    <div class="btn_wrap">
+                        <button type="button" class="btn_delete"><span>행 삭제</span></button>
+                        <button type="button" class="btn_add"><span>행 추가</span></button>
+                    </div>
+                    <h3 class="g_sub_tit">[Download Button]</h3>
+                    <div class="btn_wrap">
+                        <button type="button" class="btn_type_download"><span>보기</span></button>
+                    </div>
+                   
+                </div>
+                <!--Breadcrumb  -->
+                <div class="g_box">
+                    <h2 class="g_tit">Breadcrumb</h2>
+                    <div class="breadcrumb_wrap">
+                        <ul class="location">
+                            <li><a class="location_home" href="#none">홈</a></li>
+                            <li><a href="#none">내부제안</a></li>
+                            <li><a href="#none" class="on">아이디어</a></li><!-- 해당 페이지 .on class -->
+                        </ul>
+                    </div>
+                </div>
+                <!--LNB -->
+                <div class="g_box">
+                    <h2 class="g_tit">LNB</h2>
+                   <div class="left_lnb_wrap mt15">
+                    <ul class="left_lnb">
+                        <li class="on">
+                           <a>연구개발 계획서 개요</a>
+                        </li>
+                        <li class="on" >
+                           <a>정량적 최종 목표</a>
+                        </li>
+                        <li class="on">
+                           <a>주관기관 연구개발비 세목별 계획 (연차별)</a>
+                        </li>
+                        <li class="on">
+                           <a>주관기관 연구개발비 세목별 계획 (연차별)</a>
+                        </li>
+                        <li>
+                           <a>주관기관 연구개발비 세목별 계획 (연차별)</a>
+                        </li>
+                        <li>
+                           <a>주관기관 연구개발비 세목별 계획 (연차별)</a>
+                        </li>
+                        <li>
+                           <a>주관기관 연구개발비 세목별 계획</a>
+                        </li>
+                    </ul>
+                   </div>
+                </div>
+                <!-- icon -->
+                <!-- <div class="g_box">
+                    <h2 class="g_tit">Icon</h2>
+                    <i class="icon_file"></i>
+                    <i class="icon_file2"></i>
+                    <i class="icon_mail"></i>
+                    <i class="icon_tel"></i>
+                </div> -->
+                <!-- table -->
+                <div class="g_box">
+                    <h2 class="g_tit">Table</h2>
+                    <h3 class="g_sub_tit">[tbl_col_typ1]</h3>
+                    <div class="tbl_col_typ1_wrap">
+                        <div class="tbl_head">
+                            <div class="example_number">
+                                <p>전체 <span>0</span>건</p>
+                            </div>
+                            <div class="registration_btn"> 
+                                <div class="btn_wrap">
+                                    <button type="button" class="btn_type03 wid120">성과등록하기</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <table class="tbl_col_type02 mt16">
+                            <colgroup>
+                            <col width="110px">
+                            <col width="274px">
+                            <col width="138px">
+                            <col width="100px">
+                            <col width="200px">
+                            <col width="88px">
+                            <col width="100px">
+                            <col width="120px">
+                            <col width="*">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <h2>
+                                            과제번호  
+                                        </h2>
+                                    </th>
+                                    <th>
+                                        <h2>
+                                            연구개발 과제명  
+                                        </h2>
+                                    </th>
+                                    <th>
+                                        <h2>
+                                            주관연구기관  
+                                        </h2>
+                                    </th>
+                                    <th>
+                                        <h2>
+                                            연구책임자  
+                                        </h2>
+                                    </th>
+                                    <th>
+                                        <h2>
+                                            연구개발기간  
+                                        </h2>
+                                    </th>
+                                    <th>
+                                        <h2>
+                                            차수  
+                                        </h2>
+                                    </th>
+                                    <th>
+                                        <h2>
+                                            상태  
+                                        </h2>
+                                    </th>
+                                    <th>
+                                        <h2>
+                                            민간 과제계획서  
+                                        </h2>
+                                    </th>
+                                    <th>
+                                        <h2>
+                                            첨부파일  
+                                        </h2>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            23010-15FC
+                                        </p>
+                                    </td>
+                                    <td class="tl">
+                                        <p>
+                                            수직 적층형 cell 프랜지스터 공정 개발을 통한 3차원 DRAM 개발 방향 제시
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            서울대학교
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            박찬희
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            2023.09.04 ~2025 09.03
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            1차년도
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            사업계획
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="btn_wrap fc">
+                                            <button type="button" class="btn_type_download"><span>보기</span></button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="btn_wrap fc">
+                                            <button type="button" class="btn_download"><span>다운로드</span></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            23010-15FC
+                                        </p>
+                                    </td>
+                                    <td class="tl">
+                                        <p>
+                                            수직 적층형 cell 프랜지스터 공정 개발을 통한 3차원 DRAM 개발 방향 제시
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            서울대학교
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            박찬희
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            2023.09.04 ~2025 09.03
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            1차년도
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            사업계획
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="btn_wrap fc">
+                                            <button type="button" class="btn_type_download"><span>보기</span></button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="btn_wrap fc">
+                                           <p>-</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            23010-15FC
+                                        </p>
+                                    </td>
+                                    <td class="tl">
+                                        <p>
+                                            수직 적층형 cell 프랜지스터 공정 개발을 통한 3차원 DRAM 개발 방향 제시
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            서울대학교
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            박찬희
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            2023.09.04 ~2025 09.03
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            1차년도
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            사업계획
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="btn_wrap fc">
+                                            <button type="button" class="btn_type_download"><span>보기</span></button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="btn_wrap fc">
+                                            <button type="button" class="btn_download"><span>다운로드</span></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            23010-15FC
+                                        </p>
+                                    </td>
+                                    <td class="tl">
+                                        <p>
+                                            수직 적층형 cell 프랜지스터 공정 개발을 통한 3차원 DRAM 개발 방향 제시
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            서울대학교
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            박찬희
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            2023.09.04 ~2025 09.03
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            1차년도
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            사업계획
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="btn_wrap fc">
+                                            <button type="button" class="btn_type_download"><span>보기</span></button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="btn_wrap fc">
+                                            <button type="button" class="btn_download"><span>다운로드</span></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                        <div class="paging02">
+                            <a href="#none" class="first"><span class="blind">처음</span></a>
+                            <a href="#none" class="prev"><span class="blind">이전</span></a>
+                            <ul class="paging02_num">
+                                <li><a href="#none">1</a></li><!-- 해당페이지 .on class -->
+                                <li><a href="#none">2</a></li>
+                                <li><a href="#none">3</a></li>
+                                <li><a href="#none">4</a></li>
+                                <li><a href="#none">5</a></li>
+                                <li><a href="#none">6</a></li>
+                                <li><a href="#none">7</a></li>
+                                <li><a href="#none">8</a></li>
+                                <li><a href="#none">9</a></li>
+                                <li><a href="#none">10</a></li>
+                            </ul>
+                            <a href="#none" class="next"><span class="blind">다음</span></a>
+                            <a href="#none" class="last"><span class="blind">마지막</span></a>
+                        </div>
+                    </div>
+                    <h3 class="g_sub_tit">[paging02]</h3>
+                    <div class="tbl_col_typ1">
+                        <!-- <table>
+                            <caption>캡션 작성</caption>
+                            <colgroup>
+                                <col style="width:6.5%">
+                                <col style="width:*">
+                                <col style="width:10%">
+                                <col style="width:14%">
+                                <col style="width:12%">
+                                <col style="width:6%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">숫자</th>
+                                    <th scope="col">제목</th>
+                                    <th scope="col">진행현황</th>
+                                    <th scope="col">작성자(부서)</th>
+                                    <th scope="col">등록일</th>
+                                    <th scope="col">조회</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="num">10</td>
+                                    <td class="tit">
+                                        <a href="#none">제목입니다.</a>
+                                        <i class="icon_file"><span class="blind">첨부파일</span></i>
+                                        <span class="count">[10]</span>
+                                    </td>
+                                    <td class="fc_gr1">심사 중</td>
+                                    <td>홍길동 (경영성과팀)</td>
+                                    <td>2021.00.00</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td class="num">9</td>
+                                    <td class="tit">
+                                        <a href="#none">제목입니다.</a>
+                                        <i class="icon_file"><span class="blind">첨부파일</span></i>
+                                        <span class="count">[10]</span>
+                                    </td>
+                                    <td>심사완료</td>
+                                    <td>홍길동 (경영성과팀)</td>
+                                    <td>2021.00.00</td>
+                                    <td>100</td>
+                                </tr>
+                            </tbody>
+                        </table> -->
+                    </div>
+                    <!-- paging -->
+                    <div class="paging02">
+                        <a href="#none" class="first"><span class="blind">처음</span></a>
+                        <a href="#none" class="prev"><span class="blind">이전</span></a>
+                        <ul class="paging02_num">
+                            <li><a href="#none">1</a></li><!-- 해당페이지 .on class -->
+                            <li><a href="#none">2</a></li>
+                            <li><a href="#none">3</a></li>
+                            <li><a href="#none">4</a></li>
+                            <li><a href="#none">5</a></li>
+                            <li><a href="#none">6</a></li>
+                            <li><a href="#none">7</a></li>
+                            <li><a href="#none">8</a></li>
+                            <li><a href="#none">9</a></li>
+                            <li><a href="#none">10</a></li>
+                        </ul>
+                        <a href="#none" class="next"><span class="blind">다음</span></a>
+                        <a href="#none" class="last"><span class="blind">마지막</span></a>
+                    </div>
+                    <!-- // paging -->
+                </div>
+                <!-- bullet text -->
+                <div class="g_box">
+                    <h2 class="g_tit">Bullet Text</h2>
+                    <h3 class="g_sub_tit">[text refer]</h3>
+                    <p class="txt_refer">아이디는 영소문자와 숫자만 입력 가능합니다.</p>
+                </div>
+            </div>
+        </div>
+        <!-- // container -->
+       <!-- footer -->
+       <footer class="footer">
+        <div class="footer_text_wrap">
+            <p class="fotter_text">한국반도체산업협회 / 한국반도체연구조합경기도 <br>
+                성남시 분당구 판교역로 182(삼평동 644번지) 한국반도체산업협회회관 9~12층  l  전화 : 02-576-3472 ~ 4  l  팩스 : 02-570-5269 / 5219</p>
+          
+
+            <p class="footer_copyright">
+               © Copyright 2017 - KOREA SEMICONDUCTOR INDUSTRY ASSOCIATION
+            </p>
+
+        </div>
+      </footer>
+    <!-- // footer -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>K-Chips</title>
+  <link rel="stylesheet" href="../../resources/css/mo/swiper.min.css">
+  <link rel="stylesheet" href="../../resources/css/mo/common.css">
+  <link rel="stylesheet" href="../../resources/css/mo/style.css">
+  <script src="../../resources/js/jquery-3.6.0.min.js"></script>
+  <script src="../../resources/js/swiper.min.js"></script>
+  <script src="../../resources/js/common_mo.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header" id="header">
+    <!-- <div class="hd_back_ic">
+          <img src="/resources/images/mo/back_ic.svg" alt="">
+        </div> -->
+    <h1 class="header_logo"><a href="#none"><img src="../../resources/images/mo/logout.svg"
+          alt="K-Chips 반도체 인재양성 플랫폼"></a></h1>
+    <!-- 햄버거버튼 임시미노출 -->
+    <button type="btn" class="header_btn_bar">
+      <span class="blind">전체메뉴</span>
+    </button>
+
+    <!-- 햄버거 내용 -->
+    <div class="hamburger_content">
+      <div class="bx_flex jc_sb hamburger_content_top ai_ct">
+        <div class="">
+          <button class="btn_round02">
+            로그인
+          </button>
+          <!-- 로그인 하면 로그인>로그아웃 회원가입>홍길동님 으로 변경 -->
+          <button class="btn_round02 fc_White back_clr_333 ">
+            회원가입
+          </button>
+        </div>
+
+        <div>
+
+        </div>
+      </div>
+      <aside class="h_side_bar">
+        <div class="h_side_bar_close">
+
+
+          <div class="h_side_bar_wrap mt20">
+            <div class="lnb_wrap">
+              <ul class="lnb_li_dep1">
+                <li class="lnb_dep1 has_dep2"><!-- 활성화 시 .on 클래스 -->
+                  <a href="javascript:void(0);">K-CHIPS</a>
+                  <ul class="lnb_li_dep2">
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">사업소개</a>
+                    </li>
+                    <li class="lnb_dep2 has_dep3">
+                      <a href="javascript:void(0);">투자기관</a>
+                      <ul class="lnb_li_dep3">
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제계획서 등록</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제 협약</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">지식재산권 협약</a>
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">협약변경</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">수행기관</a>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">운영위원회</a>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">CI 소개</a>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">웹진 소개</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="lnb_dep1 has_dep2"><!-- 하위 메뉴가 있을 경우 .has_dep2 클래스 추가 -->
+                  <a href="javascript:void(0);">PROJECT</a>
+                  <ul class="lnb_li_dep2">
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">과제수행현황</a>
+                    </li>
+                    <li class="lnb_dep2 has_dep3">
+                      <a href="javascript:void(0);">협약</a>
+                      <ul class="lnb_li_dep3">
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제계획서 등록</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제 협약</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">지식재산권 협약</a>
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">협약변경</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">사업운영</a>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">연구비 관리 </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="lnb_dep1 has_dep2">
+                  <a href="javascript:void(0);">HR</a>
+                  <ul class="lnb_li_dep2">
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">인재찾기</a>
+                    </li>
+                    <li class="lnb_dep2 has_dep3">
+                      <a href="javascript:void(0);">참여연구원 현황</a>
+                      <ul class="lnb_li_dep3">
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제계획서 등록</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제 협약</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">지식재산권 협약</a>
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">협약변경</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">취업성과</a>
+                    </li>
+
+                  </ul>
+                </li>
+                <li class="lnb_dep1 has_dep2">
+                  <a href="javascript:void(0);">TRB</a>
+                  <ul class="lnb_li_dep2">
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">소개(인용방법)</a>
+                    </li>
+                    <li class="lnb_dep2 has_dep3">
+                      <a href="javascript:void(0);">테크니컬 리뷰보드</a>
+                      <ul class="lnb_li_dep3">
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제계획서 등록</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제 협약</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">지식재산권 협약</a>
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">협약변경</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">참여하기</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="lnb_dep1 has_dep2">
+                  <a href="javascript:void(0);">NOTICE</a>
+                  <ul class="lnb_li_dep2">
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">공지사항</a>
+                    </li>
+                    <li class="lnb_dep2 has_dep3">
+                      <a href="javascript:void(0);">설문조사</a>
+                      <ul class="lnb_li_dep3">
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제계획서 등록</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제 협약</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">지식재산권 협약</a>
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">협약변경</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">전자 알람</a>
+                    </li>
+
+                  </ul>
+
+                </li>
+                <li class="lnb_dep1 has_dep2">
+                  <a href="javascript:void(0);">MY HOME</a>
+                  <ul class="lnb_li_dep2">
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">나의 홈</a>
+                    </li>
+                    <li class="lnb_dep2 has_dep3">
+                      <a href="javascript:void(0);">정산 결과 확인</a>
+                      <ul class="lnb_li_dep3">
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제계획서 등록</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제 협약</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">지식재산권 협약</a>
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">협약변경</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">회원정보수정</a>
+                    </li>
+
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </aside>
+    </div>
+
+    <!-- gnb menu open : .on class -->
+
+    <!-- 활성화시 백그라운드 이미지 추가 필요 -->
+
+    <!-- gnb menu open : .on class -->
+  </header>
+
+
+  <!-- // header -->
+  <!-- gnb -->
+
+  <!-- // gnb -->
+  <!-- container -->
+  <div class="container" id="container" style="padding-bottom: 40px;">
+    <div class="sb_page_title_wrap">
+      <h2 class="sb_page_title_01">MY HOME
+      </h2>
+    </div>
+    <div class="title_bottom_line">
+
+    </div>
+    <div class="bx_flex column">
+      <div class="my_home_profile_box_lfte bx_flex column" style="border-bottom:  1px solid #f5f5f5;">
+        <div class="my_home_profile_content bx_flex column jc_ct">
+          <div class="my_home_profile_image_box">
+            <div class="my_home_profile_image"><img src="/resources/images/pc/CK_tica1140011765.jpg" alt="">
+            </div>
+            <span>뱃지</span>
+          </div>
+          <h2 class="my_home_profile_name mt24">장원영</h2>
+          <div class="my_home_profile_belong bx_flex ai_center jc_ct">
+            <p>서울대 유명진 교수 연구실</p>
+            <button>글수정</button>
+          </div>
+          <div class="profile_line mt16">
+
+          </div>
+          <p class="my_home_profile_belong02 mt16">
+            현 수행기관
+          </p>
+          <h2 class="my_home_profile_title01">
+            서울대 산학협력단
+          </h2>
+          <div class="mo_line02 mt24">
+
+          </div>
+        </div>
+        <div class="bx_flex column">
+          <div class="my_home_profile_box_lfte_Participation">
+
+            <div class=" my_home_profile_box_lfte02_top">
+              <a class="my_home_profile_top_title" href="#">
+                <h2 class="">
+                  참여 프로젝트
+                </h2>
+                <button>
+
+                </button>
+              </a>
+            </div>
+            <div class="mt16">
+              <ul class="my_home_Participation_list">
+                <li class="bx_flex on">
+                  <a href="#" class="ellips">반도체반도체반도체반도체반도체반도체반도체반도체반도체반도체반도체반도체 신생물질 개발 연구 과제</a>
+                  <span>
+                    참여중
+                  </span>
+                </li>
+                <li class="bx_flex on">
+                  <a href="#" class="ellips">반도체반도체반도체반도체반도체반도체반도체반도체반도체반도체반도체반도체 신생물질 개발 연구 과제</a>
+                  <span>
+                    참여중
+                  </span>
+                </li>
+                <li class="bx_flex">
+                  <a href="#" class="ellips">반도체반도체반도체반도체반도체반도체반도체반도체반도체반도체반도체반도체 신생물질 개발 연구 과제</a>
+                  <span>
+                    참여완료
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="profile_line02 mt24">
+
+            </div>
+          </div>
+          <div class="my_home_profile_box_lfte_tag">
+            <ul class="my_home_tag">
+              <li>
+                <a href=""># 서울대</a>
+              </li>
+              <li>
+                <a href=""># 서울대</a>
+              </li>
+              <li>
+                <a href=""># 서울대</a>
+              </li>
+              <li>
+                <a href=""># 서울대</a>
+              </li>
+              <li>
+                <a href=""># 서울대</a>
+              </li>
+              <li>
+                <a href=""># 서울대</a>
+              </li>
+              <li>
+                <a href=""># 서울대</a>
+              </li>
+              <li>
+                <a href=""># 서울대</a>
+              </li>
+              <li>
+                <a href=""># 서울대</a>
+              </li>
+            </ul>
+            <button class="correction_btn">글수정</button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="my_home_profile_box_right" style="border-top: 1px solid #f5f5f5;">
+        <a class="my_home_profile_top_title" href="#">
+          <h2 class="">
+            K-Chips행사
+          </h2>
+          <button>
+
+          </button>
+        </a>
+        <div class="my_home_profile_swiper">
+          <div class="my_home_Swiper mt16 swiper-container-initialized swiper-container-horizontal">
+            <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+              <div class="swiper-slide my_home_Swiper_card swiper-slide-active"
+                style="width: 232px; margin-right: 8px;">
+                <div class="my_home_Swiper_card_notic">
+                  <h2>2024년 상반기 반도체 대전 행사 진행</h2>
+                  <p>(2024.03.03 13:00~17:00)</p>
+                  <div class="my_home_Swiper_card_notic_bottom mt16">
+                    <img src="/resources/images/pc/qrimg.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide my_home_Swiper_card swiper-slide-next" style="width: 232px; margin-right: 8px;">
+                <div class="my_home_Swiper_card_notic">
+                  <h2>2024년 상반기 반도체 협회 모듬 워크샵</h2>
+                  <p>(2024.03.03 13:00~17:00)</p>
+
+                  <div class="btn_wrap mt12">
+                    <button type="button" class="btn_type03 wp100 mt12">지금 신청하세요</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide my_home_Swiper_card" style="width: 232px; margin-right: 8px;">
+                <div class="my_home_Swiper_card_notic">
+                  <h2>2024년 상반기 반도체 대전 행사 진행</h2>
+                  <p>(2024.03.03 13:00~17:00)</p>
+                  <div class="my_home_Swiper_card_notic_bottom">
+                    <img src="/resources/images/pc/qrimg.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide my_home_Swiper_card" style="width: 232px; margin-right: 8px;">
+                <div class="my_home_Swiper_card_notic">
+                  <h2>2024년 상반기 반도체 협회 모듬 워크샵</h2>
+                  <p>(2024.03.03 13:00~17:00)</p>
+
+                  <div class="btn_wrap mt12">
+                    <button type="button" class="btn_type03 w100">지금 신청하세요</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide my_home_Swiper_card" style="width: 232px; margin-right: 8px;">
+                <div class="my_home_Swiper_card_notic">
+                  <h2>2024년 상반기 반도체 대전 행사 진행</h2>
+                  <p>(2024.03.03 13:00~17:00)</p>
+                  <div class="my_home_Swiper_card_notic_bottom">
+                    <img src="/resources/images/pc/qrimg.png" alt="">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+          </div>
+          <div class="swiper-pagination paginationtyp01 swiper-pagination-clickable swiper-pagination-bullets"></div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="bx_flex column mt40">
+
+
+
+      <!-- K-Chips 평가  -->
+      <div class="my_home_profile_box_right ">
+        <a class="my_home_profile_top_title" href="#">
+          <h2 class="">
+            K-Chips 평가
+          </h2>
+          <button>
+
+          </button>
+        </a>
+        <div class="my_home_profile_swiper">
+          <div class="my_home_Swiper02 mt16 swiper-container-initialized swiper-container-horizontal">
+            <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+              <div class="swiper-slide evaluation_swiper_slide my_home_Swiper_card swiper-slide-active"
+                style="width: 235px; margin-right: 8px;">
+                <div class="my_home_Swiper_card_group">
+
+                  <div class="my_home_Swiper_card_group_bottom mt5">
+                    <div class="bx_flex jc_sb">
+                      <a class="my_home_profile_top_title02" href="#">
+                        <h2 class="">
+                          평가 필요
+                        </h2>
+                        <button>
+
+                        </button>
+                      </a>
+
+                    </div>
+                    <div class="my_home_Swiper_card_evaluation_wrap mt16">
+
+                      <ul class="my_home_Swiper_card_evaluation_profile">
+                        <li>
+                          <div class="evaluation_profile">
+                            <img src="/resources/images/pc/CK_tica1140011765.jpg" alt="">
+
+                          </div>
+                          <p>장원영</p>
+
+                        </li>
+                        <li>
+                          <div class="evaluation_profile">
+                            <img src="/resources/images/pc/CK_tica1140011765.jpg" alt="">
+
+                          </div>
+                          <p>장원영</p>
+
+                        </li>
+                        <li>
+                          <div class="evaluation_profile">
+                            <img src="/resources/images/pc/CK_tica1140011765.jpg" alt="">
+
+                          </div>
+                          <p>장원영</p>
+
+                        </li>
+                        <li>
+                          <div class="evaluation_profile">
+                            <img src="/resources/images/pc/CK_tica1140011765.jpg" alt="">
+
+                          </div>
+                          <p>장원영</p>
+
+                        </li>
+                        <li>
+                          <div class="evaluation_profile">
+                            <img src="/resources/images/pc/CK_tica1140011765.jpg" alt="">
+
+                          </div>
+                          <p>장원영</p>
+
+                        </li>
+                        <li>
+                          <div class="evaluation_profile">
+                            <img src="/resources/images/pc/CK_tica1140011765.jpg" alt="">
+
+                          </div>
+                          <p>장원영</p>
+
+                        </li>
+
+                      </ul>
+
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide evaluation_swiper_slide my_home_Swiper_card swiper-slide-next"
+                style="width: 235px; margin-right: 8px;">
+                <div class="my_home_Swiper_card_group">
+
+                  <div class="my_home_Swiper_card_group_bottom mt5">
+                    <div class="bx_flex jc_sb">
+                      <a class="my_home_profile_top_title02" href="#">
+                        <h2 class="">
+                          평가 완료
+                        </h2>
+                        <button>
+
+                        </button>
+                      </a>
+
+                    </div>
+                    <div class="my_home_Swiper_card_evaluation_wrap mt16">
+
+                      <ul class="my_home_Swiper_card_evaluation_profile">
+
+                        <li>
+                          <div class="evaluation_profile">
+                            <img src="/resources/images/pc/CK_tica1140011765.jpg" alt="">
+
+                          </div>
+                          <p>장원영</p>
+
+                        </li>
+                        <li>
+                          <div class="evaluation_profile">
+                            <img src="/resources/images/pc/CK_tica1140011765.jpg" alt="">
+
+                          </div>
+                          <p>장원영</p>
+
+                        </li>
+
+                        <li>
+                          <div class="evaluation_profile">
+                            <img src="/resources/images/pc/CK_tica1140011765.jpg" alt="">
+
+                          </div>
+                          <p>장원영</p>
+
+                        </li>
+                        <li>
+                          <div class="evaluation_profile">
+                            <img src="/resources/images/pc/CK_tica1140011765.jpg" alt="">
+
+                          </div>
+                          <p>장원영</p>
+
+                        </li>
+                        <li>
+                          <div class="evaluation_profile">
+                            <img src="/resources/images/pc/CK_tica1140011765.jpg" alt="">
+
+                          </div>
+                          <p>장원영</p>
+
+                        </li>
+                        <li>
+                          <div class="evaluation_profile">
+                            <img src="/resources/images/pc/CK_tica1140011765.jpg" alt="">
+
+                          </div>
+                          <p>장원영</p>
+
+                        </li>
+
+                      </ul>
+
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+          </div>
+          <div class="swiper-pagination paginationtyp02 swiper-pagination-clickable swiper-pagination-bullets"></div>
+        </div>
+      </div>
+
+      <div class="my_home_profile_box_right mt40">
+
+        <div class="my_home_profile_swiper">
+          <div class="my_home_Swiper03 mt16 swiper-container-initialized swiper-container-horizontal">
+            <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+              <div class="swiper-slide my_home_Swiper_card swiper-slide-active"
+                style="width: 235px; margin-right: 8px;">
+                <div class="my_home_Swiper_card_group">
+                  <div class="my_home_Swiper_card_group_top on">
+                    <span>참여중</span>
+                  </div>
+                  <div class="my_home_Swiper_card_group_mid">
+                    <h2 class="ellips">
+                      반도체 신생물질 개발 연구 과제
+                    </h2>
+                  </div>
+                  <div class="my_home_Swiper_card_group_bottom mt5">
+                    <a class="my_home_profile_top_title02" href="#">
+                      <h2 class="">
+                        TRB 바로가기
+                      </h2>
+                      <button>
+
+                      </button>
+                    </a>
+                    <div class="my_home_Swiper_card_group_profile_wrap mt16">
+
+                      <ul class="my_home_Swiper_card_group_profile">
+                        <li>
+                          <img src="/resources/images/pc/CK_tica1140011765.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+
+                      </ul>
+
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide my_home_Swiper_card swiper-slide-next" style="width: 235px; margin-right: 8px;">
+                <div class="my_home_Swiper_card_group">
+                  <div class="my_home_Swiper_card_group_top on">
+                    <span>참여중</span>
+                  </div>
+                  <div class="my_home_Swiper_card_group_mid">
+                    <h2 class="ellips">
+                      반도체 신생물질 개발 연구 과제
+                    </h2>
+                  </div>
+                  <div class="my_home_Swiper_card_group_bottom mt5">
+                    <a class="my_home_profile_top_title02" href="#">
+                      <h2 class="">
+                        TRB 바로가기
+                      </h2>
+                      <button>
+
+                      </button>
+                    </a>
+                    <div class="my_home_Swiper_card_group_profile_wrap mt16">
+
+                      <ul class="my_home_Swiper_card_group_profile">
+                        <li>
+                          <img src="/resources/images/pc/CK_tica1140011765.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+
+                      </ul>
+
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide my_home_Swiper_card" style="width: 235px; margin-right: 8px;">
+                <div class="my_home_Swiper_card_group">
+                  <div class="my_home_Swiper_card_group_top on">
+                    <span>참여중</span>
+                  </div>
+                  <div class="my_home_Swiper_card_group_mid">
+                    <h2 class="ellips">
+                      반도체 신생물질 개발 연구 과제
+                    </h2>
+                  </div>
+                  <div class="my_home_Swiper_card_group_bottom mt5">
+                    <a class="my_home_profile_top_title02" href="#">
+                      <h2 class="">
+                        TRB 바로가기
+                      </h2>
+                      <button>
+
+                      </button>
+                    </a>
+                    <div class="my_home_Swiper_card_group_profile_wrap mt16">
+
+                      <ul class="my_home_Swiper_card_group_profile">
+                        <li>
+                          <img src="/resources/images/pc/CK_tica1140011765.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+
+                      </ul>
+
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide my_home_Swiper_card" style="width: 235px; margin-right: 8px;">
+                <div class="my_home_Swiper_card_group">
+                  <div class="my_home_Swiper_card_group_top on">
+                    <span>참여중</span>
+                  </div>
+                  <div class="my_home_Swiper_card_group_mid">
+                    <h2 class="ellips">
+                      반도체 신생물질 개발 연구 과제
+                    </h2>
+                  </div>
+                  <div class="my_home_Swiper_card_group_bottom mt5">
+                    <a class="my_home_profile_top_title02" href="#">
+                      <h2 class="">
+                        TRB 바로가기
+                      </h2>
+                      <button>
+
+                      </button>
+                    </a>
+                    <div class="my_home_Swiper_card_group_profile_wrap mt16">
+
+                      <ul class="my_home_Swiper_card_group_profile">
+                        <li>
+                          <img src="/resources/images/pc/CK_tica1140011765.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+
+                      </ul>
+
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide my_home_Swiper_card" style="width: 235px; margin-right: 8px;">
+                <div class="my_home_Swiper_card_group">
+                  <div class="my_home_Swiper_card_group_top on">
+                    <span>참여중</span>
+                  </div>
+                  <div class="my_home_Swiper_card_group_mid">
+                    <h2 class="ellips">
+                      반도체 신생물질 개발 연구 과제
+                    </h2>
+                  </div>
+                  <div class="my_home_Swiper_card_group_bottom mt5">
+                    <a class="my_home_profile_top_title02" href="#">
+                      <h2 class="">
+                        TRB 바로가기
+                      </h2>
+                      <button>
+
+                      </button>
+                    </a>
+                    <div class="my_home_Swiper_card_group_profile_wrap mt16">
+
+                      <ul class="my_home_Swiper_card_group_profile">
+                        <li>
+                          <img src="/resources/images/pc/CK_tica1140011765.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+
+                      </ul>
+
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide my_home_Swiper_card" style="width: 235px; margin-right: 8px;">
+                <div class="my_home_Swiper_card_group">
+                  <div class="my_home_Swiper_card_group_top on">
+                    <span>참여중</span>
+                  </div>
+                  <div class="my_home_Swiper_card_group_mid">
+                    <h2 class="ellips">
+                      반도체 신생물질 개발 연구 과제
+                    </h2>
+                  </div>
+                  <div class="my_home_Swiper_card_group_bottom mt5">
+                    <a class="my_home_profile_top_title02" href="#">
+                      <h2 class="">
+                        TRB 바로가기
+                      </h2>
+                      <button>
+
+                      </button>
+                    </a>
+                    <div class="my_home_Swiper_card_group_profile_wrap mt16">
+
+                      <ul class="my_home_Swiper_card_group_profile">
+                        <li>
+                          <img src="/resources/images/pc/CK_tica1140011765.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+                        <li>
+                          <img src="/resources/images/pc/group_img.jpg" alt="">
+                        </li>
+
+                      </ul>
+
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+          </div>
+          <div class="swiper-pagination paginationtyp03 swiper-pagination-clickable swiper-pagination-bullets"></div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+    <div class="mo_page_title_wrap03 bx_flex ai_center jc_sb mt40">
+      <div class="bx_flex">
+        <h2 class="mo_page_title_02">
+          나의 경력
+        </h2>
+        <span class="ml8 block">총 10년 3개월</span>
+      </div>
+      <div>
+        <button class="correction_btn">글수정</button>
+      </div>
+    </div>
+
+    <div>
+      <table class="my_work_history_tbl">
+        <colgroup>
+          <col style="width: *;">
+        </colgroup>
+        <tbody>
+          <tr>
+            <th class="bx_flex" style="border-top:1px solid #f5f5f5; ">
+              <p class="work_history_date">2022.03 ~ 2023.03.02</p>
+              <p class="work_history_month ml8">
+                12개월
+              </p>
+            </th>
+          </tr>
+          <tr>
+            <td class="">
+              <div class="bx_flex work_history_name">
+                <p>서울대학교</p>
+                <p>/ 반도체시스템공학과</p>
+              </div>
+              <div class="bx_flex work_history_name">
+                <p>
+                  조교
+                </p>
+                <p>
+                  / 학생관리
+                </p>
+              </div>
+              <div class="work_history_title">
+                <h2>[ 대표 업무 또는 논문 ]</h2>
+              </div>
+
+              <p class="work_history_contents btn_more02_wrap">
+                (2022) Energy-and Area-Efficient CMOS Synapse and Neuron for Spiking Neural Networks With
+                STDP Learning. IEEE TRANSACTIONS ON CIRCUITS AND SYSTEMS I-REGULAR PAPERS. 69, 9
+              </p>
+
+
+              <button type="button" class="btn_more02"><span> 더보기</span></button>
+
+            </td>
+          </tr>
+          <tr>
+            <th class="bx_flex">
+              <p class="work_history_date">2022.03 ~ 2023.03.02</p>
+              <p class="work_history_month ml8">
+                12개월
+              </p>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <div class="bx_flex work_history_name">
+                <p>서울대학교</p>
+                <p>/ 반도체시스템공학과</p>
+              </div>
+              <div class="bx_flex work_history_name">
+                <p>
+                  조교
+                </p>
+                <p>
+                  / 학생관리
+                </p>
+              </div>
+              <div class="work_history_title">
+                <h2>[ 대표 업무 또는 논문 ]</h2>
+              </div>
+
+              <p class="work_history_contents btn_more02_wrap">
+                (2022) Energy-and Area-Efficient CMOS Synapse and Neuron for Spiking Neural Networks With
+                STDP Learning. IEEE TRANSACTIONS ON CIRCUITS AND SYSTEMS I-REGULAR PAPERS. 69, 9
+              </p>
+
+              <button type="button" class="btn_more02"><span> 더보기</span></button>
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="mo_page_title_wrap03 bx_flex ai_center jc_sb mt40">
+      <div class="bx_flex">
+        <h2 class="mo_page_title_02">
+          나의 학력
+        </h2>
+
+      </div>
+      <div>
+        <button class="correction_btn">글수정</button>
+      </div>
+    </div>
+
+    <div>
+      <table class="my_work_history_tbl">
+        <colgroup>
+          <col style="width: *;">
+        </colgroup>
+        <tbody>
+          <tr>
+            <th class="bx_flex" style="border-top:1px solid #f5f5f5; ">
+              <p class="work_history_date">2022.03 ~ 2023.03.02</p>
+              <p class="work_history_month ml8">
+                12개월
+              </p>
+            </th>
+          </tr>
+          <tr>
+            <td class="">
+              <div class="bx_flex work_history_name">
+                <p>서울대학교</p>
+                <p>/ 반도체시스템공학과</p>
+              </div>
+              <div class="bx_flex work_history_name">
+                <p>
+                  조교
+                </p>
+                <p>
+                  / 학생관리
+                </p>
+              </div>
+              <div class="work_history_title">
+                <h2>[ 대표 업무 또는 논문 ]</h2>
+              </div>
+
+              <p class="work_history_contents btn_more02_wrap">
+                (2022) Energy-and Area-Efficient CMOS Synapse and Neuron for Spiking Neural Networks With
+                STDP Learning. IEEE TRANSACTIONS ON CIRCUITS AND SYSTEMS I-REGULAR PAPERS. 69, 9
+              </p>
+
+
+              <button type="button" class="btn_more02"><span> 더보기</span></button>
+
+            </td>
+          </tr>
+          <tr>
+            <th class="bx_flex">
+              <p class="work_history_date">2022.03 ~ 2023.03.02</p>
+              <p class="work_history_month ml8">
+                12개월
+              </p>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <div class="bx_flex work_history_name">
+                <p>서울대학교</p>
+                <p>/ 반도체시스템공학과</p>
+              </div>
+              <div class="bx_flex work_history_name">
+                <p>
+                  조교
+                </p>
+                <p>
+                  / 학생관리
+                </p>
+              </div>
+              <div class="work_history_title">
+                <h2>[ 대표 업무 또는 논문 ]</h2>
+              </div>
+
+              <p class="work_history_contents btn_more02_wrap">
+                (2022) Energy-and Area-Efficient CMOS Synapse and Neuron for Spiking Neural Networks With
+                STDP Learning. IEEE TRANSACTIONS ON CIRCUITS AND SYSTEMS I-REGULAR PAPERS. 69, 9
+              </p>
+
+              <button type="button" class="btn_more02"><span> 더보기</span></button>
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="mo_page_title_wrap03 bx_flex ai_center jc_sb mt40">
+      <div class="bx_flex">
+        <h2 class="mo_page_title_02">
+          프로젝트 수행 경험
+        </h2>
+
+      </div>
+      <div>
+        <button class="correction_btn">글수정</button>
+      </div>
+    </div>
+
+    <div>
+      <table class="my_work_history_tbl">
+        <colgroup>
+          <col style="width: *;">
+        </colgroup>
+        <tbody>
+          <tr>
+            <th class="bx_flex" style="border-top:1px solid #f5f5f5; ">
+              <p class="work_history_date">K-Chips 프로젝트</p>
+              <p class="work_history_month ml8">
+                참여중
+              </p>
+            </th>
+          </tr>
+          <tr>
+            <td class="">
+
+
+              <div class="work_history_title">
+                <h2>[ 과제명 ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                수직 적층형 cell 프랜지스터 공정 개발을 통한 3차원 DRAM 개발 방향 제시
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 참여기간 ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                2021.03~2024.02
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 관할 부처 ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                산업통상자원부
+
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 주요 역할
+                  ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                -
+              </p>
+
+
+
+            </td>
+          </tr>
+          <tr>
+            <th class="bx_flex">
+              <p class="work_history_date">K-Chips 프로젝트</p>
+              <p class="work_history_month ml8">
+                참여중
+              </p>
+            </th>
+          </tr>
+          <tr>
+            <td class="">
+
+
+              <div class="work_history_title">
+                <h2>[ 과제명 ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                수직 적층형 cell 프랜지스터 공정 개발을 통한 3차원 DRAM 개발 방향 제시
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 참여기간 ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                2021.03~2024.02
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 관할 부처 ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                산업통상자원부
+
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 주요 역할
+                  ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                정부 부처에서 주도한 프로젝트로 1년 가량 참여했습니다.
+                프로젝트에서 주요 연구자로서 논문 작업에 참여하였고, 연구성과 기여도를 높이 평가받았습니다.
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 증빙자료
+                  ]</h2>
+              </div>
+
+              <div class="my_home_table_text_list_contents bx_flex mt8">
+
+                <div class="file_list02 wp100">
+                  <!-- 첨부된 파일이 없을 경우 -->
+                  <!-- <p>첨부된 파일이 없습니다.</p> -->
+                  <div class="btn_wrap wp100">
+                    <a href="" class="wp100"><button type="button" class="btn_down_mo wp100"><span
+                          class="wp100 ellips">문서1.PDF</span></button></a>
+                  </div>
+                  <div class="btn_wrap wp100">
+                    <a href="" class="wp100"><button type="button" class="btn_down_mo wp100"><span
+                          class="wp100 ellips">문서1.PDF</span></button></a>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="mo_page_title_wrap03 bx_flex ai_center jc_sb mt40">
+      <div class="bx_flex">
+        <h2 class="mo_page_title_02">
+          연구개발 성과
+        </h2>
+
+      </div>
+      <div>
+        <button class="correction_btn">글수정</button>
+      </div>
+    </div>
+
+    <div>
+      <table class="my_work_history_tbl">
+        <colgroup>
+          <col style="width: *;">
+        </colgroup>
+        <tbody>
+          <tr>
+            <th class="bx_flex" style="border-top:1px solid #f5f5f5; ">
+              <p class="work_history_date">K-Chips 프로젝트</p>
+              <p class="work_history_month ml8">
+                지식재산권 성과
+
+              </p>
+            </th>
+          </tr>
+          <tr>
+            <td class="">
+
+
+              <div class="work_history_title">
+                <h2>[ 국내/해외 ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                국내
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 출원/등록
+                  ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                출원
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 특허명 ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                Method for forming a connection device in a semiconductor device(반도체 배선연결 방법)
+
+
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 출원일자
+                  ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                2023-11-01
+
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 출원번호
+
+                  ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                1234567780
+
+
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 등록일자
+                  ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                -
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 등록번호
+
+                  ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                해당 없음
+
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 주요 역할
+                  ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                -
+              </p>
+
+
+
+            </td>
+          </tr>
+          <tr>
+            <th class="bx_flex">
+              <p class="work_history_date">외부 프로젝트</p>
+              <p class="work_history_month ml8">
+                논문 성과
+              </p>
+            </th>
+          </tr>
+          <tr>
+            <td class="">
+
+
+              <div class="work_history_title">
+                <h2>[ 논문 성과 ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                SCI
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 논문명 ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                Method for forming a connection device in a semiconductor device(반도체 배선연결 방법)
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 저자명 ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                홍길동, 박길동
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 게재일
+                  ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                2023-11-01
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 저널명
+
+                  ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                네이처지
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 주요 역할
+
+                  ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                주요 저자를 돕는 제 1저자로서 논문을 완성하고 수정 보완하였습니다. 다년간 진행된 연구로서, 지속적인 관리가 필요했고 관리자의 역할을 담당했습니다.
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 증빙자료
+                  ]</h2>
+              </div>
+
+              <div class="my_home_table_text_list_contents bx_flex mt8">
+
+                <div class="file_list02 wp100">
+                  <!-- 첨부된 파일이 없을 경우 -->
+                  <!-- <p>첨부된 파일이 없습니다.</p> -->
+                  <div class="btn_wrap wp100">
+                    <a href="" class="wp100"><button type="button" class="btn_down_mo wp100"><span
+                          class="wp100 ellips">문서1.PDF</span></button></a>
+                  </div>
+                  <div class="btn_wrap wp100">
+                    <a href="" class="wp100"><button type="button" class="btn_down_mo wp100"><span
+                          class="wp100 ellips">문서1.PDF</span></button></a>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+            </td>
+          </tr>
+          <tr>
+            <th class="bx_flex">
+              <p class="work_history_date">외부 프로젝트</p>
+              <p class="work_history_month ml8">
+                기타 성과
+              </p>
+            </th>
+          </tr>
+          <tr>
+            <td class="">
+
+
+              <div class="work_history_title">
+                <h2>[ 성과 구분 ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                학술발표
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 성과명 ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                2022년도 반도체 학술회의 발표
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 상세내용 ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                발표회에서 주도 발표자로 발표하고 질의 응답함.
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 대상자
+                  ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                홍길동
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 발생일
+
+                  ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                2022-01-04
+
+              </p>
+              <div class="work_history_title mt8">
+                <h2>[ 주요 역할
+
+                  ]</h2>
+              </div>
+
+              <p class="work_history_contents">
+                -</p>
+              <div class="work_history_title mt8">
+                <h2>[ 증빙자료
+                  ]</h2>
+              </div>
+
+              <div class="my_home_table_text_list_contents bx_flex mt8">
+
+                <div class="file_list02 wp100">
+                  <!-- 첨부된 파일이 없을 경우 -->
+                  <!-- <p>첨부된 파일이 없습니다.</p> -->
+                  <div class="btn_wrap wp100">
+                    <a href="" class="wp100"><button type="button" class="btn_down_mo wp100"><span
+                          class="wp100 ellips">문서1.PDF</span></button></a>
+                  </div>
+                  <div class="btn_wrap wp100">
+                    <a href="" class="wp100"><button type="button" class="btn_down_mo wp100"><span
+                          class="wp100 ellips">문서1.PDF</span></button></a>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
+  </div>
+  <!-- // container -->
+  <!-- footer -->
+  <footer class="footer" id="footer">
+
+    <p class="footer_copyright">한국반도체산업협회 / 한국반도체연구조합경기도
+      성남시 분당구 판교역로 182(삼평동 644번지) 한국반도체산업협회회관 9~12층 l 전화 : 02-576-3472 ~ 4 l 팩스 : 02-570-5269 / 5219
+    </p>
+    <p class="footer_copyright mt16"> © Copyright 2017 - KOREA SEMICONDUCTOR INDUSTRY ASSOCIATION</p>
+  </footer>
+
+
+  <!-- 더보기 스크립트 -->
+
+  <script>
+    $(document).ready(function () {
+
+      $('.btn_more02').on('click', function () {
+        $(this).toggleClass('on');
+        if ($(this).hasClass('on')) {
+          $(this).siblings('.btn_more02_wrap').addClass('on');
+          $(this).find('span').text('접기'); //
+        } else {
+          $(this).siblings('.btn_more02_wrap').removeClass('on');
+          $(this).find('span').text('더보기');
+        }
+      });
+    });
+  </script>
+
+
+  <!-- 스와이퍼 -->
+
+  <script>
+    var swiper = new Swiper(".my_home_Swiper", {
+      slidesPerView: "auto",
+      spaceBetween: 8,
+      pagination: {
+        el: ".paginationtyp01",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <script>
+    var swiper = new Swiper(".my_home_Swiper02", {
+      slidesPerView: "auto",
+      spaceBetween: 8,
+      pagination: {
+        el: ".paginationtyp02",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <script>
+    var swiper = new Swiper(".my_home_Swiper03", {
+      slidesPerView: "auto",
+      spaceBetween: 8,
+      pagination: {
+        el: ".paginationtyp03",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+</body>
+
+</html>

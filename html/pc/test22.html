@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>탭 플러그인</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- jQuery 라이브러리 호출 [CDN || Local] -->
+    <!--<script src="https://code.jquery.com/jquery-1.10.2.js></script>-->
+    <!--<script>window.jQuery||document.write('<script src="../src/js/libs/jquery-1.7.2.min.js"><\/script>')</script>-->
+</head>
+
+<style>
+    * { margin: 0; padding: 0;}
+    ul {list-style: none}
+    body { margin: 100px;}
+    .hidden_obj { position: absolute; top: 0; left: 0; width: 1px; height: 1px; overflow: hidden; visibility: hidden; font-size: 0; line-height: 0 }
+    .tab_wrap { position: relative;width: 500px; }
+    .tabList { overflow: hidden;}
+    .tabList:after {display:block;content:'';clear:both }
+    .tabList li { float: left; width:33.2%; background: #cfcfcf;}
+    .tabList li.on { background: #58647a;}
+    .tabList li a { display: block; padding: 10px; border: 1px solid #e4e4e4;color:#2f3743;text-decoration: none;}
+    .tabGroup li { position:absolute; width: 100%; background: #a6c4e8;  height: 150px; display: none;}
+    .tabGroup li:first-child { display: block;}
+    .tabGroup li div { padding: 10px;}
+    .btn-ctrl { position: absolute; right: 10px; top: -30px;}
+</style>
+
+<body>
+
+<div class="tab_wrap">
+    <ul class="tabList">
+        <li class="on"><a href="#tab1">공지사항</a></li>
+        <li><a href="#tab2">이용안내</a></li>
+        <li><a href="#tab3">QnA</a></li>
+    </ul>
+    <div style="position: relative; height: 150px;">
+        <ul class="tabGroup">
+            <li id="tab1" class="tab-cont">
+                <h3 class="hidden_obj">공지사항</h3>
+                <div>
+                    공지사항 콘텐츠입니다.공지사항 콘텐츠입니다.공지사항 콘텐츠입니다.공지사항 콘텐츠입니다.공지사항 콘텐츠입니다.공지사항 콘텐츠입니다.공지사항 콘텐츠입니다.
+                    공지사항 콘텐츠입니다.공지사항 콘텐츠입니다.공지사항 콘텐츠입니다.공지사항 콘텐츠입니다.공지사항 콘텐츠입니다.공지사항 콘텐츠입니다.
+                </div>
+            </li>
+            <li id="tab2" class="tab-cont">
+                <h3 class="hidden_obj">이용안내</h3>
+                <div>
+                    이용안내 콘텐츠 <br/>
+                    이용안내 콘텐츠 <br/>
+                    이용안내 콘텐츠 <br/>
+                    이용안내 콘텐츠 <br/>
+                    이용안내 콘텐츠 <br/>
+                </div>
+            </li>
+            <li id="tab3" class="tab-cont">
+                <h3 class="hidden_obj">QnA</h3>
+                <div>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolor et natus sit
+                     soluta? Illo incidunt molestias vero! Aliquid, exercitationem!
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="btn-ctrl"><a href="#none" class="stop"><img src="../images/stop.png" alt="중지"/></a></div>
+</div>
+
+
+<script>
+(function($){
+
+$.extend($.fn, {
+    tabModule : function(options) {
+
+        $.fn.tabModule.defaults = {
+            selector : 'a',
+            tabContWrap : 'tabGroup',
+            tabContents : 'tab-cont',
+            speed : 400,
+            visibleCont : 1,
+            autoRolling : false,
+            roofTime : 2000,
+            animate : false,
+            autoControl : false
+        };
+
+        return this.each(function(){
+            var that = $(this),
+                opts = $.extend({}, $.fn.tabModule.defaults, options || {}),
+                auto = true,
+                intervalId = null,
+                currIdx = 0,
+                stop;
+            that.data('tabList',that.closest('ul'));
+            that.data('autoCtrl', $('.btn-ctrl > a'));
+
+            that.find(opts.selector).on('click focus', function(){
+                var target = $(this),
+                    idx = $(this).parent().index();
+                currIdx = idx;
+                showTab(target, idx);
+                return false;
+            });
+
+            function showTab(target, idx) {
+                target.parent().radioClass();
+                var displayTab = $('.' +opts.tabContWrap).children().eq(idx);
+
+                if(!opts.animate) {
+                    displayTab.show().siblings().hide();
+                } else {
+                    displayTab.stop().fadeTo(opts.speed, 1)
+                            .siblings().stop().fadeTo(opts.speed, 0);
+                }
+            }
+
+            opts.autoRolling ? intervalId = setInterval(rollingTab, opts.roofTime) :
+                    that.find(opts.selector).eq(opts.visibleCont - 1).trigger('click');
+
+            function rollingTab() {
+                currIdx++;
+                if (currIdx == $('.' + opts.tabContents).length) {
+                    currIdx = 0;
+                }
+                that.find(opts.selector).eq(currIdx).trigger('click');
+            }
+
+            that.data('tabList').on({
+                'mouseenter': function(){
+                    // if(!auto) return false;
+                    clearInterval(intervalId);
+                },
+                'mouseleave': function(){
+                    if(stop == 'stop' || (opts.autoRolling == false)) return false;
+                    intervalId = setInterval(rollingTab, opts.roofTime);
+                }
+            });
+
+            !opts.autoControl ? that.data('autoCtrl').parent().hide() : that.data('autoCtrl').parent().show();
+
+            that.data('autoCtrl').on({
+                click : function() {
+                    var _self = $(this),
+                        status = _self.attr('class');
+                    if(status == 'stop') {
+                        _self.attr('class','play');
+                        _self.find('img').imgReplace('stop','play');
+                        clearInterval(intervalId);
+                    } else {
+                        _self.attr('class','stop');
+                        _self.find('img').imgReplace('play','stop')
+                        intervalId = setInterval(rollingTab, opts.roofTime);
+                    }
+                    stop = status;
+                }
+            })
+
+        });
+    },
+
+    radioClass : function(opts) {
+        $.fn.radioClass.defaults = {className : 'on'};
+        opts = $.extend({}, $.fn.radioClass.defaults, opts || {})
+        return this.each(function(){
+            $(this).siblings('.' + opts.className).removeClass(opts.className).end().addClass(opts.className);
+        });
+    },
+
+    imgReplace : function(img1, img2) {
+        return this.each(function(){
+            var target = $(this);
+            target.attr('src', function(){
+                return $(this).attr('src').replace(img1, img2)
+            })
+        })
+    }
+})
+
+
+
+})(jQuery)
+
+$('.tabList').tabModule({
+animate : true,
+autoRolling : true,
+autoControl : true
+});
+</script>
+
+</body>
+</html>

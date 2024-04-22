@@ -1,0 +1,14 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame">
+<path id="Vector" d="M36 51L47.2612 43.9263C49.4536 42.6912 52.0447 42.6912 54.2371 43.9263L65 50.8877" stroke="#565555" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M38 29C40.2727 24.4444 44.8182 22 50.6033 22C56.2851 22 60.8306 24.3333 63 29" stroke="#565555" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="Group">
+<path id="Vector_3" d="M57.3677 60.5317L58.8356 63.9013C58.8356 63.9013 77.4989 69.9033 79.5959 73.694C81.2735 76.7477 83.1609 80.9596 83.9997 86.5405" stroke="#565555" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M42 60L40.5118 63.3684C40.5118 63.3684 21.8031 69.4737 19.4646 73.1579C17.126 76.8421 15.8504 80.4211 15 86" stroke="#565555" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M41 64C41 64 43.5435 69 49.5109 69C55.4783 69 58.2174 65.3725 59 64" stroke="#565555" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path id="Vector_6" d="M31 30.0847C31.1083 28.661 31.7583 25.4068 32.2999 24.0847C32.8415 22.661 33.4914 21.339 34.2497 20.2203C39.2326 13.7119 45.732 13 50.7149 13H50.8232H50.9315C51.1482 13 51.2565 13 51.4731 13C51.5815 13 51.5815 13 51.6898 13C51.7981 13 52.0148 13 52.1231 13C56.9976 13.3051 63.1721 14.9322 67.7217 20.8305C68.8049 22.2542 69.5631 23.8814 70.1048 25.5085C70.1048 25.5085 71.188 29.3729 70.9714 31" stroke="#565555" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_7" d="M32 45.7391C35.2551 54.6087 43.7185 62 50.4457 62C57.173 62 65.8534 55.559 69 45" stroke="#565555" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_8" d="M65.8619 45.7848L60.3043 46C59.046 46 57.7877 45.6772 56.7391 45.0316L52.0205 42.019C51.0767 41.3734 49.8184 41.481 48.8747 42.1266L46.6726 43.8481C44.7852 45.2468 42.5831 45.8924 40.2762 45.8924L35.1381 45.7848C32.3069 45.7848 30 43.3101 30 40.4051V34.3797C30 31.3671 32.3069 29 35.1381 29H65.8619C68.6931 29 71 31.4747 71 34.3797V40.4051C71 43.4177 68.6931 45.7848 65.8619 45.7848Z" stroke="#3090CF" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

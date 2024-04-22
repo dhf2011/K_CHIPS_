@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>K-Chips</title>
+  <link rel="stylesheet" href="../../resources/css/mo/swiper.min.css">
+  <link rel="stylesheet" href="../../resources/css/mo/common.css">
+  <link rel="stylesheet" href="../../resources/css/mo/style.css">
+  <script src="../../resources/js/jquery-3.6.0.min.js"></script>
+  <script src="../../resources/js/swiper.min.js"></script>
+  <script src="../../resources/js/common_mo.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header" id="header">
+    <!-- <div class="hd_back_ic">
+          <img src="/resources/images/mo/back_ic.svg" alt="">
+        </div> -->
+    <h1 class="header_logo"><a href="#none"><img src="../../resources/images/mo/logout.svg"
+          alt="K-Chips 반도체 인재양성 플랫폼"></a></h1>
+    <!-- 햄버거버튼 임시미노출 -->
+    <button type="btn" class="header_btn_bar">
+      <span class="blind">전체메뉴</span>
+    </button>
+
+    <!-- 햄버거 내용 -->
+    <div class="hamburger_content">
+      <div class="bx_flex jc_sb hamburger_content_top ai_ct">
+        <div class="">
+          <button class="btn_round02">
+            로그인
+          </button>
+          <!-- 로그인 하면 로그인>로그아웃 회원가입>홍길동님 으로 변경 -->
+          <button class="btn_round02 fc_White back_clr_333 ">
+            회원가입
+          </button>
+        </div>
+
+        <div>
+
+        </div>
+      </div>
+      <aside class="h_side_bar">
+        <div class="h_side_bar_close">
+
+
+          <div class="h_side_bar_wrap mt20">
+            <div class="lnb_wrap">
+              <ul class="lnb_li_dep1">
+                <li class="lnb_dep1 has_dep2"><!-- 활성화 시 .on 클래스 -->
+                  <a href="javascript:void(0);">K-CHIPS</a>
+                  <ul class="lnb_li_dep2">
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">사업소개</a>
+                    </li>
+                    <li class="lnb_dep2 has_dep3">
+                      <a href="javascript:void(0);">투자기관</a>
+                      <ul class="lnb_li_dep3">
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제계획서 등록</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제 협약</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">지식재산권 협약</a>
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">협약변경</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">수행기관</a>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">운영위원회</a>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">CI 소개</a>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">웹진 소개</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="lnb_dep1 has_dep2"><!-- 하위 메뉴가 있을 경우 .has_dep2 클래스 추가 -->
+                  <a href="javascript:void(0);">PROJECT</a>
+                  <ul class="lnb_li_dep2">
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">과제수행현황</a>
+                    </li>
+                    <li class="lnb_dep2 has_dep3">
+                      <a href="javascript:void(0);">협약</a>
+                      <ul class="lnb_li_dep3">
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제계획서 등록</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제 협약</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">지식재산권 협약</a>
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">협약변경</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">사업운영</a>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">연구비 관리 </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="lnb_dep1 has_dep2">
+                  <a href="javascript:void(0);">HR</a>
+                  <ul class="lnb_li_dep2">
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">인재찾기</a>
+                    </li>
+                    <li class="lnb_dep2 has_dep3">
+                      <a href="javascript:void(0);">참여연구원 현황</a>
+                      <ul class="lnb_li_dep3">
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제계획서 등록</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제 협약</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">지식재산권 협약</a>
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">협약변경</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">취업성과</a>
+                    </li>
+
+                  </ul>
+                </li>
+                <li class="lnb_dep1 has_dep2">
+                  <a href="javascript:void(0);">TRB</a>
+                  <ul class="lnb_li_dep2">
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">소개(인용방법)</a>
+                    </li>
+                    <li class="lnb_dep2 has_dep3">
+                      <a href="javascript:void(0);">테크니컬 리뷰보드</a>
+                      <ul class="lnb_li_dep3">
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제계획서 등록</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제 협약</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">지식재산권 협약</a>
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">협약변경</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">참여하기</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="lnb_dep1 has_dep2">
+                  <a href="javascript:void(0);">NOTICE</a>
+                  <ul class="lnb_li_dep2">
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">공지사항</a>
+                    </li>
+                    <li class="lnb_dep2 has_dep3">
+                      <a href="javascript:void(0);">설문조사</a>
+                      <ul class="lnb_li_dep3">
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제계획서 등록</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제 협약</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">지식재산권 협약</a>
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">협약변경</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">전자 알람</a>
+                    </li>
+
+                  </ul>
+
+                </li>
+                <li class="lnb_dep1 has_dep2">
+                  <a href="javascript:void(0);">MY HOME</a>
+                  <ul class="lnb_li_dep2">
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">나의 홈</a>
+                    </li>
+                    <li class="lnb_dep2 has_dep3">
+                      <a href="javascript:void(0);">정산 결과 확인</a>
+                      <ul class="lnb_li_dep3">
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제계획서 등록</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+                          <a href="javascript:void(0);">과제 협약</a>
+
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">지식재산권 협약</a>
+                        </li>
+                        <li class="lnb_dep3">
+
+                          <a href="javascript:void(0);">협약변경</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="lnb_dep2">
+                      <a href="javascript:void(0);">회원정보수정</a>
+                    </li>
+
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </aside>
+    </div>
+
+    <!-- gnb menu open : .on class -->
+
+    <!-- 활성화시 백그라운드 이미지 추가 필요 -->
+
+    <!-- gnb menu open : .on class -->
+  </header>
+
+
+  <!-- // header -->
+  <!-- gnb -->
+
+  <!-- // gnb -->
+  <!-- container -->
+  <div class="container" id="container">
+    <div class="container_head bx_flex jc_sb ai_ct">
+      <button class="back_btn">
+        back
+      </button>
+      <div>
+        <div class="sel_typ2 ml10 " style="width: 88px;"><!-- 선택 시 .on class -->
+          <!-- 23.08.31 select 수정 -->
+          <select id="dgriCd" name="dgriCd">
+            <option value="" selected="selected" disabled="disabled">사업소개</option>
+            <option value="dgriCd01">웹진 소개</option>
+            <option value="dgriCd02">석사</option>
+            <option value="dgriCd03">박사</option>
+          </select>
+          <label for="wrkplcTypeCd" class="icoArrow"></label>
+        </div>
+      </div>
+      <div style="width: 24px;">
+
+      </div>
+    </div>
+
+    <div class="contents02" style="padding-bottom: 80px;">
+      <div class="business_introduction_text mt24">
+        <div class="business_introduction_text_title">
+          <img src="../../resources/images/pc/business_logo.svg" alt="">
+          <h2 class="mt16"> 민관공동투자 반도체 고급인력 양성 사업</h2>
+        </div>
+        <div class="business_introduction_text_contents mt8">
+          <p>민관공동투자 반도체 고급인력 양성사업 ‘K-Chips’는 산업통상자원부와 우리나라 반도체 기업이 함께, 우리나라 반도체 산업에서 필요한 파급효과가 큰 반도체 R&amp;D를 연구하고, 이로
+            인해 반도체 석박사 고급인력을 양성합니다. 동 사업에서는 연구개발에 산업 전문가(엔지니어가) 전 수행기관에 참여하여 현장형 연구 인력을 양성하고, 우리나라의 반도체 기술력을 확보합니다. 반도체
+            산업, 대학, 정부의 협력관계를 구축하여 건강한 반도체 연구 환경을 조성합니다.</p>
+          <span class="mt8">*선행 사업 : ‘미래반도체소자 원천기술개발사업’</span>
+        </div>
+        <div class="mt8">
+          <img src="/resources/images/mo/business_img01.svg" alt="">
+        </div>
+        <div class="bx_flex gap24 mt54 jc_sb column mt10 gap16">
+          <div class="business_color_box01 bx_flex jc_sb ai_ct ">
+            <h2>
+              산업지향 <br>
+              원천기술 개발
+            </h2>
+            <img src="/resources/images/mo/business_color_box01.png" alt="">
+
+          </div>
+          <div class="business_color_box02 bx_flex jc_sb ai_ct">
+            <h2>
+              산업지향 <br>
+              원천기술 개발
+            </h2>
+            <img src="/resources/images/mo/business_color_box02.png" alt="">
+
+          </div>
+          <div class="business_color_box03 bx_flex jc_sb ai_ct">
+            <h2>
+              산업지향 <br>
+              원천기술 개발
+            </h2>
+            <img src="/resources/images/mo/business_color_box03.png" alt="">
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+      <div class="business_introduction_wrap02 mt40">
+        <div class="business_introduction_wrap02_full">
+          <h2 class="business_information_title">
+            사업정보
+          </h2>
+          <div class="business_information_wrap mt25">
+            <ul class="bx_flex jc_sb column">
+              <li>
+                <h2>
+                  규모
+                </h2>
+                <p style="color:#0094EA;">
+                  2,228억원
+                </p>
+              </li>
+              <li>
+                <h2>
+                  투자기관
+                </h2>
+                <p>
+                  산업통상자원부,삼성전자,SK하이닉스 外
+                </p>
+              </li>
+              <li>
+                <h2>
+                  사업 기간
+                </h2>
+                <p>
+                  2023년-2032년 (10년)
+                </p>
+              </li>
+              <li>
+                <h2>
+                  대상
+                </h2>
+                <p>
+                  대학 및 연구소
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business_introduction_block01 mt5">
+        <h2 class="business_introduction_block_title">
+          사업 목표
+        </h2>
+        <div class="bx_flex jc_sb column">
+          <div class="target_item bx_flex jc_sb">
+            <div class="bx_flex">
+              <span class="mt10">1</span>
+              <h2 class="mt10">반도체 실무투입형<br>
+                고급인력 양성</h2>
+            </div>
+            <img src="../../resources/images/pc/target_item01.svg" alt="">
+          </div>
+          <div class="target_item bx_flex jc_sb">
+            <div class="bx_flex">
+              <span class="mt10">2</span>
+              <h2 class="mt10">연구기술개발<br>
+                (특허, 논문)</h2>
+            </div>
+            <img src="../../resources/images/pc/target_item02.svg" alt="">
+          </div>
+          <div class="target_item bx_flex jc_sb">
+            <div class="bx_flex">
+              <span class="mt10">3</span>
+              <h2 class="mt10">기업 수요형<br>
+                연구개발 체계구축</h2>
+            </div>
+            <img src="../../resources/images/pc/target_item03.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="business_introduction_block01 ">
+        <h2 class="business_introduction_block_title">
+          전략 분야
+        </h2>
+        <div class="business_img mt16">
+          <img src="/resources/images/mo/business_img02.svg" alt="">
+
+        </div>
+      </div>
+      <div class="business_introduction_block01 ">
+        <h2 class="business_introduction_block_title">
+          사업개념
+        </h2>
+        <div class="business_img mt16">
+          <img src="/resources/images/mo/business_img03.svg" alt="">
+
+        </div>
+      </div>
+      <div class="business_introduction_block01 mt5">
+        <h2 class="business_introduction_block_title">
+          추진 전략
+        </h2>
+        <div class="bx_flex jc_sb mt24 column gap16">
+          <div class="business_strategy_item bx_flex">
+            <img src="/resources/images/mo/business_strategy01.svg" alt="">
+            <div class="business_strategy_title">
+              <h2>
+                투자기업 밀착형 R&amp;D
+
+              </h2>
+              <p>
+                기업수요반영, 기업 엔지니어 기술멘토링
+                산업형 R&amp;D 전문인력 양성
+              </p>
+            </div>
+
+          </div>
+          <div class="business_strategy_item bx_flex ">
+            <img src="/resources/images/mo/business_strategy02.svg" alt="">
+            <div class="business_strategy_title">
+              <h2>
+                반도체 인재육성 체계화
+
+              </h2>
+              <p>
+                고급인력 자격 검증·평가 프로세스 정립,
+                기업연계 HR 프로그램 시행
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+  <!-- // container -->
+  <!-- footer -->
+  <footer class="footer" id="footer">
+
+    <p class="footer_copyright">한국반도체산업협회 / 한국반도체연구조합경기도
+      성남시 분당구 판교역로 182(삼평동 644번지) 한국반도체산업협회회관 9~12층 l 전화 : 02-576-3472 ~ 4 l 팩스 : 02-570-5269 / 5219
+    </p>
+    <p class="footer_copyright mt16"> © Copyright 2017 - KOREA SEMICONDUCTOR INDUSTRY ASSOCIATION</p>
+  </footer>
+
+
+</body>
+
+</html>

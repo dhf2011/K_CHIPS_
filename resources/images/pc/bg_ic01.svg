@@ -1,0 +1,21 @@
+<svg width="703"  height="660" viewBox="0 0 703 660" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" id="moon-wrap" clip-rule="evenodd" d="M288.884 656.297C292.777 660.288 299.046 660.364 302.873 656.516L699.412 257.776C703.314 253.851 703.171 247.363 699.095 243.402L452.057 3.35987C449.932 1.29489 447.044 0.249564 444.152 0.499189L9.62948 38.0129C4.15273 38.4858 0.216845 43.3946 0.907054 48.9362C30.6684 287.884 136.366 499.952 288.884 656.297Z" fill="#0099D8" fill-opacity="0.4"/>
+<style type="text/css">
+    <![CDATA[
+    #moon-wrap {
+    -webkit-animation: moon-wrap-anim 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) alternate infinite;
+    animation: moon-wrap-anim 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) alternate infinite;
+    }
+    @-webkit-keyframes moon-wrap-anim {
+    0% { -webkit-transform: translate(0, 0px); }
+    100% { -webkit-transform: translate(0, -15px); }
+    }
+    @keyframes moon-wrap-anim {
+    0% { transform: translate(0, 0px); }
+    100% { transform: translate(0, -15px); }
+    }
+
+    ]]>
+  </style>
+
+</svg>
