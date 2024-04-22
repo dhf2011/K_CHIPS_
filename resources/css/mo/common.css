@@ -197,8 +197,8 @@
 .header .hd_back_ic img{color: #646464;}
 .header_logo {width:80px}
  /* 햄버거 */
-.header_btn_bar {z-index: 9999999999999; width:24px;height:24px;background:url('/resources/images/mo/hamburger.svg') no-repeat center;background-size:24px auto}
-.header_btn_bar.on {background:url('/resources/images/mo/hamburger_close.svg') no-repeat center;background-size:24px}
+.header_btn_bar {z-index: 9999999999999; width:24px;height:24px;background:url('/K_CHIPS_/resources/images/mo/hamburger.svg') no-repeat center;background-size:24px auto}
+.header_btn_bar.on {background:url('/K_CHIPS_/resources/images/mo/hamburger_close.svg') no-repeat center;background-size:24px}
 .hamburger_content{transition: all 0.2s ease-in; z-index:999; position: absolute; top:0px;left: 100%; width: 100vw; height: 100vh; background-color: #fff;}
 .hamburger_content.on{left: 0% !important;}
 .hamburger_content_top{height: 52px; padding: 0 20px;}
@@ -438,8 +438,8 @@ input[type="checkbox"] {position:absolute;left:0;top:0;margin:-1px;padding:0;wid
 .chk_ty2:checked:disabled + label:before {background-image:url('../../images/pc/icon_chk_chked_dis02.png')}
 
 .chk_ty_star + label {display: flex; padding-right: 8px; padding-left:32px;font-family: Pretendard;font-size: 16px;    font-style: normal;    font-weight: 400;    line-height: 28px; /* 150% */    letter-spacing: -0.5px; }
-.chk_ty_star + label:before {content:'';display:block;position:absolute;left:0;top:2px;width:24px;height:24px;background-image:url('/resources/images/mo/chek_star_off.svg');background-repeat:no-repeat;background-position:left top;background-size:100%}
-.chk_ty_star:checked + label:before {background-image:url('/resources/images/mo/chek_star.svg')}
+.chk_ty_star + label:before {content:'';display:block;position:absolute;left:0;top:2px;width:24px;height:24px;background-image:url('/K_CHIPS_/resources/images/mo/chek_star_off.svg');background-repeat:no-repeat;background-position:left top;background-size:100%}
+.chk_ty_star:checked + label:before {background-image:url('/K_CHIPS_/resources/images/mo/chek_star.svg')}
 .chk_ty_star:disabled + label:before {background-image:url('../../images/pc/icon_chk_dis02.png')}
 .chk_ty_star:checked:disabled + label:before {background-image:url('../../images/pc/icon_chk_chked_dis02.png')}
 
@@ -513,7 +513,7 @@ input[type="radio"].radio_ty2 + label {font-size:16px;vertical-align:middle}
 
 .btn_more02{ margin-top:20px;width:100%;height:40px;background:#fff;border:1px solid #e6e6e6;border-radius:5px}
 .btn_more02 span {padding-right:20px;position:relative;font-weight:700;color:#646464;line-height:38px;}
-.btn_more02 span::after{transition: all 0.2s ease-in; content: "" ; background:url('/resources/images/mo/icon_arr_gray02.svg') no-repeat right center;background-size:18px; width: 18px; height: 18px; position: absolute; top: -1px; right: 0; }
+.btn_more02 span::after{transition: all 0.2s ease-in; content: "" ; background:url('/K_CHIPS_/resources/images/mo/icon_arr_gray02.svg') no-repeat right center;background-size:18px; width: 18px; height: 18px; position: absolute; top: -1px; right: 0; }
 .btn_more02.on span::after{transform: rotate(180deg); }
 .btn_more02_wrap{height: 20px;  overflow: hidden; transition: all 0.3s ease-in;}
 .btn_more02_wrap.on{height: auto; }
@@ -546,7 +546,7 @@ input[type="radio"].radio_ty2 + label {font-size:16px;vertical-align:middle}
 
 
 .btn_down_mo {padding: 8px 20px; font-size:16px; font-weight:700;border-radius:4px;color:#333;background:#fff; border:1px solid #0075CA;}
-.btn_down_mo span {text-align: left; display:block;line-height: 22px; padding:0 20px 0px 0px;font-size: 14px;font-weight: 300; background:url('/resources/images/pc/ico16_download.svg') no-repeat right center;background-size:16px auto;letter-spacing:-1px}
+.btn_down_mo span {text-align: left; display:block;line-height: 22px; padding:0 20px 0px 0px;font-size: 14px;font-weight: 300; background:url('/K_CHIPS_/resources/images/pc/ico16_download.svg') no-repeat right center;background-size:16px auto;letter-spacing:-1px}
 .btn_down_mo:hover {background:#d8d8d8}
 .btn_down_mo:disabled {border-color:1px solid #999; background-color: #fff;}
 .btn_down_mo:disabled span{color: #999; background:url('../../images/pc/ico16_download.svg') no-repeat right center;}
@@ -554,7 +554,7 @@ input[type="radio"].radio_ty2 + label {font-size:16px;vertical-align:middle}
 
 
 .btn_file_mo {padding: 8px 20px; font-size:16px; font-weight:700;border-radius:4px;color:#333;background:#fff; border:1px solid #0075CA;}
-.btn_file_mo span {text-align: left; display:inline-block;line-height: 24px; padding:0 20px 0px 0px;font-size: 14px;font-weight: 300; background:url('/resources/images/pc/ico16_close.svg') no-repeat right center;background-size:16px auto;letter-spacing:-1px}
+.btn_file_mo span {text-align: left; display:inline-block;line-height: 24px; padding:0 20px 0px 0px;font-size: 14px;font-weight: 300; background:url('/K_CHIPS_/resources/images/pc/ico16_close.svg') no-repeat right center;background-size:16px auto;letter-spacing:-1px}
 .btn_file_mo:hover {background:#d8d8d8}
 .btn_file_mo:disabled {border-color:1px solid #999; background-color: #fff;}
 .btn_file_mo:disabled span{color: #999; background:url('../../images/pc/ico16_close.svg') no-repeat right center;}
