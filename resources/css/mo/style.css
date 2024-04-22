@@ -33,7 +33,7 @@
     .recom_word > li {width:33.3%}
 }
 
-.log_out_btn{color: #323232 !important; padding-left: 17px; background-image: url(/resources/images/mo/logout.svg); background-repeat: no-repeat; background-position: left; background-size: 12px 12px;}
+.log_out_btn{color: #323232 !important; padding-left: 17px; background-image: url(/K_CHIPS_/resources/images/mo/logout.svg); background-repeat: no-repeat; background-position: left; background-size: 12px 12px;}
 
 
 /* 아이디 비밀번호 찾기 */
@@ -44,7 +44,7 @@
 
 .password_find_nv li + li{ margin-left: 30px;}
 .password_find_nv li { position: relative; font-size: 14px; color: #969696;}
-/* .password_find_nv li + li::before {content: ""; position: absolute; top: 3px; left: -15px; width: 12px; height: 12px;background-repeat: no-repeat;  background-image: url(/resources/images/pc/icon_arr_gray4_r.png);} */
+/* .password_find_nv li + li::before {content: ""; position: absolute; top: 3px; left: -15px; width: 12px; height: 12px;background-repeat: no-repeat;  background-image: url(/K_CHIPS_/resources/images/pc/icon_arr_gray4_r.png);} */
 .password_find_nv li .on{ color: #323232;}
 
 .location{margin-left: 3px; }
@@ -54,9 +54,9 @@
 .text_hidden {    position: absolute;    width: 1px;    height: 1px;    overflow: hidden;    clip: rect(1px 1px 1px 1px);    font-size: 2px;    line-height: 0.5;    margin: 0 !important;}
 .snsLogBox ul{display: flex; justify-content: center; gap: 20px; }
 .snsLogBox a{width: 45px; height: 45px;}
-.snsNaver{background-image: url(/resources/images/pc/ico_naver.png); background-size: cover;}
-.snsKakao{background-image: url(/resources/images/pc/ico_kakao.png); background-size: cover;}
-.snsGoogle{background-image: url(/resources/images/pc/icon_circle_google.png); background-size: cover;}
+.snsNaver{background-image: url(/K_CHIPS_/resources/images/pc/ico_naver.png); background-size: cover;}
+.snsKakao{background-image: url(/K_CHIPS_/resources/images/pc/ico_kakao.png); background-size: cover;}
+.snsGoogle{background-image: url(/K_CHIPS_/resources/images/pc/icon_circle_google.png); background-size: cover;}
 
 
 .login_chk_wrap{display: flex; gap: 20px; justify-content: end;}
@@ -115,7 +115,7 @@
 
 /*23.08.28 수정완료 */
 
-.Kwrd_list ul li .Kwrd_close_btn{cursor: pointer; position: absolute; top: 8px; right: 10px; height: 10px; width: 10px; background-image: url(/resources/images/pc/xmark_black.svg); background-size: cover;}
+.Kwrd_list ul li .Kwrd_close_btn{cursor: pointer; position: absolute; top: 8px; right: 10px; height: 10px; width: 10px; background-image: url(/K_CHIPS_/resources/images/pc/xmark_black.svg); background-size: cover;}
 .Kwrd_list ul li button{font-size: 14px;position: relative; color: #2470be; padding: 5px 25px 5px 5px; border-radius: 20px; border: 1px solid #2470be;} 
 .Kwrd_list ul li{} 
 .Kwrd_list ul{display: flex; gap: 5px; flex-wrap: wrap;}
@@ -123,8 +123,8 @@
 
 
 .list_add_delete .list_add_line::before{content: "" ;background-color: #eeeeee; width: 100%; height: 10px; position: absolute; top: -40px; left: 0px;}
-.list_add_delete .list_add_li .close_btn{content: "" ; background-image: url(/resources/images/mo/btn_gnb_close.png); background-size: cover; width: 12px; height: 12px; position: absolute; top: -20px; right: 5px;}
-.list_add_delete .list_add_li .close_btn{content: "" ; background-image: url(/resources/images/mo/btn_gnb_close.png); background-size: cover; width: 12px; height: 12px; position: absolute; top: -20px; right: 5px;}
+.list_add_delete .list_add_li .close_btn{content: "" ; background-image: url(/K_CHIPS_/resources/images/mo/btn_gnb_close.png); background-size: cover; width: 12px; height: 12px; position: absolute; top: -20px; right: 5px;}
+.list_add_delete .list_add_li .close_btn{content: "" ; background-image: url(/K_CHIPS_/resources/images/mo/btn_gnb_close.png); background-size: cover; width: 12px; height: 12px; position: absolute; top: -20px; right: 5px;}
 .list_add_delete .list_add_li{position: relative; ;}
 .list_add_delete .list_add_li .add_disappear{display: none;}
 
@@ -140,7 +140,7 @@
 
 
 .circle_info {
-    position: absolute;    top: -1px;    left: 95px;    width: 18px;    height: 18px;    color: transparent;    background-image: url(/resources/images/pc/info_ic.svg);    background-size: cover;    background-repeat: no-repeat;}
+    position: absolute;    top: -1px;    left: 95px;    width: 18px;    height: 18px;    color: transparent;    background-image: url(/K_CHIPS_/resources/images/pc/info_ic.svg);    background-size: cover;    background-repeat: no-repeat;}
 .bx_chk_multiple{display: flex; gap: 15px;}
 .member_wrap {margin-top:35px}
 .member_wrap .bx_inp.ty1.flex .inp input {width:calc(100% )}
@@ -317,10 +317,10 @@
 
 
 
-.lnb_dep1 > a::after{ transition: all 0.3s ease-in; content: ""; position: absolute; top: 50%; transform: translate(-50%); transform: rotate(180deg); right: 0px; width: 12px; height: 6px; background-image: url(/resources/images/mo/gnb_arrow_oon.svg);}
+.lnb_dep1 > a::after{ transition: all 0.3s ease-in; content: ""; position: absolute; top: 50%; transform: translate(-50%); transform: rotate(180deg); right: 0px; width: 12px; height: 6px; background-image: url(/K_CHIPS_/resources/images/mo/gnb_arrow_oon.svg);}
 .lnb_dep1 > a {padding: 8px 0px; transition: all 0.3s ease-in;font-family: Pretendard;font-size: 20px;line-height: 28px; /* 140% */letter-spacing: -0.4px;    font-weight: 500; display:block;position:relative; color: #333;}
 .lnb_dep1.on > a {color:#333;}
-.lnb_dep1.on > a::after {transform: rotate(0deg); background-image: url(/resources/images/mo/gnb_arrow.svg)}
+.lnb_dep1.on > a::after {transform: rotate(0deg); background-image: url(/K_CHIPS_/resources/images/mo/gnb_arrow.svg)}
 .lnb_dep1.has_dep2.on > a {color: #0096EA;}
 /* .lnb_dep1.has_dep2 > a:before {content:'';display:block;position:absolute;right:26px;top:50%;margin-top:-2px;width:7px;height:4px;background:url('../images/icon_arr_b_7x4.png') no-repeat center;background-size:7px auto;transition:all 0.3s}
 .lnb_dep1.has_dep2.on > a:before {transform:rotate(180deg)} */
@@ -337,7 +337,7 @@
 .lnb_dep3{margin-left: 17px;}
 .h_side_bar{ margin-top: 20px; padding: 0 20px; width: 100%;  height: calc((100% - 52px));z-index: 999; position:; right: 0px; top: 0; transition: transform 0.35s cubic-bezier(0.075, 0.82, 0.165, 1);}
 .lnb_li_dep2{padding: 24px; background-color: rgba(0, 150, 234, 0.20); border-radius: 16px; border: 1px solid rgba(0, 150, 234, 0.50);}
-.h_side_bar_close_btn {position: absolute; top: 24px; right: 24px; width: 24px; height: 24px; background-size: cover; background-repeat: no-repeat; background-image: url(../../../resources/images/pc/Close_LG.svg)}
+.h_side_bar_close_btn {position: absolute; top: 24px; right: 24px; width: 24px; height: 24px; background-size: cover; background-repeat: no-repeat; background-image: url(../../../K_CHIPS_/resources/images/pc/Close_LG.svg)}
 
 
 
@@ -363,7 +363,7 @@
 .main_02_banner_wrap .swiper-slide {min-height: 100%; }
 
 
-.main_banner_wrap{border-radius: 15px 0 0 15px; width: 915px; height: 515px;background-size: cover; background-image: url(/resources/images/pc/main_banner.jpg);}
+.main_banner_wrap{border-radius: 15px 0 0 15px; width: 915px; height: 515px;background-size: cover; background-image: url(/K_CHIPS_/resources/images/pc/main_banner.jpg);}
 .main_banner_box{color: #fff; padding: 100px 0; text-align: center; width: 365px; height: 515px; border-radius: 0 15px 15px 0; background-color:#282627 ;}
 .main_banner_box h2{font-size: 44px; font-weight: bold;}
 .main_banner_box .banner_text_el{margin-top: 22px; font-size: 24px; font-weight: 600; line-height: 31px;letter-spacing: 1.2px; }
@@ -465,7 +465,7 @@
 /* ci */
 
 .container_head{ padding: 10px 20px; border-bottom: 1px solid #ddd;}
-.back_btn{background-image: url(/resources/images/mo/back_btn.svg); width: 24px; height: 24px; color: transparent; background-size: cover;}
+.back_btn{background-image: url(/K_CHIPS_/resources/images/mo/back_btn.svg); width: 24px; height: 24px; color: transparent; background-size: cover;}
 .title_text_type_01{color: #000;    text-align: center;font-family: Pretendard;    font-size: 20px;    font-style: normal;    font-weight: 600;    line-height: 30px;    letter-spacing: -0.4px;}
 .ci_content_bx{ padding: 40px 0; background-color: #F8F8F8;}
 .ci_content_bx > img{margin: auto;}
@@ -499,7 +499,7 @@
 
 
 .business_introduction_wrap02{width: 100%; background-color: #C1DFF9;}
-.business_introduction_wrap02_full{width:100%;padding: 46px 24px 40px 24px;  margin: auto; background-size: cover; background-image: url(/resources/images/mo/business_introduction_wrap02_full.svg);}
+.business_introduction_wrap02_full{width:100%;padding: 46px 24px 40px 24px;  margin: auto; background-size: cover; background-image: url(/K_CHIPS_/resources/images/mo/business_introduction_wrap02_full.svg);}
 .business_information_title{color: #111;    font-family: Pretendard;    font-size: 20px;    font-weight: 600;    line-height: 30px;     letter-spacing: -0.4px;}
 .business_information_wrap{ margin: auto; width: 100%; background-color: rgba(255, 255, 255, 0.80);border-radius: 24px; box-shadow: 10px 10px 30px 0px rgba(129, 129, 129, 0.50);backdrop-filter: blur(5px);}
 .business_information_wrap ul{padding: 40px 24px}
@@ -536,10 +536,10 @@
 .my_home_profile_content{width: 100%; padding: 24px 24px 0px 24px;text-align: center;}
 .my_home_profile_image{width: 180px; height: 180px; overflow: hidden; border-radius: 180px;  }
 .my_home_profile_image_box{position: relative; width: 180px; margin: auto; display: flex; justify-content: center;}
-.my_home_profile_image_box span{position: absolute; color: transparent; bottom: -10px; background-size: cover; right: 17px; width: 56px; height: 56px; background-image: url(/resources/images/pc/k_chips_stc.svg);}
+.my_home_profile_image_box span{position: absolute; color: transparent; bottom: -10px; background-size: cover; right: 17px; width: 56px; height: 56px; background-image: url(/K_CHIPS_/resources/images/pc/k_chips_stc.svg);}
 .my_home_profile_name{font-family: Pretendard;  font-size: 20px;color: #333;  font-weight: 600;  line-height: 30px; /* 150% */letter-spacing: -0.4px; }
 .my_home_profile_belong p{font-family: Pretendard;  font-size: 16px;color: #333;  font-weight: 400;  line-height: 24px; /* 150% */  letter-spacing: -0.32px;}
-.my_home_profile_belong button{color: transparent; background-image: url(/resources/images/pc/ic_16_edit.svg);  width: 16px; height: 16px; margin-left: 8px;  }
+.my_home_profile_belong button{color: transparent; background-image: url(/K_CHIPS_/resources/images/pc/ic_16_edit.svg);  width: 16px; height: 16px; margin-left: 8px;  }
 .profile_line{ width: 20px; height: 1px; margin: auto; background-color: #333;}
 .my_home_profile_belong02{text-align: center;  font-size: 14px;  font-weight: 400;  line-height: 24px; /* 171.429% */  letter-spacing: -0.28px;}
 .my_home_profile_title01{ font-family: Pretendard; color: #333;  font-size: 16px;  font-weight: 600;  line-height: 28px; /* 175% */  letter-spacing: -0.32px;}
@@ -549,7 +549,7 @@
 .my_home_Participation_title span{font-family: Pretendard;font-size: 18px;color: #0094EA;  font-weight: 600;  line-height: 30px;letter-spacing: -0.4px;}
 .my_home_Participation_list{ width: 100%; display: flex; flex-direction: column; gap: 8px; }
 .my_home_Participation_list li{margin-left: 20px; position: relative;  }
-.my_home_Participation_list li::after{ content: ""; position: absolute; top: 6px; left: -20px; background-image: url(/resources/images/pc/bullet.svg);background-position: center; background-repeat: no-repeat; width:16px ; height: 16px; }
+.my_home_Participation_list li::after{ content: ""; position: absolute; top: 6px; left: -20px; background-image: url(/K_CHIPS_/resources/images/pc/bullet.svg);background-position: center; background-repeat: no-repeat; width:16px ; height: 16px; }
 .my_home_Participation_list li a{width: 100%; font-family: Pretendard;color:#333;  font-size: 16px;  font-weight: 400;  line-height: 28px;  letter-spacing: -0.32px; }
 .my_home_Participation_list li span{margin-left: 5px; font-family: Pretendard; white-space: nowrap; color: #555; border-radius: 50px;  padding: 0px 8px; border: 1px solid #999;   font-size: 12px;  font-weight: 600;  line-height: 28px; /* 166.667% */  letter-spacing: -0.24px;}
 .my_home_Participation_list li.on span{color:#0094EA ; border: 1px solid #0094EA;}
@@ -558,20 +558,20 @@
 .my_home_profile_box_lfte_tag .my_home_tag{ padding-bottom: 24px;overflow: hidden; display: flex; flex-wrap: wrap; gap: 8px; }
 .my_home_profile_box_lfte_tag .my_home_tag li{background-color:#F5F5F5;  padding: 4px 12px; border-radius: 20px; }
 .my_home_profile_box_lfte_tag .my_home_tag li a{font-family: Pretendard;font-size: 14px;color: #555;  font-weight: 400;  line-height: 24px; /* 171.429% */  letter-spacing: -0.28px;}
-.correction_btn{color: transparent; max-width: 24px; background-size: cover; background-image: url(/resources/images/pc/ic_16_edit.svg); background-repeat: no-repeat; background-position: center;  min-width: 24px; height: 24px; margin-left: 8px; }
+.correction_btn{color: transparent; max-width: 24px; background-size: cover; background-image: url(/K_CHIPS_/resources/images/pc/ic_16_edit.svg); background-repeat: no-repeat; background-position: center;  min-width: 24px; height: 24px; margin-left: 8px; }
 .my_home_profile_box_right{border: 1px solid #ddd; background-color:#F8F8F8 ; padding: 24px 0px 68px 20px;}
 
 
 
 .my_home_profile_top_title{ display: flex; align-items: center;}
 .my_home_profile_top_title h2{font-family: Pretendard;  font-size: 20px;  font-weight: 600;  color: #333;  line-height: 30px; /* 150% */  letter-spacing: -0.4px;}
-.my_home_profile_top_title button{width: 24px; height: 24px; background-image: url(/resources/images/pc/component02.svg); background-size: cover;}
+.my_home_profile_top_title button{width: 24px; height: 24px; background-image: url(/K_CHIPS_/resources/images/pc/component02.svg); background-size: cover;}
 .my_home_profile_top_title02{ display: flex; align-items: center;}
 .my_home_profile_top_title02 h2{color:#333;    /* B/B1_SB */    font-family: Pretendard;    font-size: 16px;    font-style: normal;    font-weight: 600;    line-height: 28px; /* 175% */    letter-spacing: -0.32px;}
-.my_home_profile_top_title02 button{width: 16px; height: 16px; background-image: url(/resources/images/pc/component02.svg); background-size: cover;}
+.my_home_profile_top_title02 button{width: 16px; height: 16px; background-image: url(/K_CHIPS_/resources/images/pc/component02.svg); background-size: cover;}
 .my_home_profile_top_title03{ display: flex; align-items: center;}
 .my_home_profile_top_title03 h2{font-family: Pretendard; font-size: 16px;  font-weight: 600;  line-height: 28px;  letter-spacing: -0.32px;}
-.my_home_profile_top_title03 button{width: 16px; height: 16px; background-image: url(/resources/images/pc/component02.svg); background-size: cover;}
+.my_home_profile_top_title03 button{width: 16px; height: 16px; background-image: url(/K_CHIPS_/resources/images/pc/component02.svg); background-size: cover;}
 .my_home_profile_swiper{position: relative;}
 .my_home_profile_swiper .my_home_Swiper{overflow: hidden;}
 .my_home_Swiper{position: relative;}
@@ -580,8 +580,8 @@
 .my_home_profile_swiper .my_home_Swiper03{overflow: hidden;}
 .my_home_Swiper03{position: relative;}
 .my_home_profile_swiper .swiper-slide{height: 292px;padding: 24px 20px 24px 20px; background-color: #fff; border: 1px solid #ddd;}
-.my_home_profile_swiper .swiper-button-prev{left: -44px !important; width: 24px !important;background-size: cover;  height: 24px!important; background-image: url(/resources/images/pc/my_home_Swiperprev.png);}
-.my_home_profile_swiper .swiper-button-next{right: -44px !important; width: 24px !important;background-size: cover;  height: 24px!important;transform: rotate(180deg); background-image: url(/resources/images/pc/my_home_Swiperprev.png);}
+.my_home_profile_swiper .swiper-button-prev{left: -44px !important; width: 24px !important;background-size: cover;  height: 24px!important; background-image: url(/K_CHIPS_/resources/images/pc/my_home_Swiperprev.png);}
+.my_home_profile_swiper .swiper-button-next{right: -44px !important; width: 24px !important;background-size: cover;  height: 24px!important;transform: rotate(180deg); background-image: url(/K_CHIPS_/resources/images/pc/my_home_Swiperprev.png);}
 
 
 .my_home_profile_swiper .swiper-pagination{left: 50%;bottom: -24px; transform: translateX(-50%); display: flex; gap: 10px;}
@@ -602,7 +602,7 @@
 .my_home_profile_box_lfte02_mid ul li .date02{font-family: Pretendard; font-size: 14px; color: #555;  font-weight: 400;  line-height: 24px;   letter-spacing: -0.28px;}
 .my_home_profile_box_lfte02_bottom{ display: flex;align-items: center; flex-direction: column; padding: 24px 20px; background-color: #E2F2FC;}
 .my_home_profile_box_lfte02_bottom p{position: relative; padding-left: 32px; color: #333;  font-size: 16px;  font-weight: 400;  line-height: 28px;   letter-spacing: -0.32px;}
-.my_home_profile_box_lfte02_bottom p::after{content: ""; position: absolute;top:0px; left: 12px; transform: translateX(-50%); background-image: url(/resources/images/pc/ico24_search_light.svg); width: 24px; height: 24px; }
+.my_home_profile_box_lfte02_bottom p::after{content: ""; position: absolute;top:0px; left: 12px; transform: translateX(-50%); background-image: url(/K_CHIPS_/resources/images/pc/ico24_search_light.svg); width: 24px; height: 24px; }
 
 
 .my_home_Swiper_card_group_top span{font-family: Pretendard; color: #555; border-radius: 20px;  padding: 2px 8px; border: 1px solid #999;   font-size: 12px;  font-weight: 400;  line-height: 30px; /* 166.667% */  letter-spacing: -0.24px;}
@@ -629,17 +629,17 @@
 .my_home_Swiper_card_evaluation_profile li p {text-align: center; color: #555;  font-size: 14px;  font-weight: 400;  line-height: 24px;  letter-spacing: -0.28px;}
 
 .my_home_table_text_list >  li{margin-left: 13px; position: relative;  }
-.my_home_table_text_list > li::after{ content: ""; position: absolute; top: 5px; left: -15px; background-image: url(/resources/images/pc/bullet.svg);background-position: center; background-repeat: no-repeat; width:16px ; height: 16px; }
+.my_home_table_text_list > li::after{ content: ""; position: absolute; top: 5px; left: -15px; background-image: url(/K_CHIPS_/resources/images/pc/bullet.svg);background-position: center; background-repeat: no-repeat; width:16px ; height: 16px; }
 .my_home_table_text_list_contents h2{color:#333; white-space: nowrap; /* B/B1_SB */  font-family: Pretendard;  font-size: 16px;   font-weight: 600;  line-height: 28px;letter-spacing: -0.32px;}
 .my_home_table_text_list_contents p{ color:  #333;  font-size: 16px;  font-weight: 400;  line-height: 28px;  letter-spacing: -0.32px;}
 
 
-.hy_home_close_btn{z-index:1; position: absolute; top: 10px; right: 10px; color: transparent; overflow: hidden; width: 12px; height: 12px; background-image: url(/resources/images/pc/xmark.svg) ; background-size:cover; background-repeat: no-repeat; }
-.hy_home_close_btn{z-index:1; position: absolute; top: 10px; right: 10px; color: transparent; overflow: hidden; width: 12px; height: 12px; background-image: url(/resources/images/pc/xmark.svg) ; background-size:cover; background-repeat: no-repeat; }
+.hy_home_close_btn{z-index:1; position: absolute; top: 10px; right: 10px; color: transparent; overflow: hidden; width: 12px; height: 12px; background-image: url(/K_CHIPS_/resources/images/pc/xmark.svg) ; background-size:cover; background-repeat: no-repeat; }
+.hy_home_close_btn{z-index:1; position: absolute; top: 10px; right: 10px; color: transparent; overflow: hidden; width: 12px; height: 12px; background-image: url(/K_CHIPS_/resources/images/pc/xmark.svg) ; background-size:cover; background-repeat: no-repeat; }
 
 
 .my_home_table_text_list li.inp{ margin-left: 20px; position: relative;  }
-.my_home_table_text_list li.inp::after{ content: ""; position: absolute; top: 11px; left: -20px; background-image: url(/resources/images/pc/bullet.svg);background-position: center; background-repeat: no-repeat; width:16px ; height: 16px; }
+.my_home_table_text_list li.inp::after{ content: ""; position: absolute; top: 11px; left: -20px; background-image: url(/K_CHIPS_/resources/images/pc/bullet.svg);background-position: center; background-repeat: no-repeat; width:16px ; height: 16px; }
 
 .file_list02 p {font-size:16px;color:#969696}
 .file_list02 .file {padding-left:25px;color:#323232;font-size:14px;line-height:21px;background:url('../../images/pc/icon_file_16x21.png') no-repeat left center;background-size:16px auto}
@@ -722,7 +722,7 @@
 .technical_revie_board_wrap > li{border: 1px solid #ddd; width: 48%; padding: 8px 12px 16px 12px; }
 .revie_board_card_pointer{ font-size: 14px;  color: #0086DD;  font-weight: 400;    line-height: 24px; /* 171.429% */ letter-spacing: -0.28px;}
 
-.kchips_decoration{position: absolute;  color: transparent;  top: 0px;  background-size: cover;  left: -10px;  width: 32px;  height: 32px;  background-image: url(/resources/images/pc/k_chips_stc.svg);}
+.kchips_decoration{position: absolute;  color: transparent;  top: 0px;  background-size: cover;  left: -10px;  width: 32px;  height: 32px;  background-image: url(/K_CHIPS_/resources/images/pc/k_chips_stc.svg);}
 
 
 /* 댓글 */
